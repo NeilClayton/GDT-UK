@@ -1,0 +1,234 @@
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+#login-body {
+	height:100vh; 
+	background:#089de3;	
+}
+body {
+	margin:0;
+	padding:0 0 250px 0;
+	position: relative;
+	min-height: 100%;
+}
+.affix + .container-fluid {
+	padding-top: 70px;
+ }
+.affix {
+	top: 0;
+	width: 100%;
+}
+.header {
+	width:100%;
+	padding:20px 0;
+	margin:0;
+}
+.header img {
+}
+
+/* --- Navbar Begins --- */
+.navbar {
+    margin-bottom: 0;
+	border:none;
+	border-radius:0;
+	z-index:9999;
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+.navbar .navbar-brand {
+	color:white;
+	margin:5px 0;
+}
+.navbar-default {
+	background:#089de3;
+	border:none;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+}
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:visited, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:active  {
+	color:white;
+	font-size:1.7rem;
+	margin:5px 15px;
+}
+.navbar-default .navbar-nav>li:hover {
+	background:#077fb7;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	background:none;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	color:white;	
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.navbar-default .navbar-toggle {
+	border:none;
+	color:white;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background:white;
+}
+.navbar-toggle, .navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus {
+	background:transparent !important;
+}
+.login {
+	margin:0;
+	color:white;
+	font-size:1.7rem;
+	line-height:60px;
+	padding:0 20px;
+}
+.login:hover {
+	text-decoration:none;
+	color:white;
+	background:#077fb7;
+}
+/* --- Navbar Ends --- */
+
+/* --- Homepage begins --- */
+.introduction {
+	padding:3% 0;
+}
+.introduction h1 {
+	margin-top:0;
+	font-family: 'Rubik', sans-serif;
+	text-transform:uppercase;
+}
+.introduction p {
+	margin-top:1.5%;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:1.6rem;
+	text-align:justify;
+}
+.nextsection {
+	padding:0 0 3% 0;
+}
+.category {
+	padding:0;
+}
+.category h2 {
+	text-align:center;
+	font-family: 'Rubik', sans-serif;
+	font-size:2.4rem;
+	font-weight:normal;
+}
+.category p {
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:1.7rem;
+	text-align:center;
+}
+/* --- Homepage Ends --- */
+
+/* --- Login page Begins --- */
+.login-form {
+	position:relative;
+	top:50%;
+	transform:transformY(-50%);
+	width:30%;
+	background:white;
+	padding:2%;
+	margin:0 auto;
+}
+.login-form h1 {
+	font-family: 'Rubik', sans-serif;
+	font-size:4.5rem;
+	font-weight:normal;	
+	text-align:center;
+	margin:0 0 2% 0;
+	padding-bottom:2%;
+	border-bottom:1px solid #ccc;
+}
+.login-form label {
+	font-family: 'Rubik', sans-serif;
+	font-size:2rem;
+	font-weight:normal;	
+}
+.login-form input {
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:1.7rem;
+	margin:0;
+	border-radius:0;
+	border:none;
+	box-shadow:none;
+	border-bottom:1px solid #ccc;
+	outline:none;
+}
+.login-form input:focus {
+	box-shadow:none;
+	border-bottom:1px solid #ccc;
+}
+.login-form .btn {
+	width:100%;
+	background:#089de3;
+	padding:1.5% 0;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:1.8rem;
+}
+/* --- Login page Ends --- */
+
+/* --- Footer Begins --- */
+footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height:250px;
+	width:100%;
+	padding:25px 0;
+	background:#089de3;
+	font-family: 'Lato', sans-serif;
+}
+footer ul {
+	margin:0;
+	list-style-type:none;
+	font-size:1.6rem;
+}
+.head {
+	font-weight:bold;
+	font-size:1.9rem;
+	text-transform:uppercase;
+	color:white;
+}
+footer .glyphicon {
+	margin-right:2%;
+}
+footer ul li a {
+	color:white;
+	font-weight:300;
+}
+footer p {
+	width:100%;
+	font-size:1.5rem;
+	padding:0;
+	margin:0;
+	color:white;
+	font-weight:300;
+}
+.call {
+	width:100%;
+	color:white;
+	margin:0;
+}
+/* --- Footer Ends --- */
+@media all and (max-width:991px) {
+}
+@media all and (max-width:768px) {
+	.navbar-default .navbar-nav>li:hover {
+		background:none;
+	}
+	.login-form {
+		width:50%;
+	}
+}
