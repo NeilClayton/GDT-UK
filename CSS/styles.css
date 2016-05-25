@@ -307,6 +307,44 @@ table {
 	font-weight:300;
 	font-size:1.5rem;	
 }
+
+/* --- Course --- */
+.bronze, .silver, .gold {
+	display:block;
+	width:15%;
+	padding:0.7% 0;
+	margin-bottom:0.7%;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:1.6rem;
+}
+.bronze, .bronze:active, .bronze:focus {
+	background:#CD7F32;
+	border-color:#a55608;
+	outline:none;
+}
+.bronze:hover {
+	background:#a55608;
+	border-color:#5d3c1c;
+}
+.silver, .silver:active, .silver:focus {
+	background:#c0c0c0;
+	border-color:#808080;
+	outline:none;
+}
+.silver:hover {
+	background:#808080;
+	border-color:#494949;
+}
+.gold, .gold:active, .gold:focus {
+	background:#FFD700;
+	border-color:#af9405;
+	outline:none;
+}
+.gold:hover {
+	background:#af9405;
+	border-color:#66580c;
+}
 /* --- Footer Begins --- */
 footer {
 	position: absolute;
