@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="other-html" lang="en">
 	<head>
 	<title>GDT: Nottingham Driving School - Driving Lessons UK</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -21,29 +21,29 @@
 	<img src="Images/gdt_logo3.png" width="600" height="278" class="img-responsive center-block">
 	</section>
 <!-- Navigation bar -->
-		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="800">
-			<div class="container-fluid">
-				<div class="navbar-header">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<section class="container-fluid">
+				<section class="navbar-header">
 				<!-- Button to toggle drop down -->
 					<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" role="button" aria-haspopup="true">
 						<span class = "icon-bar"></span>
 						<span class = "icon-bar"></span>
 						<span class = "icon-bar"></span>
 					</a>
-				</div>
-					<div class="collapse navbar-collapse" id="navbar">
+				</section>
+					<section class="collapse navbar-collapse" id="navbar">
 				<!-- Align links to the right -->
 						<ul class="nav navbar-nav">
 							<li><a href="index.html"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a></li>
-							<li><a href="#"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;About</a></li>
-							<li><a href="courses.html"><i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;Courses</a></li>
-							<li><a href="#"><i class="fa fa-question-circle"></i>&nbsp;&nbsp;Your theory test</a></li>
-							<li><a href="#"><i class="fa fa-car"></i>&nbsp;&nbsp;Your driving test</a></li>
-							<li><a class="last-link" href="contact.html"><i class="fa fa-phone-square"></i>&nbsp;&nbsp;Contact</a></li>
+							<li><a href="about.html"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;About</a></li>
+							<li><a href="courses.html"><i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;Courses<span class="sr-only">(current)</span></a></li>
+							<li><a href="drivingtheorytest.html"><i class="fa fa-question-circle"></i>&nbsp;&nbsp;Your theory test</a></li>
+							<li><a href="drivingpracticaltest.html"><i class="fa fa-car"></i>&nbsp;&nbsp;Your driving test</a></li>
+							<li><a href="contact.html"><i class="fa fa-phone-square"></i>&nbsp;&nbsp;Contact</a></li>
+							<li><a href="login.html" role="button"><i class="fa fa-user"></i>&nbsp;&nbsp;(Guest) Login</a></li>
 						</ul>
-					<a class="login pull-right" href="login.html" role="button"><i class="fa fa-user"></i>&nbsp;&nbsp;(Guest) Login</a>
-					</div>
-			</div>
+					</section>
+			</section>
 		</nav>
 			<section class="container-fluid">
 				<section class="row introduction">
@@ -68,38 +68,96 @@
 								<td>£49.00</td>
 							</tr>
 						</table>
-						<section class="collapse" id="bronze">
-							<p>This offer is an option for cheaper driving lessons, which can be booked for you to take the lessons when it suits you.</p>
-							<p>With this course you get <strong>11</strong> hours of driving tuition.</p>
-							<p>You can either take your lessons hourly or you can book more than 1 lesson a week, or you may like to book lessons by 1.1/2 , 2 hour , 3 hours upto a maximum of 4 hours a day.</p>
-							<p>The price of this course is <strong>£220</strong>.</p>
-							<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
-							<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
+						<ul class="nav nav-tabs">
+							<li class="active"><a data-toggle="tab" href="#bronze">Intensive driving courses (Bronze)</a></li>
+							<li><a data-toggle="tab" href="#silver">Intensive driving courses (Silver)</a></li>
+							<li><a data-toggle="tab" href="#gold">Intensive driving courses (Gold)</a></li>
+							<li><a data-toggle="tab" href="#satellite">Satellite navigation lessons</a></li>
+							<li><a data-toggle="tab" href="#passplus">Pass plus driving course</a></li>
+							<li><a data-toggle="tab" href="#refresher">Refresher driving lessons</a></li>
+							<li><a data-toggle="tab" href="#motorway">Motorway driving lessons</a></li>
+							<li><a data-toggle="tab" href="#blockbook">Block book driving lessons</a></li>
+						</ul>
+						<section class="tab-content">
+							<section id="bronze" class="tab-pane fade in active">
+								<h3>Bronze driving course</h3>
+								<p>This offer is an option for cheaper driving lessons, which can be booked for you to take the lessons when it suits you.</p>
+								<p>With this course you get <strong>11</strong> hours of driving tuition.</p>
+								<p>You can either take your lessons hourly or you can book more than 1 lesson a week, or you may like to book lessons by 1.1/2 , 2 hour , 3 hours up to a maximum of 4 hours a day.</p>
+								<p>The price of this course is <strong>£220</strong>.</p>
+								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
+								<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
+							</section>
+							<section id="silver" class="tab-pane fade">
+								<h3>Silver driving courses</h3>
+								<p>Here at GDT we appreciate how busy your life can be, and that every learner is different. That's why we offer our specially designed intensive courses that have been built with you in mind.</p>
+								<p>These can be taken as quickly as you like, as one hour or up to four hours maximum,* suitably tailoring your driver training to meet your insectionidual needs.</p>
+								<p>Our <strong>Silver</strong> intensive course costs <strong>£430</strong>, and this includes:</p>
+								<p><strong>20</strong> hours driving tuition plus one <strong>FREE</strong> attempt at the Driving theory test.</p>
+								<p>If four hours are booked, there will be a 20 minute comfort break after the second hour, keeping your safety in mind.</p>
+								<p>The <strong>FREE</strong> attempt at the <a href="#" target="_blank">driving theory test</a> is included in the price and can be booked by your instructor.</p>
+								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
+								<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
+							</section>
+							<section id="gold" class="tab-pane fade">
+								<h3>Gold driving courses</h3>
+								<p>Here at GDT we appreciate how busy your life can be, and that every learner is different. That's why we offer our specially designed intensive courses that have been built with you in mind.</p>
+								<p>These can be taken as quickly as you like, as one hour or up to four hours maximum, suitably tailoring your driver training to meet your insectionidual needs.</p>
+								<p>Our <strong>Gold</strong> intensive course costs <strong>£700</strong> and this includes:</p>
+								<p><strong>30</strong> hours driving tuition plus one <strong>FREE</strong> attempt at the Driving Theory Test and one <strong>FREE</strong> attempt at the <a href="drivingpracticaltest.html" target="_blank">practical driving test</a>.</p>
+								<p>However, if you feel that our intensive courses aren't right for you, then why not check out our deals on <a href="#" target="_blank">block driving lesson bookings</a>.</p>
+								<p>If a four hour driving lesson is booked, there will be a 20 minute comfort break after the second hour, keeping your safety in mind.</p>
+								<p>The <strong>FREE</strong> attempt at the <a href="#" target="_blank">driving theory test</a> and the <a href="#" target="_blank">practical driving test</a> <strong>are</strong> included in the price, and can be booked by your instructor.</p>
+								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
+								<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
+							</section>
+							<section id="satellite" class="tab-pane fade">
+								<h3>Satellite navigation lessons</h3>
+								<p>Satelite navigation, or sat nav  is the way that many of people find there way around nowadays, gone are the days of map reading in the dark. So getting used to driving around with the directions be spoken to you, and the fact that you sometimes have to look at a little screen and keep your eye on the road can be quite daunting.</p>
+								<p>Well thats where these lessons will be invaluable. Even sat nav's can be wrong, and these lessons will teach you not only how to get from A to B safely, but how not to panic and to continue driving safely.</p>
+								<p>Lesson prices are <strong>£24.50</strong> per hour.</p>
+								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
+								<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
+							</section>								
+							<section id="passplus" class="tab-pane fade">
+								<h3>Pass plus driving course</h3>
+								<p>Pass plus is available for any driver who has already passed their <a href="#" target="_blank">practical driving test</a>. The benefits of completing a pass plus course are cheaper car insurance and more advanced driver training.
+								There are six modules taught over a six hour block, in one or two days.  There will be comfort breaks when required, for your safety.</p>
+								<h4>The six modules are:</h4>
+								<ul>
+									<li>Module 1: Introduction and town driving.</li>
+									<li>Module 2: All-weather driving.</li>
+									<li>Module 3: Out of town driving and rural roads.</li>
+									<li>Module 4: Night driving.</li>
+									<li>Module 5: Dual carriageways.</li>
+									<li>Module 6: Motorways.</li>
+								</ul>
+								<p>The cost of a pass plus course is <strong>£150</strong> if you pass your <a href="#" target="_blank">practical driving test</a> with GDT.</p>
+								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
+								<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
+							</section>
+							<section id="refresher" class="tab-pane fade">
+								<h3>Refresher lessons</h3>
+								<p>Refresher lessons are structured around the driver who has passed their Practical Driving Test, but have probably not driven for a while and are feeling a little nervous about getting back behind the wheel
+								So at GDT we will endevour to boost your self esteem, turning you into a safe and confident driver.</p>
+								<p>Lesson prices are <strong>£24.50</strong> per hour and you can take as little or as many hours as you like until you feel confident.</p>
+								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
+								<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
+							</section>
+							<section id="motorway" class="tab-pane fade">
+								<h3>Motorway lessons</h3>
+								<p>Motorway lessons are available for anyone, whether you have just passed your Practical Driving Test, or have been driving for a while and not yet got the confidence to drive on the motorway.</p>
+							</section>
+							<section id="blockbook" class="tab-pane fade">
+								<h3>Block book lessons</h3>
+								<p>Here at GDT we appreciate how busy your life can be, and that every learner driver is different.  That's why we offer our specially designed block driving lesson bookings that have been built with you in mind. </p>
+								<p>These can be taken as slowly or as quickly as you like, as one hour or in multiples, or up to a maximum of four hours*, suitably tailoring your driver training to meet your individual needs.
+								Block Bookings can be booked in groups of ten, but without the additional benefits of the Intensive Driving Courses.</p>
+								<p><strong>10</strong> hours = <strong>£215</strong>.</p>
+								<p><strong>20</strong> hours = <strong>£400</strong> plus 1 <strong>FREE</strong> hour.</p>
+								<p><strong>30</strong> hours = <strong>£650</strong> plus 2 <strong>FREE</strong> hours.</p>
+							</section>
 						</section>
-						<button type="button" class="btn btn-primary bronze" data-toggle="collapse" data-target="#bronze">Intensive driving course Bronze</button>
-						<section class="collapse" id="silver">
-							<p>Here at GDT we appreciate how busy your life can be, and that every learner is different. That's why we offer our specially designed intensive courses that have been built with you in mind.</p>
-							<p>These can be taken as quickly as you like, as one hour or up to four hours maximum,* suitably tailoring your driver training to meet your individual needs.</p>
-							<p>Our <strong>Silver</strong> intensive course costs <strong>£430</strong>, and this includes:</p>
-							<p><strong>20</strong> hours driving tuition plus one <strong>FREE</strong> attempt at the Driving theory test.</p>
-							<p>If four hours are booked, there will be a 20 minute comfort break after the second hour, keeping your safety in mind.</p>
-							<p>The <strong>FREE</strong> attempt at the <a href="#" target="_blank">driving theory test</a> is included in the price and can be booked by your instructor.</p>
-							<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
-							<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
-						</section>
-						<button type="button" class="btn btn-primary silver" data-toggle="collapse" data-target="#silver">Intensive driving course Silver</button>
-						<section class="collapse" id="gold">
-							<p>Here at GDT we appreciate how busy your life can be, and that every learner is different. That's why we offer our specially designed intensive courses that have been built with you in mind.</p>
-							<p>These can be taken as quickly as you like, as one hour or up to four hours maximum, suitably tailoring your driver training to meet your individual needs.</p>
-							<p>Our <strong>Gold</strong> intensive course costs <strong>£700</strong> and this includes:</p>
-							<p><strong>30</strong> hours driving tuition plus one <strong>FREE</strong> attempt at the Driving Theory Test and one <strong>FREE</strong> attempt at the <a href="drivingpracticaltest.html" target="_blank">practical driving test</a>.</p>
-							<p>However, if you feel that our intensive courses aren't right for you, then why not check out our deals on <a href="#" target="_blank">block driving lesson bookings</a>.</p>
-							<p>If a four hour driving lesson is booked, there will be a 20 minute comfort break after the second hour, keeping your safety in mind.</p>
-							<p>The <strong>FREE</strong> attempt at the <a href="#" target="_blank">driving theory test</a> and the <a href="#" target="_blank">practical driving test</a> <strong>are</strong> included in the price, and can be booked by your instructor.</p>
-							<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
-							<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
-						</section>
-						<button type="button" class="btn btn-primary gold" data-toggle="collapse" data-target="#gold">Intensive driving course Gold</button>
 					</section>
 				</section>
 			</section>
@@ -110,7 +168,7 @@
 						<ul>
 							<li class="head">Main Menu</li>
 							<li><a href="index.html"><i class="glyphicon glyphicon-chevron-right"></i>Home</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>About us</a></li>
+							<li><a href="about.html"><i class="glyphicon glyphicon-chevron-right"></i>About us</a></li>
 							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Driving lessons &amp; Courses</a></li>
 							<li><a href="drivingtheorytest.html"><i class="glyphicon glyphicon-chevron-right"></i>The driving theory test</a></li>
 							<li><a href="drivingpracticaltest.html"><i class="glyphicon glyphicon-chevron-right"></i>The driving practical test</a></li>
@@ -118,32 +176,34 @@
 							<li><a href="prices.html"><i class="glyphicon glyphicon-chevron-right"></i>Prices</a></li>
 						</ul>
 					</section>
-					<section class="col-sm-6 col-md-3 col-md-offset-0">
+					<section class="col-sm-6 col-md-3">
 						<ul>
 							<li class="head">Driving lessons/courses</li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Bronze)</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Silver)</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Gold)</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Satellite navigation lessons</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Pass plus driving course</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Refresher driving lessons</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Motorway driving lessons</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Block booking driving lessons</a></li>
+							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Bronze)</a></li>
+							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Silver)</a></li>
+							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Gold)</a></li>
+							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Satellite navigation lessons</a></li>
+							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Pass plus driving course</a></li>
+							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Refresher driving lessons</a></li>
+							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Motorway driving lessons</a></li>
+							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Block booking driving lessons</a></li>
 						</ul>
 					</section>
-					<section class="col-sm-6 col-md-3 col-md-offset-0"">
+					<section class="col-sm-6 col-md-3">
 						<ul>
 							<li class="head">Special Offers</li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Student driving lesson discounts</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>10 Driving Lessons for £215</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Driving lesson gift vouchers</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Recommend a friend</a></li>
+							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>Student driving lesson discounts</a></li>
+							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>10 Driving Lessons for £215</a></li>
+							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>Driving lesson gift vouchers</a></li>
+							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>Recommend a friend</a></li>
 						</ul>
 					</section>
-					<section class="col-sm-6 col-md-2 col-md-offset-0">
-							<p>Call me on: <a class="call" href="tel:07870438438">07870 438 438</a>.</p>
-							<p>Like GDT-UK on <a class="call" href="https://www.facebook.com/group.php?gid=134221319951289"><i class="fa fa-facebook-square"></i></a></p>
-							<p>&copy; 2016 GDT</p>
+					<section class="col-sm-6 col-md-2">
+						<ul>
+							<li>Call me on: <a class="call" href="tel:07870438438">07870 438 438</a>.</li>
+							<li>Like GDT-UK on <a class="call" href="https://www.facebook.com/group.php?gid=134221319951289"><i class="fa fa-facebook-square"></i></a></li>
+							<li>&copy; 2016 GDT</li>
+						</ul>
 					</section>
 				</section>
 			</section>

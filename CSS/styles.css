@@ -5,6 +5,11 @@ html {
 	background-size:cover;
 	background-attachment:fixed;
 }
+.other-html {
+	background:url(../Images/bg3.png) center center no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
 .login-html {
 	background:url(../Images/bg.jpg) center center no-repeat;
 	background-size:cover;
@@ -12,26 +17,25 @@ html {
 }
 #login-body {
 	height:100vh; 
-	background:rgba(0, 0 , 0, 0.6);
+	background:rgba(0, 0 , 0, 0.7);
 }
 body {
 	background:none;
 	margin:0;
-	padding:0 0 250px 0;
+	padding:50px 0 250px 0;
 	position: relative;
 	min-height: 100%;
 }
 textarea {
 	resize:none;
 }
-.affix + .container-fluid {
-	padding-top: 70px;
- }
-.affix {
-	top: 0;
-	width: 100%;
+.asterisk, .price {
+	color:red;
 }
-.header {
+strong {
+	color:red;
+}
+header {
 	height:100vh;
     display:flex;
     align-items: center;
@@ -41,14 +45,23 @@ textarea {
 	margin:0;
 	background:rgba(0, 0 , 0, 0.2);
 }
-.header img {
+header img {
     vertical-align:middle; /*middle centred*/
     display:table-cell; /*acts like a table cell*/
 	margin:0 auto;
 }
-
+.header {
+	height:50vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+	padding:0;
+	border-bottom:1px solid #202020;
+	background:rgba(0, 0 , 0, 0.2);
+}
 /* --- Navbar Begins --- */
 .navbar {
+   -webkit-backface-visibility: hidden;
     margin-bottom: 0;
 	border:none;
 	border-radius:0;
@@ -56,10 +69,6 @@ textarea {
 	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-}
-.navbar .navbar-brand {
-	color:white;
-	margin:5px 0;
 }
 .navbar-inverse {
 	border:none;
@@ -77,7 +86,7 @@ textarea {
 	background:none;
 }
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
-	color:white;	
+	color:#f0ed08;	
 }
 .navbar .navbar-nav {
   display: inline-block;
@@ -89,25 +98,13 @@ textarea {
 }
 .navbar-inverse .navbar-toggle {
 	border:none;
-	color:white;
+	color:#f0ed08;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-	background:white;
+	background:#f0ed08;
 }
 .navbar-toggle, .navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus {
 	background:transparent !important;
-}
-.login {
-	margin:0;
-	color:#f0ed08;
-	font-size:1.7rem;
-	line-height:60px;
-	padding:0 20px;
-}
-.login:hover {
-	text-decoration:none;
-	color:#f0ed08;
-	background:black;
 }
 /* --- Navbar Ends --- */
 
@@ -117,17 +114,23 @@ textarea {
 	padding:3% 0;
 	color:black;
 }
-.introduction h1 {
+.introduction h1, .contact h1 {
 	margin-top:0;
 	font-family: 'Montserrat', sans-serif;
 	text-transform:uppercase;
 }
-.introduction p, .introduction li {
+.introduction p, .introduction li, marquee {
 	margin-top:1.5%;
 	font-family: 'Lato', sans-serif;
 	font-weight:300;
 	font-size:1.6rem;
 	text-align:justify;
+}
+marquee {
+	margin:0;
+}
+h2 a {
+	color:black;
 }
 .introduction a {
 	color:#0d3f83;
@@ -160,9 +163,13 @@ textarea {
 	top:50%;
 	transform:transformY(-50%);
 	width:30%;
-	background:white;
+	background:#202020;
 	padding:2%;
 	margin:0 auto;
+	border-radius:15px;
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 }
 .login-form h1 {
 	font-family: 'Montserrat', sans-serif;
@@ -171,14 +178,15 @@ textarea {
 	text-align:center;
 	margin:0 0 2% 0;
 	padding-bottom:2%;
-	border-bottom:1px solid #ccc;
+	border-bottom:1px solid #f0ed08;
+	color:#f0ed08;
 }
 .login-form label {
 	font-family: 'Montserrat', sans-serif;
 	font-size:2rem;
 	font-weight:normal;	
 }
-.login-form input {
+.login-form input[type=text], .login-form input[type=password] {
 	font-family: 'Lato', sans-serif;
 	font-weight:300;
 	font-size:1.7rem;
@@ -186,20 +194,38 @@ textarea {
 	border-radius:0;
 	border:none;
 	box-shadow:none;
-	border-bottom:1px solid #ccc;
+	border-bottom:1px solid #f0ed08;
 	outline:none;
+	background:none;
+	color:#f0ed08;
+	padding-bottom:3.5%;
 }
-.login-form input:focus {
+.login-form input[type=text]:focus, .login-form input[type=password]:focus {
 	box-shadow:none;
-	border-bottom:1px solid #ccc;
+	border-bottom:1px solid #f0ed08;
 }
-.login-form .btn {
+.login-form .btn, .login-form .btn:active, .login-form .btn:hover, .login-form .btn:focus {
 	width:100%;
 	background:#202020;
+	margin:-1% auto 0 auto;
 	padding:1.5% 0;
 	font-family: 'Lato', sans-serif;
 	font-weight:300;
 	font-size:1.8rem;
+	outline:none;
+	color:#f0ed08;
+	border:none;
+	border-bottom:1px solid #f0ed08;
+	border-radius:0;	
+}
+.login-form a {
+	display:block;
+	margin-top:2%;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:1.7rem;
+	color:#f0ed08;
+	text-align:center;
 }
 /* --- Login page Ends --- */
 
@@ -224,9 +250,14 @@ table {
 	font-size:1.6rem;	
 }
 /* --- Prices page Ends --- */
+
+/* --- Contact page begins --- */
 .contact {
 	background:white;
 	padding:3% 0;
+}
+.contact h1 {
+	text-align:center;
 }
 .contact form {
 	font-family: 'Lato', sans-serif;
@@ -248,6 +279,8 @@ table {
 	font-weight:normal;
 }
 /* --- Contact Page Ends --- */
+
+/* --- Driving pages Begin --- */
 .introduction h3 {
 	font-family: 'Montserrat', sans-serif;
 	font-size:2rem;
@@ -264,8 +297,21 @@ table {
 	font-size:1.5rem;
 	font-weight:normal;
 }
+.jumbotron {
+	margin-top:1%;
+	padding:1.5%;
+}
+.jumbotron .btn-primary {
+	padding:0.5% 2%;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:1.6rem;
+}
 .introduction li  {
 	margin:0;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	color:black;
 }
 .panel-heading [data-toggle="collapse"]:after {
     font-family: 'Glyphicons';
@@ -307,44 +353,8 @@ table {
 	font-weight:300;
 	font-size:1.5rem;	
 }
+/* --- Driving pages end --- */
 
-/* --- Course --- */
-.bronze, .silver, .gold {
-	display:block;
-	width:15%;
-	padding:0.7% 0;
-	margin-bottom:0.7%;
-	font-family: 'Lato', sans-serif;
-	font-weight:300;
-	font-size:1.6rem;
-}
-.bronze, .bronze:active, .bronze:focus {
-	background:#CD7F32;
-	border-color:#a55608;
-	outline:none;
-}
-.bronze:hover {
-	background:#a55608;
-	border-color:#5d3c1c;
-}
-.silver, .silver:active, .silver:focus {
-	background:#c0c0c0;
-	border-color:#808080;
-	outline:none;
-}
-.silver:hover {
-	background:#808080;
-	border-color:#494949;
-}
-.gold, .gold:active, .gold:focus {
-	background:#FFD700;
-	border-color:#af9405;
-	outline:none;
-}
-.gold:hover {
-	background:#af9405;
-	border-color:#66580c;
-}
 /* --- Footer Begins --- */
 footer {
 	position: absolute;
@@ -361,6 +371,7 @@ footer ul {
 	margin:0;
 	list-style-type:none;
 	font-size:1.6rem;
+	color:#f0ed08;
 }
 .head {
 	font-weight:bold;
@@ -393,6 +404,15 @@ footer p {
 }
 /* --- Footer Ends --- */
 @media all and (max-width:991px) {
+	footer {
+		height:430px;
+	}
+	body {
+		padding-bottom:430px;
+	}
+	footer ul {
+	margin-bottom:2%;
+	}
 }
 @media all and (max-width:768px) {
 	.navbar-inverse .navbar-nav>li:hover {
@@ -407,4 +427,12 @@ footer p {
 	body {
 		padding-bottom:700px;
 	}
+}
+@media all and (max-width:414px) {
+	footer {
+		height:650px;
+	}
+	body {
+		padding-bottom:650px;
+	}	
 }
