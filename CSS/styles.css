@@ -45,10 +45,14 @@ header {
 	margin:0;
 	background:rgba(0, 0 , 0, 0.2);
 }
+header p, .header p {
+	text-align:center;
+}
 header img {
+	margin:0 auto;
+	padding:0;
     vertical-align:middle; /*middle centred*/
     display:table-cell; /*acts like a table cell*/
-	margin:0 auto;
 }
 .header {
 	height:50vh;
@@ -119,7 +123,7 @@ header img {
 	font-family: 'Montserrat', sans-serif;
 	text-transform:uppercase;
 }
-.introduction p, .introduction li, marquee {
+.introduction p, .introduction li, marquee, .profile-1 p {
 	margin-top:1.5%;
 	font-family: 'Lato', sans-serif;
 	font-weight:300;
@@ -233,7 +237,7 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 /* --- Login page Ends --- */
 
 /* --- Prices page Begins --- */
-table {
+.introduction table {
 	margin:3% 0;
 	font-family: 'Lato', sans-serif;
 	font-weight:300;
@@ -357,6 +361,225 @@ table {
 	font-size:1.5rem;	
 }
 /* --- Driving pages end --- */
+
+/* --- Profile page begins --- */
+.profile-1 {
+	background:white;
+	padding:3% 0 0 0;
+}
+.profile-2 {
+	background:white;
+	padding:0 0 3% 0;
+}
+.profile-1 h1 {
+	margin-top:1%;
+	font-family: 'Montserrat', sans-serif;
+	font-size:4rem;
+}
+.profile-1 a, .profile-2 a {
+	color:#588ed3;
+}
+.profile-2 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, .nav-tabs>li>a:hover {
+	border-bottom-color:#ddd;
+	border-radius:2px 2px 0 0;
+}
+#posts h6 ,#information h3 ,#lessons h3, #videos h3 {
+	margin-top:1%;
+	font-family: 'Montserrat', sans-serif;
+	font-size:2.5rem;	
+}
+.slogan {
+	font-style:italic;
+}
+.slogan:before, .slogan:after {
+	content:"\00022";
+}
+.new-post {
+	padding:0.5% 0;
+}
+.new-post form {
+	margin-top:1.5%;
+}
+#post-message {
+	width:100%;
+	margin:0;
+	border-radius:0;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:1.7rem;
+	box-shadow:none;
+}
+.new-post input[type=submit] {
+	margin-top:1%;
+	padding:0.6% 4%;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:1.7rem;
+}
+.user-post {
+	width:100%;
+	float:left;
+	margin-top:1%;
+	padding:0.5%;
+	border-bottom:1px dashed #ddd;
+}
+.user-details {
+	width:100%;
+	float:left;
+	padding:0;
+}
+.user-details img {
+	float:left;
+	margin:0 2% 1% 0;
+}
+.user-details h2 {
+	display:block;
+	width:100%;
+	padding:0;
+	float:none;
+	margin:1% 0 0 0;
+	font-family: 'Lato', sans-serif;
+	font-size:2rem;
+	font-weight:bold;	
+}
+.user-details h3 {
+	display:block;
+	width:100%;
+	padding:0;
+	float:none;
+	margin:1% 0 0 0;
+	font-family: 'Lato', sans-serif;
+	font-size:1.4rem;
+	font-weight:300;
+}
+.user-message p {
+	margin:0;
+}
+.user-replies {
+	float:left;
+	margin:1% 0 0 12.5%;
+	width:75%;
+	padding:0.5%;
+}
+.user-reply {
+	margin:3% 0 0 0;
+}
+.reply-details {
+	width:100%;
+	float:left;
+	padding:0;	
+}
+.reply-details img {
+	float:left;
+	margin:0 2% 1% 0;
+}
+.reply-details h4 {
+	display:block;
+	width:100%;
+	padding:0;
+	float:none;
+	margin:1.25% 0 0 0;
+	font-family: 'Lato', sans-serif;
+	font-size:1.3rem;
+	font-weight:bold;
+}
+.reply-details h5 {
+	display:block;
+	width:100%;
+	padding:0;
+	float:none;
+	margin:1% 0 0 0;
+	font-family: 'Lato', sans-serif;
+	font-size:1.2rem;
+	font-weight:300;
+}
+.reply-message p {
+	margin:0;
+	font-size:1.3rem;
+}
+.new-reply {
+	margin-top:2%;
+}
+#reply-message {
+	width:100%;
+	margin:0;
+	border-radius:0;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:1.4rem;
+	box-shadow:none;
+}
+.new-reply input[type=submit] {
+	margin-top:1%;
+	padding:0.6% 4%;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:1.4rem;
+}
+.about-details {
+	float:left;
+	width:100%;
+	padding:1% 0;
+}
+.about-detail {
+	padding:0;
+}
+p.about-title {
+	width:12.5%;
+	display:inline-block;
+	font-family: 'Lato', sans-serif;
+	font-size:1.6rem;
+	font-weight:bold;
+}
+p.about-content {
+	width:20%;
+	display:inline-block;
+	text-align:left;
+	font-family: 'Lato', sans-serif;
+	font-size:1.6rem;
+	font-weight:300;
+	margin:0;
+}
+#information button {
+	margin:0;
+	padding:0.6% 4%;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:1.6rem;
+}
+#lessons table {
+	margin:3% 0;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:1.6rem;
+}
+.table-striped th {
+	font-family: 'Montserrat', sans-serif;
+	font-size:2rem;
+	font-weight:normal;		
+}
+.table-striped td, .table-striped th{
+    border-color: black !important;
+}
+.outdated {
+	text-decoration:line-through;
+}
+.videos {
+	margin-top:2%;
+}
+.videos [class="col-md-3"] {
+	padding:0 2% 0 0;
+}
+.embed-responsive {
+	margin:0 0 2% 0;
+}
+p.comment {
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:1.6rem;	
+	margin-bottom:5%;
+}
+/* --- Profile page ends --- */
 
 /* --- Footer Begins --- */
 footer {

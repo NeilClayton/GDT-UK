@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html class="other-html" lang="en">
+	<head>
+	<title>GDT: Nottingham Driving School - Driving Lessons UK</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="CSS/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="JS/bootstrap.min.js"></script>
+	<!-- Custom JS -->
+	<script src="https://use.fontawesome.com/71ebc9e44c.js"></script>
+	<!-- Custom CSS -->
+	<link href="CSS/styles.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+	<section class="container-fluid header">
+	<p><img src="Images/gdt_logo3.png" width="600" height="278" class="img-responsive center-block"></p>
+	</section>
+<!-- Navigation bar -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<section class="container-fluid">
+				<section class="navbar-header">
+				<!-- Button to toggle drop down -->
+					<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" role="button" aria-haspopup="true">
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+					</a>
+				</section>
+					<section class="collapse navbar-collapse" id="navbar">
+				<!-- Align links to the right -->
+						<ul class="nav navbar-nav">
+							<li><a href="index.html"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a></li>
+							<li><a href="about.html"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;About</a></li>
+							<li><a href="courses.html"><i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;Courses</a></li>
+							<li><a href="drivingtheorytest.html"><i class="fa fa-question-circle"></i>&nbsp;&nbsp;Your theory test</a></li>
+							<li><a href="drivingpracticaltest.html"><i class="fa fa-car"></i>&nbsp;&nbsp;Your driving test</a></li>
+							<li><a href="contact.html"><i class="fa fa-phone-square"></i>&nbsp;&nbsp;Contact<span class="sr-only">(current)</span></a></li>
+							<li><a href="login.html" role="button"><i class="fa fa-user"></i>&nbsp;&nbsp;(Guest) Login</a></li>
+						</ul>
+					</section>
+			</section>
+		</nav>
+			<section class="container-fluid">
+				<section class="row profile-1">
+					<section class="col-md-8 col-md-offset-2">
+						<img src="Images/user.png" width="200" height="200" class="img-responsive img-thumbnail" alt="profile">
+						<h1>John Doe</h1>
+						<p>Male from Toton, Nottingham</p>
+						<p class="slogan">I really like driving.</p>
+					</section>
+				</section>
+				<section class="row profile-2">
+					<section class="col-md-8 col-md-offset-2">
+						<ul class="nav nav-tabs">
+							<li class="active"><a data-toggle="tab" href="#posts">User Feed</a></li>
+							<li><a data-toggle="tab" href="#information">Information</a></li>
+							<li><a data-toggle="tab" href="#lessons">Lesson bookings</a></li>
+							<li><a data-toggle="tab" href="#videos">Videos</a></li>
+						</ul>
+						<section class="tab-content">
+							<section id="posts" class="tab-pane fade in active">
+								<h6>User feed</h6>
+								<section class="new-post">
+									<form method="post" action="#">
+										<textarea class="form-control" id="post-message" rows="5" cols="100" maxlength="600" required placeholder="Write a message..."></textarea>
+										<input type="submit" class="btn btn-success pull-right" value="Post">
+									<form>
+								</section>
+								<section class="user-post">
+									<section class="user-details">
+										<img src="Images/user.png" width="75" height="75" class="img-responsive img-thumbnail" alt="profile">
+										<h2><a href="#">John Smith</a></h2>
+										<h3>16:37 27/05/16</h3>
+									</section>
+									<section class="user-message">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec odio vitae dui sagittis posuere a id est. Sed iaculis magna orci, a posuere arcu finibus id.</p>
+									</section>
+										<section class="user-replies">
+											<section class="user-reply">
+												<section class="reply-details">
+													<img src="Images/user.png" width="50" height="50" class="img-responsive img-thumbnail" alt="profile">
+													<h4><a href="#">Joe Bloggs</a></h4>
+													<h5>16:39 27/05/16</h5>
+												</section>
+												<section class="reply-message">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec odio vitae dui sagittis posuere a id est. Sed iaculis magna orci, a posuere arcu finibus id.</p>
+												</section>
+											</section>
+											<section class="user-reply">
+												<section class="reply-details">
+													<img src="Images/user.png" width="50" height="50" class="img-responsive img-thumbnail" alt="profile">
+													<h4><a href="#">John Smith</a></h4>
+													<h5>12:00 28/05/16</h5>
+												</section>
+												<section class="reply-message">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec odio vitae dui sagittis posuere a id est. Sed iaculis magna orci, a posuere arcu finibus id.</p>
+												</section>
+											</section>
+											<section class="new-reply">
+												<form method="post" action="#">
+													<textarea class="form-control" id="reply-message" rows="3" cols="100" maxlength="600" required placeholder="Write a reply..."></textarea>
+													<input type="submit" class="btn btn-success pull-right" value="Reply">
+												</form>
+											</section>
+										</section>
+								</section>
+								<section class="user-post">
+									<section class="user-details">
+										<img src="Images/user.png" width="75" height="75" class="img-responsive img-thumbnail" alt="profile">
+										<h2><a href="#">John Smith</a></h2>
+										<h3>16:37 27/05/16</h3>
+									</section>
+									<section class="user-message">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec odio vitae dui sagittis posuere a id est. Sed iaculis magna orci, a posuere arcu finibus id.</p>
+									</section>
+										<section class="user-replies">
+											<section class="user-reply">
+												<section class="reply-details">
+													<img src="Images/user.png" width="50" height="50" class="img-responsive img-thumbnail" alt="profile">
+													<h4><a href="#">Joe Bloggs</a></h4>
+													<h5>16:39 27/05/16</h5>
+												</section>
+												<section class="reply-message">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec odio vitae dui sagittis posuere a id est. Sed iaculis magna orci, a posuere arcu finibus id.</p>
+												</section>
+											</section>
+											<section class="user-reply">
+												<section class="reply-details">
+													<img src="Images/user.png" width="50" height="50" class="img-responsive img-thumbnail" alt="profile">
+													<h4><a href="#">John Smith</a></h4>
+													<h5>12:00 28/05/16</h5>
+												</section>
+												<section class="reply-message">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec odio vitae dui sagittis posuere a id est. Sed iaculis magna orci, a posuere arcu finibus id.</p>
+												</section>
+											</section>
+											<section class="new-reply">
+												<form method="post" action="#">
+													<textarea class="form-control" id="reply-message" rows="3" cols="100" maxlength="600" required placeholder="Write a reply..."></textarea>
+													<input type="submit" class="btn btn-success pull-right" value="Reply">
+												</form>
+											</section>
+										</section>
+								</section>
+							</section>
+							<section id="information" class="tab-pane fade">
+								<h3>Information</h3>
+								<section class="about-details">
+									<section class="about-detail">
+										<p class="about-title">Name:</p>
+										<p class="about-content">John Smith</p>
+									</section>
+									<section class="about-detail">
+										<p class="about-title">Age:</p>
+										<p class="about-content">21</p>
+									</section>
+									<section class="about-detail">
+										<p class="about-title">Gender:</p>
+										<p class="about-content">Male</p>
+									</section>
+									<section class="about-detail">
+										<p class="about-title">Hobbies:</p>
+										<p class="about-content">Football, Gaming</p>
+									</section>
+									<section class="about-detail">
+										<p class="about-title">Town:</p>
+										<p class="about-content">Toton</p>
+									</section>
+								</section>
+								<button type="button" class="btn btn-info">Edit</button>
+							</section>
+							<section id="lessons" class="tab-pane fade">
+								<h3>Booked Lessons</h3>
+								<table class="table table-striped">
+									<tr>
+										<th>Date</th>
+										<th>Time</th>
+									</tr>
+									<tr class="outdated">
+										<td>27/05/2016</td>
+										<td>16:45</td>
+									</tr>
+									<tr>
+										<td>29/05/2016</td>
+										<td>15:45</td>
+									</tr>
+									<tr>
+										<td>05/06/2016</td>
+										<td>15:45</td>
+									</tr>
+								</table>
+							</section>
+							<section id="videos" class="tab-pane fade">
+								<h3>Videos</h3>
+								<section class="videos">
+									<section class="col-sm-6 col-md-3">
+										<section class="embed-responsive embed-responsive-16by9 user-video">
+											<iframe class="embed-responsive-item" allowfullscreen width="800" height="450" src="https://www.youtube.com/embed/0vrdgDdPApQ"></iframe>
+										</section>
+										<p class="comment">Haha, you almost crashed!<b class="pull-right">27/05/16</b></p>
+									</section>
+									<section class="col-sm-6 col-md-3">
+										<section class="embed-responsive embed-responsive-16by9 user-video">
+											<iframe class="embed-responsive-item" allowfullscreen width="800" height="450" src="https://www.youtube.com/embed/0vrdgDdPApQ"></iframe>
+										</section>
+										<p class="comment">Haha, you almost crashed!<b class="pull-right">27/05/16</b></p>
+									</section>
+									<section class="col-sm-6 col-md-3">
+										<section class="embed-responsive embed-responsive-16by9 user-video">
+											<iframe class="embed-responsive-item" allowfullscreen width="800" height="450" src="https://www.youtube.com/embed/0vrdgDdPApQ"></iframe>
+										</section>
+										<p class="comment">Haha, you almost crashed!<b class="pull-right">27/05/16</b></p>
+									</section>
+									<section class="col-sm-6 col-md-3">
+										<section class="embed-responsive embed-responsive-16by9 user-video">
+											<iframe class="embed-responsive-item" allowfullscreen width="800" height="450" src="https://www.youtube.com/embed/0vrdgDdPApQ"></iframe>
+										</section>
+										<p class="comment">Haha, you almost crashed!<b class="pull-right">27/05/16</b></p>
+									</section>
+									<section class="col-sm-6 col-md-3">
+										<section class="embed-responsive embed-responsive-16by9 user-video">
+											<iframe class="embed-responsive-item" allowfullscreen width="800" height="450" src="https://www.youtube.com/embed/0vrdgDdPApQ"></iframe>
+										</section>
+										<p class="comment">Haha, you almost crashed!<b class="pull-right">27/05/16</b></p>
+									</section>
+									<section class="col-sm-6 col-md-3">
+										<section class="embed-responsive embed-responsive-16by9 user-video">
+											<iframe class="embed-responsive-item" allowfullscreen width="800" height="450" src="https://www.youtube.com/embed/0vrdgDdPApQ"></iframe>
+										</section>
+										<p class="comment">Haha, you almost crashed!<b class="pull-right">27/05/16</b></p>
+									</section>
+									<section class="col-sm-6 col-md-3">
+										<section class="embed-responsive embed-responsive-16by9 user-video">
+											<iframe class="embed-responsive-item" allowfullscreen width="800" height="450" src="https://www.youtube.com/embed/0vrdgDdPApQ"></iframe>
+										</section>
+										<p class="comment">Haha, you almost crashed!<b class="pull-right">27/05/16</b></p>
+									</section>
+									<section class="col-sm-6 col-md-3">
+										<section class="embed-responsive embed-responsive-16by9 user-video">
+											<iframe class="embed-responsive-item" allowfullscreen width="800" height="450" src="https://www.youtube.com/embed/0vrdgDdPApQ"></iframe>
+										</section>
+										<p class="comment">Haha, you almost crashed!<b class="pull-right">27/05/16</b></p>
+									</section>
+								</section>
+							</section>
+						</section>
+					</section>
+				</section>
+			</section>
+		<footer>
+			<section class="container-fluid">
+				<section class="row">
+					<section class="col-sm-6 col-md-3 col-md-offset-1">
+						<ul>
+							<li class="head">Main Menu</li>
+							<li><a href="index.html"><i class="glyphicon glyphicon-chevron-right"></i>Home</a></li>
+							<li><a href="about.html"><i class="glyphicon glyphicon-chevron-right"></i>About us</a></li>
+							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Driving lessons &amp; Courses</a></li>
+							<li><a href="drivingtheorytest.html"><i class="glyphicon glyphicon-chevron-right"></i>The driving theory test</a></li>
+							<li><a href="drivingpracticaltest.html"><i class="glyphicon glyphicon-chevron-right"></i>The driving practical test</a></li>
+							<li><a href="contact.html"><i class="glyphicon glyphicon-chevron-right"></i>Contact Us</a></li>
+							<li><a href="prices.html"><i class="glyphicon glyphicon-chevron-right"></i>Prices</a></li>
+						</ul>
+					</section>
+					<section class="col-sm-6 col-md-3">
+						<ul>
+							<li class="head">Driving lessons/courses</li>
+							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Bronze)</a></li>
+							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Silver)</a></li>
+							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Gold)</a></li>
+							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Satellite navigation lessons</a></li>
+							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Pass plus driving course</a></li>
+							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Refresher driving lessons</a></li>
+							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Motorway driving lessons</a></li>
+							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Block booking driving lessons</a></li>
+						</ul>
+					</section>
+					<section class="col-sm-6 col-md-3">
+						<ul>
+							<li class="head">Special Offers</li>
+							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>Student driving lesson discounts</a></li>
+							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>10 Driving Lessons for £215</a></li>
+							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>Driving lesson gift vouchers</a></li>
+							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>Recommend a friend</a></li>
+						</ul>
+					</section>
+					<section class="col-sm-6 col-md-2">
+						<ul>
+							<li>Call me on: <a class="call" href="tel:07870438438">07870 438 438</a>.</li>
+							<li>Like GDT-UK on <a class="call" href="https://www.facebook.com/group.php?gid=134221319951289"><i class="fa fa-facebook-square"></i></a></li>
+							<li>&copy; 2016 GDT</li>
+						</ul>
+					</section>
+				</section>
+			</section>
+		</footer>
+	</body>
+</html>
