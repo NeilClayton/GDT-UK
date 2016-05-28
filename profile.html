@@ -57,25 +57,23 @@
 				<section class="row profile-2">
 					<section class="col-md-8 col-md-offset-2">
 						<ul class="nav nav-tabs">
-							<li class="active"><a data-toggle="tab" href="#posts">User Feed</a></li>
-							<li><a data-toggle="tab" href="#information">Information</a></li>
-							<li><a data-toggle="tab" href="#lessons">Lesson bookings</a></li>
-							<li><a data-toggle="tab" href="#videos">Videos</a></li>
+							<li class="active"><a data-toggle="tab" href="#posts"><i class="fa fa-user"></i>&nbsp;&nbsp;User Feed</a></li>
+							<li><a data-toggle="tab" href="#information"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Information</a></li>
+							<li><a data-toggle="tab" href="#lessons"><i class="fa fa-book"></i>&nbsp;&nbsp;Lesson bookings</a></li>
+							<li><a data-toggle="tab" href="#videos"><i class="fa fa-video-camera"></i>&nbsp;&nbsp;Videos</a></li>
 						</ul>
 						<section class="tab-content">
 							<section id="posts" class="tab-pane fade in active">
-								<h6>User feed</h6>
 								<section class="new-post">
 									<form method="post" action="#">
 										<textarea class="form-control" id="post-message" rows="5" cols="100" maxlength="600" required placeholder="Write a message..."></textarea>
-										<input type="submit" class="btn btn-success pull-right" value="Post">
+										<button type="submit" class="btn btn-success pull-right">Post&nbsp;&nbsp;<i class="fa fa-send"></i></button>
 									<form>
 								</section>
 								<section class="user-post">
 									<section class="user-details">
-										<img src="Images/user.png" width="75" height="75" class="img-responsive img-thumbnail" alt="profile">
-										<h2><a href="#">John Smith</a></h2>
-										<h3>16:37 27/05/16</h3>
+										<img src="Images/user.png" width="75" height="75" class="img-responsive img-circle" alt="profile">
+										<h2><a href="#">John Smith</a><b class="pull-right datetime">16:37 27/05/16</b></h2>
 									</section>
 									<section class="user-message">
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec odio vitae dui sagittis posuere a id est. Sed iaculis magna orci, a posuere arcu finibus id.</p>
@@ -83,9 +81,8 @@
 										<section class="user-replies">
 											<section class="user-reply">
 												<section class="reply-details">
-													<img src="Images/user.png" width="50" height="50" class="img-responsive img-thumbnail" alt="profile">
-													<h4><a href="#">Joe Bloggs</a></h4>
-													<h5>16:39 27/05/16</h5>
+													<img src="Images/user.png" width="50" height="50" class="img-responsive img-circle" alt="profile">
+													<h4><a href="#">Joe Bloggs</a><b class="pull-right r-datetime">16:39 27/05/16</b></h4>
 												</section>
 												<section class="reply-message">
 													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec odio vitae dui sagittis posuere a id est. Sed iaculis magna orci, a posuere arcu finibus id.</p>
@@ -93,9 +90,8 @@
 											</section>
 											<section class="user-reply">
 												<section class="reply-details">
-													<img src="Images/user.png" width="50" height="50" class="img-responsive img-thumbnail" alt="profile">
-													<h4><a href="#">John Smith</a></h4>
-													<h5>12:00 28/05/16</h5>
+													<img src="Images/user.png" width="50" height="50" class="img-responsive img-circle" alt="profile">
+													<h4><a href="#">John Smith</a><b class="pull-right r-datetime">12:00 28/05/16</b></h4>
 												</section>
 												<section class="reply-message">
 													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec odio vitae dui sagittis posuere a id est. Sed iaculis magna orci, a posuere arcu finibus id.</p>
@@ -104,45 +100,7 @@
 											<section class="new-reply">
 												<form method="post" action="#">
 													<textarea class="form-control" id="reply-message" rows="3" cols="100" maxlength="600" required placeholder="Write a reply..."></textarea>
-													<input type="submit" class="btn btn-success pull-right" value="Reply">
-												</form>
-											</section>
-										</section>
-								</section>
-								<section class="user-post">
-									<section class="user-details">
-										<img src="Images/user.png" width="75" height="75" class="img-responsive img-thumbnail" alt="profile">
-										<h2><a href="#">John Smith</a></h2>
-										<h3>16:37 27/05/16</h3>
-									</section>
-									<section class="user-message">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec odio vitae dui sagittis posuere a id est. Sed iaculis magna orci, a posuere arcu finibus id.</p>
-									</section>
-										<section class="user-replies">
-											<section class="user-reply">
-												<section class="reply-details">
-													<img src="Images/user.png" width="50" height="50" class="img-responsive img-thumbnail" alt="profile">
-													<h4><a href="#">Joe Bloggs</a></h4>
-													<h5>16:39 27/05/16</h5>
-												</section>
-												<section class="reply-message">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec odio vitae dui sagittis posuere a id est. Sed iaculis magna orci, a posuere arcu finibus id.</p>
-												</section>
-											</section>
-											<section class="user-reply">
-												<section class="reply-details">
-													<img src="Images/user.png" width="50" height="50" class="img-responsive img-thumbnail" alt="profile">
-													<h4><a href="#">John Smith</a></h4>
-													<h5>12:00 28/05/16</h5>
-												</section>
-												<section class="reply-message">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec odio vitae dui sagittis posuere a id est. Sed iaculis magna orci, a posuere arcu finibus id.</p>
-												</section>
-											</section>
-											<section class="new-reply">
-												<form method="post" action="#">
-													<textarea class="form-control" id="reply-message" rows="3" cols="100" maxlength="600" required placeholder="Write a reply..."></textarea>
-													<input type="submit" class="btn btn-success pull-right" value="Reply">
+													<button type="submit" class="btn btn-success pull-right">Reply&nbsp;&nbsp;<i class="fa fa-comments"></i></button>
 												</form>
 											</section>
 										</section>
@@ -176,24 +134,26 @@
 							</section>
 							<section id="lessons" class="tab-pane fade">
 								<h3>Booked Lessons</h3>
-								<table class="table table-striped">
-									<tr>
-										<th>Date</th>
-										<th>Time</th>
-									</tr>
-									<tr class="outdated">
-										<td>27/05/2016</td>
-										<td>16:45</td>
-									</tr>
-									<tr>
-										<td>29/05/2016</td>
-										<td>15:45</td>
-									</tr>
-									<tr>
-										<td>05/06/2016</td>
-										<td>15:45</td>
-									</tr>
-								</table>
+								<section class="table-responsive">
+									<table class="table table-striped">
+										<tr>
+											<th>Date</th>
+											<th>Time</th>
+										</tr>
+										<tr class="outdated">
+											<td>27/05/2016</td>
+											<td>16:45</td>
+										</tr>
+										<tr>
+											<td>29/05/2016</td>
+											<td>15:45</td>
+										</tr>
+										<tr>
+											<td>05/06/2016</td>
+											<td>15:45</td>
+										</tr>
+									</table>
+								</section>
 							</section>
 							<section id="videos" class="tab-pane fade">
 								<h3>Videos</h3>
@@ -292,7 +252,7 @@
 					<section class="col-sm-6 col-md-2">
 						<ul>
 							<li>Call me on: <a class="call" href="tel:07870438438">07870 438 438</a>.</li>
-							<li>Like GDT-UK on <a class="call" href="https://www.facebook.com/group.php?gid=134221319951289"><i class="fa fa-facebook-square"></i></a></li>
+							<li>Like GDT-UK on <a class="call" href="http://bit.ly/1TLqAID" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
 							<li>&copy; 2016 GDT</li>
 						</ul>
 					</section>
