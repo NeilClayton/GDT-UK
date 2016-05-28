@@ -376,10 +376,10 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 	font-family: 'Montserrat', sans-serif;
 	font-size:4rem;
 }
-.profile-1 a, .profile-2 a {
+.profile-2 a {
 	color:#588ed3;
 }
-.profile-2 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, .nav-tabs>li>a:hover {
+.profile-2 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, .nav-tabs>li>a:hover, .admin .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, .nav-tabs>li>a:hover {
 	border-bottom-color:#ddd;
 	border-radius:2px 2px 0 0;
 }
@@ -409,12 +409,12 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 	font-size:1.7rem;
 	box-shadow:none;
 }
-.new-post input[type=submit] {
-	margin-top:1%;
-	padding:0.6% 4%;
+.new-post button[type=submit] {
+	margin-top:0.5%;
+	padding:0.5% 3.5%;
 	font-family: 'Lato', sans-serif;
-	font-weight:300;
 	font-size:1.7rem;
+	border-radius:0;
 }
 .user-post {
 	width:100%;
@@ -430,30 +430,30 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 }
 .user-details img {
 	float:left;
-	margin:0 2% 1% 0;
+	margin:0 1% 1% 0;
+	padding:3px;
+	background:white;
+	border:1px solid #ddd;
 }
 .user-details h2 {
-	display:block;
-	width:100%;
 	padding:0;
-	float:none;
-	margin:1% 0 0 0;
+	margin:2% 0 0 0;
 	font-family: 'Lato', sans-serif;
 	font-size:2rem;
-	font-weight:bold;	
+	font-weight:bold;    
 }
-.user-details h3 {
-	display:block;
-	width:100%;
-	padding:0;
-	float:none;
-	margin:1% 0 0 0;
+.datetime {
 	font-family: 'Lato', sans-serif;
 	font-size:1.4rem;
-	font-weight:300;
+	color:#8e8e8e;
 }
 .user-message p {
+	width:87%;
 	margin:0;
+	text-align:justify;
+	font-size:1.6rem;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
 }
 .user-replies {
 	float:left;
@@ -471,31 +471,31 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 }
 .reply-details img {
 	float:left;
-	margin:0 2% 1% 0;
+	margin:0 1% 1% 0;
+	padding:3px;
+	background:white;
+	border:1px solid #ddd;
 }
 .reply-details h4 {
 	display:block;
 	width:100%;
 	padding:0;
 	float:none;
-	margin:1.25% 0 0 0;
+	margin:1.8% 0 0 0;
 	font-family: 'Lato', sans-serif;
 	font-size:1.3rem;
 	font-weight:bold;
 }
-.reply-details h5 {
-	display:block;
-	width:100%;
-	padding:0;
-	float:none;
-	margin:1% 0 0 0;
+.r-datetime {
 	font-family: 'Lato', sans-serif;
 	font-size:1.2rem;
-	font-weight:300;
+	color:#8e8e8e;	
 }
 .reply-message p {
 	margin:0;
 	font-size:1.3rem;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
 }
 .new-reply {
 	margin-top:2%;
@@ -509,12 +509,12 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 	font-size:1.4rem;
 	box-shadow:none;
 }
-.new-reply input[type=submit] {
-	margin-top:1%;
-	padding:0.6% 4%;
+.new-reply button[type=submit] {
+	margin-top:0.5%;
+	padding:0.5% 3.5%;
 	font-family: 'Lato', sans-serif;
-	font-weight:300;
 	font-size:1.4rem;
+	border-radius:0;
 }
 .about-details {
 	float:left;
@@ -567,9 +567,6 @@ p.about-content {
 .videos {
 	margin-top:2%;
 }
-.videos [class="col-md-3"] {
-	padding:0 2% 0 0;
-}
 .embed-responsive {
 	margin:0 0 2% 0;
 }
@@ -580,6 +577,56 @@ p.comment {
 	margin-bottom:5%;
 }
 /* --- Profile page ends --- */
+
+/* --- Admin page begins --- */
+.admin {
+	background:white;
+	padding:3% 0;	
+}
+.admin h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size:4rem;
+	font-weight:normal;
+	margin-bottom:2%;	
+}
+.admin h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size:3rem;
+	font-weight:normal;
+	margin-bottom:2%;	
+}
+.admin th {
+	font-family: 'Montserrat', sans-serif;
+	font-size:1.8rem;
+	font-weight:normal;	
+}
+.admin td {
+	font-family: 'Lato', sans-serif;
+	font-size:1.6rem;		
+}
+.table-responsive {
+	overflow-x:auto;
+}
+.admin form label {
+	font-family: 'Montserrat', sans-serif;
+	font-size:1.8rem;
+	font-weight:normal;		
+}
+.admin form input {
+	border-radius:0;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:1.7rem;
+	padding:1%;	
+}
+.admin form button {
+	margin-top:0.5%;
+	padding:0.5% 3.5%;
+	font-family: 'Lato', sans-serif;
+	font-size:1.7rem;
+	border-radius:0;
+}
+/* --- Admin page ends --- */
 
 /* --- Footer Begins --- */
 footer {
@@ -653,6 +700,9 @@ footer p {
 	body {
 		padding-bottom:700px;
 	}
+	.user-details h2 {
+		margin:3.5% 0 0 0;  
+	}
 }
 @media all and (max-width:414px) {
 	footer {
@@ -661,4 +711,15 @@ footer p {
 	body {
 		padding-bottom:650px;
 	}	
+	.user-details h2 {
+		margin:6% 0 0 0;  
+	}
+}
+@media all and (max-width:320px) {
+	.user-details h2 {
+		margin:9% 0 0 0;  
+	}
+	.datetime {
+		margin-top:1.75%;
+	}
 }

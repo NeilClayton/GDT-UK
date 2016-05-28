@@ -46,40 +46,138 @@
 			</section>
 		</nav>
 			<section class="container-fluid">
-				<section class="row contact">
-					<section class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
-						<form>
-							<h1>Contact GDT-UK</h1>
-							<section class="form-group ">
-								<label for="name">Full Name</label>
-								<input type="text" class="form-control" id="name" placeholder="Who are you?" required>
+				<section class="row admin">
+					<section class="col-md-8 col-md-offset-2">
+						<h1>Admin Panel&nbsp;<i class="fa fa-lock"></i></h1>
+						<ul class="nav nav-tabs">
+							<li class="active"><a data-toggle="tab" href="#man-users"><i class="fa fa-users"></i>&nbsp;&nbsp;Manage Users</a></li>
+							<li><a data-toggle="tab" href="#add-users"><i class="fa fa-user-plus"></i>&nbsp;&nbsp;Add Users</a></li>
+							<li><a data-toggle="tab" href="#man-lessons"><i class="fa fa-book"></i>&nbsp;&nbsp;Manage bookings</a></li>
+							<li><a data-toggle="tab" href="#man-videos"><i class="fa fa-video-camera"></i>&nbsp;&nbsp;Manage Videos</a></li>
+						</ul>
+						<section class="tab-content">
+							<section id="man-users" class="tab-pane fade in active">
+								<h2>User Management</h2>
+								<section class="table-responsive">
+									<table class="table table-hover">
+										<tr>
+											<th>User ID</th>
+											<th>Full name</th>
+											<th>Email</th>
+											<th>Mobile No</th>
+											<th>Address</th>
+											<th>Edit</th>
+											<th>Delete</th>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>John Smith</td>
+											<td>jsmith@email.com</td>
+											<td>123 4567 8901</td>
+											<td>1 Dashboard Avenue</td>
+											<td><i class="fa fa-edit"></i></td>
+											<td><i class="fa fa-remove"></i></td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Joe Bloggs</td>
+											<td>jbloggs@email.com</td>
+											<td>123 4567 8901</td>
+											<td>2 Dashboard Avenue</td>
+											<td><i class="fa fa-edit"></i></td>
+											<td><i class="fa fa-remove"></i></td>
+										</tr>
+									</table>
+								</section>
 							</section>
-							<section class="form-group">
-								<label for="Email">Email</label>
-								<input type="email" id="inputHelpBlock email" class="form-control" placeholder="Please enter your e-mail address" aria-describedby="helpBlock" required>
-								<span id="helpBlock" class="help-block">This is the e-mail address we will use to contact you.</span>
+							<section id="add-users" class="tab-pane fade">
+								<h2>Add users</h2>
+								<form method="post" action="#">
+									<section class="form-group">
+										<label for="name">Full Name</label>
+										<input type="text" class="form-control" id="name" placeholder="Enter a name" required>
+									</section>			
+									<section class="form-group">
+										<label for="email">Email</label>
+										<input type="text" class="form-control" id="email" placeholder="Enter an email address" required>
+									</section>
+									<section class="form-group">
+										<label for="mobile">Mobile No</label>
+										<input type="text" class="form-control" id="mobile" placeholder="Enter a mobile number" required>
+									</section>
+									<section class="form-group">
+										<label for="mobile">Address</label>
+										<input type="text" class="form-control" id="address" placeholder="Enter a street address" required>
+									</section>	
+									<button type="submit" class="btn btn-success">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
+								</form>
 							</section>
-							<section class="form-group">
-								<label for="Email">Mobile No</label>
-								<input type="text" id="inputHelpBlock mobile-number" class="form-control" placeholder="Please enter your mobile number" aria-describedby="helpBlock">
-								<span id="helpBlock" class="help-block">This is optional but we recommend it in case we can't reach you via e-mail.</span>
+							<section id="man-lessons" class="tab-pane fade">
+								<h2>Booked Lessons</h2>
+								<section class="table-responsive">
+									<table class="table table-hover">
+										<tr>
+											<th>Booking ID</th>
+											<th>Full name</th>
+											<th>Date</th>
+											<th>Time</th>
+											<th>Edit</th>
+											<th>Delete</th>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>John Smith</td>
+											<td>29/05/2016</td>
+											<td>15:55</td>
+											<td><i class="fa fa-edit"></i></td>
+											<td><i class="fa fa-remove"></i></td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Joe Bloggs</td>
+											<td>05/06/2016</td>
+											<td>14:40</td>
+											<td><i class="fa fa-edit"></i></td>
+											<td><i class="fa fa-remove"></i></td>
+										</tr>
+									</table>
+								</section>
 							</section>
-							<section class="form-group">
-								<label for="Subject">Subject</label>
-								<input type="text" id="Subject" class="form-control" placeholder="Enter a subject...">
+							<section id="man-videos" class="tab-pane fade">
+								<h2>Videos</h2>
+								<section class="table-responsive">
+									<table class="table table-hover">
+										<tr>
+											<th>Video ID</th>
+											<th>Title</th>
+											<th>Code</th>
+											<th>Client</th>
+											<th>Date</th>
+											<th>Edit</th>
+											<th>Delete</th>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>John's lesson</td>
+											<td>345JJ34K7SD</td>
+											<td>John Smith</td>
+											<td>29/05/2016</td>
+											<td><i class="fa fa-edit"></i></td>
+											<td><i class="fa fa-remove"></i></td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Joe's lesson</td>
+											<td>345JJ34K7SD</td>
+											<td>Joe Bloggs</td>
+											<td>29/05/2016</td>
+											<td><i class="fa fa-edit"></i></td>
+											<td><i class="fa fa-remove"></i></td>
+										</tr>
+									</table>
+								</section>
 							</section>
-							<section class="form-group">
-								<label for="Email">Message</label>
-								<textarea class="form-control" id="message" rows="7" cols="100" maxlength="600" required placeholder="Please enter your message"></textarea>
-								<p id="countleft"></b><br>
-							</section>
-							<section class="checkbox">
-								<label>
-								<input type="checkbox" required>I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a>
-								</label>
-							</section>
-							<button type="submit" class="btn btn-primary">Submit</button>
-						</form>
+						</section>
 					</section>
 				</section>
 			</section>
@@ -123,7 +221,7 @@
 					<section class="col-sm-6 col-md-2">
 						<ul>
 							<li>Call me on: <a class="call" href="tel:07870438438">07870 438 438</a>.</li>
-							<li>Like GDT-UK on <a class="call" href="http://bit.ly/1TLqAID"><i class="fa fa-facebook-square"></i></a></li>
+							<li>Like GDT-UK on <a class="call" href="http://bit.ly/1TLqAID" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
 							<li>&copy; 2016 GDT</li>
 						</ul>
 					</section>
