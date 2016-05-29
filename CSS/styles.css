@@ -278,7 +278,7 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 	font-size:inherit;
 }
 .contact form input {
-	padding:2%;
+	padding:1.5%;
 }
 .contact form label {
 	font-family: 'Montserrat', sans-serif;
@@ -612,11 +612,12 @@ p.comment {
 	font-size:1.8rem;
 	font-weight:normal;		
 }
-.admin form input {
+.admin form input, .admin form select {
 	border-radius:0;
 	font-family: 'Lato', sans-serif;
 	font-weight:300;
 	font-size:1.7rem;
+	line-height:1.7rem;
 	padding:1%;	
 }
 .admin form button {
@@ -624,6 +625,7 @@ p.comment {
 	padding:0.5% 3.5%;
 	font-family: 'Lato', sans-serif;
 	font-size:1.7rem;
+	line-height:1.7rem;
 	border-radius:0;
 }
 /* --- Admin page ends --- */
