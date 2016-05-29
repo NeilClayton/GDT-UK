@@ -66,6 +66,7 @@
 											<th>Full name</th>
 											<th>Date</th>
 											<th>Time</th>
+											<th>Duration</th>
 											<th>Edit</th>
 											<th>Delete</th>
 										</tr>
@@ -74,6 +75,7 @@
 											<td>John Smith</td>
 											<td>29/05/2016</td>
 											<td>15:55</td>
+											<td>1 hour</td>
 											<td><i class="fa fa-edit"></i></td>
 											<td><i class="fa fa-remove"></i></td>
 										</tr>
@@ -82,6 +84,7 @@
 											<td>Joe Bloggs</td>
 											<td>05/06/2016</td>
 											<td>14:40</td>
+											<td>2 hours</td>
 											<td><i class="fa fa-edit"></i></td>
 											<td><i class="fa fa-remove"></i></td>
 										</tr>
@@ -102,6 +105,15 @@
 									<section class="form-group">
 										<label for="time">Time</label>
 										<input type="time" class="form-control" id="time" placeholder="Enter a mobile number" required>
+									</section>
+									<section class="form-group">
+										<label for="time">Duration</label>
+										<select class="form-control" id="duration" required>
+											<option selected>...</option>
+											<option value="#">1 hour</option>
+											<option value="#">1.5 hours</option>
+											<option value="#">2 hours</option>
+										</select>
 									</section>
 									<button type="submit" class="btn btn-success">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
 								</form>
