@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="other-html" lang="en">
 	<head>
+	<meta charset="UTF-8">
 	<title>GDT: Nottingham Driving School - Driving Lessons UK</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<!-- Latest compiled and minified CSS -->
@@ -17,37 +18,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-	<section class="container-fluid header">
-	<p><img src="Images/gdt_logo3.png" width="600" height="278" class="img-responsive center-block"></p>
-	</section>
-<!-- Navigation bar -->
-		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="800">
+		<?php include('Includes/header.php'); ?>
+		<?php include('Includes/nav.php'); ?>
 			<div class="container-fluid">
-				<div class="navbar-header">
-				<!-- Button to toggle drop down -->
-					<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" role="button" aria-haspopup="true">
-						<span class = "icon-bar"></span>
-						<span class = "icon-bar"></span>
-						<span class = "icon-bar"></span>
-					</a>
-				</div>
-					<div class="collapse navbar-collapse" id="navbar">
-				<!-- Align links to the right -->
-						<ul class="nav navbar-nav">
-							<li><a href="index.html"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a></li>
-							<li><a href="#"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;About</a></li>
-							<li><a href="#"><i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;Courses</a></li>
-							<li><a href="#"><i class="fa fa-question-circle"></i>&nbsp;&nbsp;Your theory test</a></li>
-							<li><a href="#"><i class="fa fa-car"></i>&nbsp;&nbsp;Your driving test</a></li>
-							<li><a class="last-link" href="contact.html"><i class="fa fa-phone-square"></i>&nbsp;&nbsp;Contact</a></li>
-						</ul>
-					<a class="login pull-right" href="login.html" role="button"><i class="fa fa-user"></i>&nbsp;&nbsp;(Guest) Login</a>
-					</div>
-			</div>
-		</nav>
-			<section class="container-fluid">
-				<section class="row introduction">
-					<section class="col-md-10 col-md-offset-1">
+				<div class="row introduction">
+					<div class="col-md-10 col-md-offset-1">				
 						<ul class="nav nav-tabs">
 							<li class="active"><a data-toggle="tab" href="#thedrivingtest">The driving test</a></li>
 							<li><a data-toggle="tab" href="#howtoprepare">How to prepare</a></li>
@@ -63,7 +38,7 @@
 							<div id="thedrivingtest" class="tab-pane fade in active">
 								<h3>The driving test</h3>
 								<p>The Driving Test is a test of your ability to drive a car safely, the test is designed to put you through various parts of driving, from being able to move off safely and under control to doing manoeuvres such as the turn in the road, reversing left round a corner, parallel parking, bay parking, whilst still being in full control of the car throughout the whole test.</p>
-								<p>The test will last approximately 35-40 mins and as from October 2010 there will be a new part to the test being added, called independent driving, where the pupil will be asked to follow a certain route without directions from the examiner,this could be done in way of either verbal instruction or a mini map not to scale and continue on the route higlighted on the map. </p>
+								<p>The test will last approximately 35-40 mins and as from October 2010 there will be a new part to the test being added, called independent driving, where the pupil will be asked to follow a certain route without directions from the examiner, this could be done in way of either verbal instruction or a mini map not to scale and continue on the route higlighted on the map. </p>
 								<h4>Once you are at the test centre either:</h4>
 								<ul>
 									<li><strong>Colwick</strong> (MPTC), Nottingham.</li>
@@ -122,7 +97,7 @@
 												<a class="accordion-toggle toggle1" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Open the bonnet, identify where you would check the engine oil level and tell me how you would check that the engine has sufficient oil?</a>
 											</h4>
 										</div>
-										<div id="collapseOne" class="panel-collapse collapse in">
+										<div id="collapseOne" class="panel-collapse collapse in">										
 											<div class="panel-body">
 												Identify dipstick / oil level indicator, describe check of oil level against the minimum / maximum markers.
 											</div>
@@ -177,6 +152,7 @@
 										</div>
 									</div>
 									<div class="panel panel-default">
+										<h2 class="sr-only">Question 6</h2>
 										<div class="panel-heading">
 											<h4 class="panel-title">
 												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Tell me how you would check that the brakes are working before starting a journey?</a>
@@ -304,13 +280,14 @@
 										</div>
 										<div id="collapseSixteen" class="panel-collapse collapse">
 											<div class="panel-body">
+												Operate switch (with ignition or engine on if necessary); Check with main beam warning light
 											</div>
 										</div>
 									</div>
 									<div class="panel panel-default">
 										<div class="panel-heading">
 											<h4 class="panel-title">
-												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeveteen">Tell me how you make sure your head restraint is correctly adjusted?</a>
+												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeventeen">Tell me how you make sure your head restraint is correctly adjusted?</a>
 											</h4>
 										</div>
 										<div id="collapseSeventeen" class="panel-collapse collapse">
@@ -336,53 +313,9 @@
 								<p>At the end of your Practical Driving Test the examiner will give you a debriefing on your test after they have given you the result, you may request that your instructor be present to listen in to the debrief also,this can be very useful if your Driving Instructor was not present during your Practical Driving Test, which is always helpful as they can give you more advice or help on anything that your examiner mentions.</p>
 							</div>
 						</div>
-					</section>
-				</section>
-			</section>
-		<footer>
-			<section class="container-fluid">
-				<section class="row">
-					<section class="col-sm-6 col-md-3 col-md-offset-1">
-						<ul>
-							<li class="head">Main Menu</li>
-							<li><a href="index.html"><i class="glyphicon glyphicon-chevron-right"></i>Home</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>About us</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Driving lessons &amp; Courses</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>The driving theory test</a></li>
-							<li><a href="drivingtest.html"><i class="glyphicon glyphicon-chevron-right"></i>The driving practical test</a></li>
-							<li><a href="contact.html"><i class="glyphicon glyphicon-chevron-right"></i>Contact Us</a></li>
-							<li><a href="prices.html"><i class="glyphicon glyphicon-chevron-right"></i>Prices</a></li>
-						</ul>
-					</section>
-					<section class="col-sm-6 col-md-3 col-md-offset-0">
-						<ul>
-							<li class="head">Driving lessons/courses</li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Bronze)</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Silver)</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Gold)</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Satellite navigation lessons</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Pass plus driving course</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Refresher driving lessons</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Motorway driving lessons</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Block booking driving lessons</a></li>
-						</ul>
-					</section>
-					<section class="col-sm-6 col-md-3 col-md-offset-0"">
-						<ul>
-							<li class="head">Special Offers</li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Student driving lesson discounts</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>10 Driving Lessons for £215</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Driving lesson gift vouchers</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i>Recommend a friend</a></li>
-						</ul>
-					</section>
-					<section class="col-sm-6 col-md-2 col-md-offset-0">
-							<p>Call me on: <a class="call" href="tel:07870438438">07870 438 438</a>.</p>
-							<p>Like GDT-UK on <a class="call" href="http://bit.ly/1TLqAID"><i class="fa fa-facebook-square"></i></a></p>
-							<p>&copy; 2016 GDT</p>
-					</section>
-				</section>
-			</section>
-		</footer>
+					</div>
+				</div>
+			</div>
+		<?php include('Includes/footer.php'); ?>
 	</body>
 </html>

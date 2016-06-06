@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="login-html" lang="en">
 	<head>
+	<meta charset="UTF-8">
 	<title>GDT: Nottingham Driving School - Driving Lessons UK</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<!-- Latest compiled and minified CSS -->
