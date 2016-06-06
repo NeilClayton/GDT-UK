@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="other-html" lang="en">
 	<head>
+	<meta charset="UTF-8">
 	<title>GDT: Nottingham Driving School - Driving Lessons UK</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<!-- Latest compiled and minified CSS -->
@@ -17,46 +18,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-	<section class="container-fluid header">
-	<p><img src="Images/gdt_logo3.png" width="600" height="278" class="img-responsive center-block"></p>
-	</section>
-<!-- Navigation bar -->
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<section class="container-fluid">
-				<section class="navbar-header">
-				<!-- Button to toggle drop down -->
-					<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" role="button" aria-haspopup="true">
-						<span class = "icon-bar"></span>
-						<span class = "icon-bar"></span>
-						<span class = "icon-bar"></span>
-					</a>
-				</section>
-					<section class="collapse navbar-collapse" id="navbar">
-				<!-- Align links to the right -->
-						<ul class="nav navbar-nav">
-							<li><a href="index.html"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a></li>
-							<li><a href="about.html"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;About</a></li>
-							<li><a href="courses.html"><i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;Courses</a></li>
-							<li><a href="drivingtheorytest.html"><i class="fa fa-question-circle"></i>&nbsp;&nbsp;Your theory test</a></li>
-							<li><a href="drivingpracticaltest.html"><i class="fa fa-car"></i>&nbsp;&nbsp;Your driving test</a></li>
-							<li><a href="contact.html"><i class="fa fa-phone-square"></i>&nbsp;&nbsp;Contact</a></li>
-							<li><a href="login.html" role="button"><i class="fa fa-user"></i>&nbsp;&nbsp;(Guest) Login</a></li>
-						</ul>
-					</section>
-			</section>
-		</nav>
-			<section class="container-fluid">
-				<section class="row introduction">
-					<section class="col-md-10 col-md-offset-1">
-						<h1>Discounts & Vouchers</h1>
+		<?php include('Includes/header.php'); ?>
+		<?php include('Includes/nav.php'); ?>
+			<div class="container-fluid">
+				<div class="row introduction">
+					<div class="col-md-10 col-md-offset-1">
 						<ul class="nav nav-tabs">
 							<li class="active"><a data-toggle="tab" href="#discounts">Student driving lesson discounts</a></li>
 							<li><a data-toggle="tab" href="#10lessons">10 driving lessons for £215</a></li>
 							<li><a data-toggle="tab" href="#vouchers">Driving lesson gift vouchers</a></li>
 							<li><a data-toggle="tab" href="#afriend">Recommend a friend</a></li>
 						</ul>
-						<section class="tab-content">
-							<section id="discounts" class="tab-pane fade in active">
+						<div class="tab-content">
+							<div id="discounts" class="tab-pane fade in active">
 								<h3>Student Driving Lesson Discounts</h3>
 								<p>Student Discounts are available to all students on production of a valid NUS card.</p>
 								<p>Student rate is <strong>£22.50</strong> per hour.</p>
@@ -64,101 +38,55 @@
 								<p><b class="asterisk">*&nbsp;</b>Please note student discounts are unavailable in conjunction with other offers, unless stated.</p>
 								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
 								<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
-							</section>
-							<section id="10lessons" class="tab-pane fade">
+							</div>
+							<div id="10lessons" class="tab-pane fade">
 								<h3>10 driving lessons for £215</h3>
 								<p>This offer is an option for cheaper lessons, which can be booked for you to take the lessons when it suits you. You can either take your lessons hourly or you can book more than 1 lesson a week, or you may like to book lessons by 1.1/2, 2 hour, 3 hours up to a maximum of 4 hours a day.</p>
 								<p><b class="asterisk">*&nbsp;</b>If four hours are booked, there will be a 20 minute comfort break after the second hour, keeping your safety in mind.</p>
 								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
 								<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
-							</section>
-							<section id="vouchers" class="tab-pane fade">
+							</div>
+							<div id="vouchers" class="tab-pane fade">
 								<h3>Driving lesson gift vouchers</h3>
 								<p>At GDT we can offer that special present for someone who wants to learn to drive, but never got started on it, or it could be a birthday present or just a gift ,so why not treat them to a Driving Lesson Gift Voucher from GDT.</p>
 								<p>The Driving Lesson Gift Voucher's can be paid for directly through the GDT website via a Paypal account and you will recieve a confirmation email within 24 hours, and the gift voucher's 2-3 working days from order. The Driving Lesson Gift Voucher's can be personalised for the person you are purchasing them for.</p>
 								<h4>Please select from the following to make your payment via PayPal:</h4>
-								<section class="jumbotron">
+								<div class="jumbotron">
 									<h3>10 Driving Lessons for <b class="pull-right price">£215</b></h3>
 									<p><b class="asterisk">*&nbsp;</b>This offer is an option for cheaper lessons, which can be booked for you to take the lessons when it suits you. You can either take your lessons hourly or you can book more than 1 lesson a week, or you may like to book lessons by 1.1/2, 2 hour, 3 hours upto a maximum of 4 hours a day.</p>
 									<p>If four hours are booked, there will be a 20 minute comfort break after the second hour, keeping your safety in mind.</p>
 									<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
 									<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
 									<button type="button" class="btn btn-primary centerblock">Buy Now</button>
-								</section>
-								<section class="jumbotron">
+								</div>
+								<div class="jumbotron">
 									<h3>Intense Driving Course (Bronze)<b class="pull-right price">£215</b></h3>
 									<p>With the Intensive Driving Course Bronze you will get 11 hours of driving tution. You can either take your lessons hourly or you can book more than 1 lesson a week, or you may like to book lessons by 1.1/2, 2 hour, 3 hours up to a maximum of 4 hours a day.</p>
 									<button type="button" class="btn btn-primary centerblock">Buy Now</button>
-								</section>
-								<section class="jumbotron">
+								</div>
+								<div class="jumbotron">
 									<h3>Intense Driving Course (Silver)<b class="pull-right price">£430</b></h3>
 									<p><strong>20</strong> hours driving tuition plus one <strong>FREE</strong> attempt at the Driving Theory Test</p>
 									<button type="button" class="btn btn-primary centerblock">Buy Now</button>
-								</section>
-								<section class="jumbotron">
+								</div>
+								<div class="jumbotron">
 									<h3>Intense Driving Course (Gold)<b class="pull-right price">£700</b></h3>
 									<p>You can either take your lessons hourly, or you can book more than 1 lesson a week.  You may like to book lessons by 1.1/2, 2 hour, 3 hours up to a maximum of 4 hours a day.</p>
 									<button type="button" class="btn btn-primary centerblock">Buy Now</button>
-								</section>
-							</section>
-							<section id="afriend" class="tab-pane fade">
+								</div>
+							</div>
+							<div id="afriend" class="tab-pane fade">
 								<h3>Recommend a friend</h3>
 								<p>As a learner driver with GDT, if you recommend a friend you will recieve an hours tuition at half the price of a normal 1 hour lesson (terms and conditions apply).</p>
 								<p>Normal lesson with discount: <strong>£11.50</strong>.</p>
 								<p>Normal lesson price with student discount: <strong>£11</strong>.</p>
 								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
 								<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
-							</section>
-						</section>
-					</section>
-				</section>
-			</section>
-		<footer>
-			<section class="container-fluid">
-				<section class="row">
-					<section class="col-sm-6 col-md-3 col-md-offset-1">
-						<ul>
-							<li class="head">Main Menu</li>
-							<li><a href="index.html"><i class="glyphicon glyphicon-chevron-right"></i>Home</a></li>
-							<li><a href="about.html"><i class="glyphicon glyphicon-chevron-right"></i>About us</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Driving lessons &amp; Courses</a></li>
-							<li><a href="drivingtheorytest.html"><i class="glyphicon glyphicon-chevron-right"></i>The driving theory test</a></li>
-							<li><a href="drivingpracticaltest.html"><i class="glyphicon glyphicon-chevron-right"></i>The driving practical test</a></li>
-							<li><a href="contact.html"><i class="glyphicon glyphicon-chevron-right"></i>Contact Us</a></li>
-							<li><a href="prices.html"><i class="glyphicon glyphicon-chevron-right"></i>Prices</a></li>
-						</ul>
-					</section>
-					<section class="col-sm-6 col-md-3">
-						<ul>
-							<li class="head">Driving lessons/courses</li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Bronze)</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Silver)</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Gold)</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Satellite navigation lessons</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Pass plus driving course</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Refresher driving lessons</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Motorway driving lessons</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Block booking driving lessons</a></li>
-						</ul>
-					</section>
-					<section class="col-sm-6 col-md-3">
-						<ul>
-							<li class="head">Special Offers</li>
-							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>Student driving lesson discounts</a></li>
-							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>10 Driving Lessons for £215</a></li>
-							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>Driving lesson gift vouchers</a></li>
-							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>Recommend a friend</a></li>
-						</ul>
-					</section>
-					<section class="col-sm-6 col-md-2">
-						<ul>
-							<li>Call me on: <a class="call" href="tel:07870438438">07870 438 438</a>.</li>
-							<li>Like GDT-UK on <a class="call" href="http://bit.ly/1TLqAID"><i class="fa fa-facebook-square"></i></a></li>
-							<li>&copy; 2016 GDT</li>
-						</ul>
-					</section>
-				</section>
-			</section>
-		</footer>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<?php include('Includes/footer.php'); ?>
 	</body>
 </html>
