@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="other-html" lang="en">
 	<head>
+	<meta charset="UTF-8">
 	<title>GDT: Nottingham Driving School - Driving Lessons UK</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<!-- Latest compiled and minified CSS -->
@@ -17,34 +18,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-	<section class="container-fluid header">
-	<p><img src="Images/gdt_logo3.png" width="600" height="278" class="img-responsive center-block"></p>
-	</section>
-<!-- Navigation bar -->
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<section class="container-fluid">
-				<section class="navbar-header">
-				<!-- Button to toggle drop down -->
-					<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" role="button" aria-haspopup="true">
-						<span class = "icon-bar"></span>
-						<span class = "icon-bar"></span>
-						<span class = "icon-bar"></span>
-					</a>
-				</section>
-					<section class="collapse navbar-collapse" id="navbar">
-				<!-- Align links to the right -->
-						<ul class="nav navbar-nav">
-							<li><a href="index.html"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a></li>
-							<li><a href="about.html"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;About</a></li>
-							<li><a href="courses.html"><i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;Courses</a></li>
-							<li><a href="drivingtheorytest.html"><i class="fa fa-question-circle"></i>&nbsp;&nbsp;Your theory test</a></li>
-							<li><a href="drivingpracticaltest.html"><i class="fa fa-car"></i>&nbsp;&nbsp;Your driving test</a></li>
-							<li><a href="contact.html"><i class="fa fa-phone-square"></i>&nbsp;&nbsp;Contact<span class="sr-only">(current)</span></a></li>
-							<li><a href="login.html" role="button"><i class="fa fa-user"></i>&nbsp;&nbsp;(Guest) Login</a></li>
-						</ul>
-					</section>
-			</section>
-		</nav>
+		<?php include('Includes/header.php'); ?>
+		<?php include('Includes/nav.php'); ?>
 			<section class="container-fluid">
 				<section class="row profile-1">
 					<section class="col-md-8 col-md-offset-2">
@@ -57,8 +32,8 @@
 				<section class="row profile-2">
 					<section class="col-md-8 col-md-offset-2">
 						<ul class="nav nav-tabs">
-							<li class="active"><a data-toggle="tab" href="#posts"><i class="fa fa-user"></i>&nbsp;&nbsp;User Feed</a></li>
-							<li><a data-toggle="tab" href="#information"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Information</a></li>
+							<li class="active"><a data-toggle="tab" href="#posts"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;User Feed</a></li>
+							<li><a data-toggle="tab" href="#information"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;Information</a></li>
 							<li><a data-toggle="tab" href="#lessons"><i class="fa fa-book"></i>&nbsp;&nbsp;Lesson bookings</a></li>
 							<li><a data-toggle="tab" href="#videos"><i class="fa fa-video-camera"></i>&nbsp;&nbsp;Videos</a></li>
 						</ul>
@@ -212,52 +187,6 @@
 					</section>
 				</section>
 			</section>
-		<footer>
-			<section class="container-fluid">
-				<section class="row">
-					<section class="col-sm-6 col-md-3 col-md-offset-1">
-						<ul>
-							<li class="head">Main Menu</li>
-							<li><a href="index.html"><i class="glyphicon glyphicon-chevron-right"></i>Home</a></li>
-							<li><a href="about.html"><i class="glyphicon glyphicon-chevron-right"></i>About us</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Driving lessons &amp; Courses</a></li>
-							<li><a href="drivingtheorytest.html"><i class="glyphicon glyphicon-chevron-right"></i>The driving theory test</a></li>
-							<li><a href="drivingpracticaltest.html"><i class="glyphicon glyphicon-chevron-right"></i>The driving practical test</a></li>
-							<li><a href="contact.html"><i class="glyphicon glyphicon-chevron-right"></i>Contact Us</a></li>
-							<li><a href="prices.html"><i class="glyphicon glyphicon-chevron-right"></i>Prices</a></li>
-						</ul>
-					</section>
-					<section class="col-sm-6 col-md-3">
-						<ul>
-							<li class="head">Driving lessons/courses</li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Bronze)</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Silver)</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Gold)</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Satellite navigation lessons</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Pass plus driving course</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Refresher driving lessons</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Motorway driving lessons</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Block booking driving lessons</a></li>
-						</ul>
-					</section>
-					<section class="col-sm-6 col-md-3">
-						<ul>
-							<li class="head">Special Offers</li>
-							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>Student driving lesson discounts</a></li>
-							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>10 Driving Lessons for £215</a></li>
-							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>Driving lesson gift vouchers</a></li>
-							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>Recommend a friend</a></li>
-						</ul>
-					</section>
-					<section class="col-sm-6 col-md-2">
-						<ul>
-							<li>Call me on: <a class="call" href="tel:07870438438">07870 438 438</a>.</li>
-							<li>Like GDT-UK on <a class="call" href="http://bit.ly/1TLqAID" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-							<li>&copy; 2016 GDT</li>
-						</ul>
-					</section>
-				</section>
-			</section>
-		</footer>
+		<?php include('Includes/footer.php'); ?>
 	</body>
 </html>

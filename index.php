@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+	<meta charset="UTF-8">
 	<title>GDT: Nottingham Driving School - Driving Lessons UK</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -18,38 +19,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-	<header class="container-fluid">
-	<p><p><img src="Images/gdt_logo3.png" width="600" height="278" class="img-responsive center-block"><p><p>
-	</header>
-<!-- Navigation bar -->
-		<nav class="navbar navbar-inverse navbar-fixed-top">
+		<?php include('Includes/header.php'); ?>
+		<?php include('Includes/nav.php'); ?>
 			<section class="container-fluid">
-				<section class="navbar-header">
-				<!-- Button to toggle drop down -->
-					<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" role="button" aria-haspopup="true">
-						<span class = "icon-bar"></span>
-						<span class = "icon-bar"></span>
-						<span class = "icon-bar"></span>
-					</a>
-				</section>
-					<section class="collapse navbar-collapse" id="navbar">
-				<!-- Align links to the right -->
-						<ul class="nav navbar-nav">
-							<li><a href="index.html"><i class="fa fa-home"></i>&nbsp;&nbsp;Home<span class="sr-only">(current)</span></a></li>
-							<li><a href="about.html"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;About</a></li>
-							<li><a href="courses.html"><i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;Courses</a></li>
-							<li><a href="drivingtheorytest.html"><i class="fa fa-question-circle"></i>&nbsp;&nbsp;Your theory test</a></li>
-							<li><a href="drivingpracticaltest.html"><i class="fa fa-car"></i>&nbsp;&nbsp;Your driving test</a></li>
-							<li><a href="contact.html"><i class="fa fa-phone-square"></i>&nbsp;&nbsp;Contact</a></li>
-							<li><a href="login.html" role="button"><i class="fa fa-user"></i>&nbsp;&nbsp;(Guest) Login</a></li>
-						</ul>
-					</section>
-			</section>
-		</nav>
-			<section class="container-fluid">
+				<h2 class="sr-only">Main page content</h2>
 				<section class="row introduction">
+					<h2 class="sr-only">What GDT is</h2>
 					<section class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-						<h1>GDT - Nottingham's Driving School</h1>
+						<h2>GDT - Nottingham's Driving School</h2>
 						<p>"Hi, welcome to Gary's Driver Training, Nottingham's premier driving school."</p>
 						<p>At GDT we are a team of  DSA  and Pass Plus registered driving instructors. And we are all fully qualified driving instructors. GDT is Nottingham's leading driving school and has been established since 2003.  Our aim is to provide you with safe driver training of the highest possible standard. That means we will endeavour to pass on all our years of driving skills onto you, the learner driver, making you a safe and confident driver. </p>
 						<p>GDT offer many courses and packages, and these can be tailored to suit your insectionidual needs, including <a href="courses.html" target="_blank">Intensive Driving Courses</a>, <a href="courses.html" target="_blank">Block Booking Courses</a>, <a href="#">Student Discount</a> and <a href="courses.html" target="_blank">Pass Plus</a> courses. Here at GDT we cater for all types of learner, including beginner, confident and nervous.
@@ -62,6 +39,7 @@
 					</section>
 				</section>
 				<section class="row nextsection">
+					<h2 class="sr-only">Additional information</h2>				
 					<section class="col-sm-6 col-md-3 category">
 						<h2 class="cat-title"><a href="discounts.html">Offers &amp; Discounts</a></h2>
 						<p>For that special gift they will always remember.</p>
@@ -72,14 +50,14 @@
 					</section>
 					<section class="col-sm-6 col-md-3 category">
 						<h2>What our customers say</h2>
-						<marquee scrolldelay="30" scrollamount="11">
+						<!--<marquee scrolldelay="30" scrollamount="11" class="col-sm-6 col-md-3 category">
 							<strong>Thanks to Gary I Passed First Time!</strong> Thanks to Gary I passed first time, he is an excellent instructor, very calm and relaxed approach to teaching, he doesn't put you under any pressure & is good at reassuring you when you have a bad lesson. He reviews your progress at the end of each lesson, which is helpful, so you know what areas you need to concentrate on. Make sure you have a good sense of humour as he like to tell jokes, even when you've passed he'll still be sending you jokes by text! - Emily Raymond from Arnold.
 							<strong>I Would Highly Recommend This Driving Instructor!</strong> Gary was a thoroughly professional and friendly driving instructor. His patient tuition allowing me to pass my driving test at the first time of trying. His advice on when to take my test proved to be spot on. His sense of humor and relaxed style of instruction was very beneficial to me, therefore I would highly recommend this instructor to you! - Jim Mackintosh.
 							<strong>Gary is a Really Patient and Professional Driving Instructor!</strong> I passed my driving test first time in October 2009. I had been learning with Gary for about 4/5 months and was very nervous to begin with, but that didn't last long with Gary's encouragement. He is really patient and professional and also has a cracking sense of humor which calmed me down! Thanks alot Gary almost one year on and I love driving! -  Rachel Grice Nottingham.
 							<strong>You gain confidence quicker than you would imagine!</strong> Gary is a fantastic teacher, he takes the time to guide you through the pressures of learning to drive. His techniques really put you at ease and you gain confidence quicker than you would imagine, I recommend him very highly!
 							<strong>I'd Pass You on to Anyone Who Wanted to Start Driving!</strong> Hi gary, thank you so much for helping me with my driving u made me feel so welcome and calm that made me believe I could pass! I'd pass you on two anyone who wanted two start driving! - Claire Redmile from Arnold.
 							<strong>He Was Able to Taylor his Teaching Style to Suit my Learning!</strong> Gary was a fine instuctor who knows his stuff. He was able to taylor his teaching style to suit my learning abilities. His advice on lesson lengths proved to be the best option for me as it allowed me to pass first time. I would recommend Gary to anyone I know about to start taking lessons. - Ian Peck.
-						</marquee>
+						</marquee>-->
 					</section>
 					<section class="col-sm-6 col-md-3 category">
 						<h2>Motorcycle training</h2>
@@ -87,52 +65,6 @@
 					</section>
 				</section>
 			</section>
-		<footer>
-			<section class="container-fluid">
-				<section class="row">
-					<section class="col-sm-6 col-md-3 col-md-offset-1">
-						<ul>
-							<li class="head">Main Menu</li>
-							<li><a href="index.html"><i class="glyphicon glyphicon-chevron-right"></i>Home</a></li>
-							<li><a href="about.html"><i class="glyphicon glyphicon-chevron-right"></i>About us</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Driving lessons &amp; Courses</a></li>
-							<li><a href="drivingtheorytest.html"><i class="glyphicon glyphicon-chevron-right"></i>The driving theory test</a></li>
-							<li><a href="drivingpracticaltest.html"><i class="glyphicon glyphicon-chevron-right"></i>The driving practical test</a></li>
-							<li><a href="contact.html"><i class="glyphicon glyphicon-chevron-right"></i>Contact Us</a></li>
-							<li><a href="prices.html"><i class="glyphicon glyphicon-chevron-right"></i>Prices</a></li>
-						</ul>
-					</section>
-					<section class="col-sm-6 col-md-3">
-						<ul>
-							<li class="head">Driving lessons/courses</li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Bronze)</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Silver)</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Intensive driving course (Gold)</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Satellite navigation lessons</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Pass plus driving course</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Refresher driving lessons</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Motorway driving lessons</a></li>
-							<li><a href="courses.html"><i class="glyphicon glyphicon-chevron-right"></i>Block booking driving lessons</a></li>
-						</ul>
-					</section>
-					<section class="col-sm-6 col-md-3">
-						<ul>
-							<li class="head">Special Offers</li>
-							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>Student driving lesson discounts</a></li>
-							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>10 Driving Lessons for £215</a></li>
-							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>Driving lesson gift vouchers</a></li>
-							<li><a href="discounts.html"><i class="glyphicon glyphicon-chevron-right"></i>Recommend a friend</a></li>
-						</ul>
-					</section>
-					<section class="col-sm-6 col-md-2">
-						<ul>
-							<li>Call me on: <a class="call" href="tel:07870438438">07870 438 438</a>.</li>
-							<li>Like GDT-UK on <a class="call" href="http://bit.ly/1TLqAID"><i class="fa fa-facebook-square"></i></a></li>
-							<li>&copy; 2016 GDT</li>
-						</ul>
-					</section>
-				</section>
-			</section>
-		</footer>
+	<?php include('Includes/footer.php'); ?>
 	</body>
 </html>
