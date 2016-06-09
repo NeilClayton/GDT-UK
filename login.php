@@ -29,7 +29,7 @@
 				<input type="password" class="form-control" id="passwordInput" placeholder="Password">
 			</div>
 			<input type="submit" class="btn btn-primary center-block" value="Submit">
-			<p><a href="index.html">Back to homepage</a>&nbsp;&nbsp;&#10072;&nbsp;&nbsp;<a href="#">Forgotten your password</a></p>
+			<p><a href="index.php">Back to homepage</a>&nbsp;&nbsp;&#10072;&nbsp;&nbsp;<a href="#">Forgotten your password</a></p>
 		</form>
 	</body>
 </html>
