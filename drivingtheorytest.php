@@ -18,8 +18,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-		<?php include('Includes/header.php'); ?>
-		<?php include('Includes/nav.php'); ?>
+
+		<?php include('Includes/header2.html'); ?>
+		<?php include('Includes/nav.html'); ?>
+
 			<section class="container-fluid">
 				<section class="row introduction">
 					<section class="col-md-10 col-md-offset-1">
@@ -82,6 +84,10 @@
 					</section>
 				</section>
 			</section>
+<<<<<<< HEAD:drivingtheorytest.php
 		<?php include('Includes/footer.php'); ?>
+=======
+		<?php include('Includes/footer.html'); ?>
+>>>>>>> d3268d495e313b4baef6938c6c93a53c861f2fba:drivingtheorytest.php
 	</body>
 </html>
