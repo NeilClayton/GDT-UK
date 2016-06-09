@@ -84,10 +84,8 @@
 					</section>
 				</section>
 			</section>
-<<<<<<< HEAD:drivingtheorytest.php
-		<?php include('Includes/footer.php'); ?>
-=======
+
 		<?php include('Includes/footer.html'); ?>
->>>>>>> d3268d495e313b4baef6938c6c93a53c861f2fba:drivingtheorytest.php
+
 	</body>
 </html>
