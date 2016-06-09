@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="other-html" lang="en">
 	<head>
 	<meta charset="UTF-8">
@@ -18,8 +18,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-		<?php include('Includes/header.php'); ?>
-		<?php include('Includes/nav.php'); ?>
+
+		<?php include('Includes/header2.html'); ?>
+		<?php include('Includes/nav.html'); ?>
+
 			<div class="container-fluid">
 				<div class="row introduction">
 					<div class="col-md-10 col-md-offset-1">
@@ -87,6 +89,8 @@
 					</div>
 				</div>
 			</div>
-		<?php include('Includes/footer.php'); ?>
+
+		<?php include('Includes/footer.html'); ?>
+
 	</body>
 </html>
