@@ -19,8 +19,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-		<?php include('Includes/header.php'); ?>
-		<?php include('Includes/nav.php'); ?>
+		<?php include('Includes/header.html'); ?>
+		<?php include('Includes/nav.html'); ?>
 			<section class="container-fluid">
 				<h2 class="sr-only">Main page content</h2>
 				<section class="row introduction">
@@ -65,6 +65,6 @@
 					</section>
 				</section>
 			</section>
-	<?php include('Includes/footer.php'); ?>
+	<?php include('Includes/footer.html'); ?>
 	</body>
 </html>

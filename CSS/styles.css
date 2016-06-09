@@ -678,7 +678,7 @@ footer p {
 	margin:0;
 }
 /* --- Footer Ends --- */
-@media all and (max-width:991px) {
+@media all and (max-width:1024px) {
 	footer {
 		height:430px;
 	}
