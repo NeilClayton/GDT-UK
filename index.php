@@ -21,34 +21,34 @@
 	<body>
 		<?php include('Includes/header.html'); ?>
 		<?php include('Includes/nav.html'); ?>
-			<section class="container-fluid">
+			<div class="container-fluid">
 				<h2 class="sr-only">Main page content</h2>
-				<section class="row introduction">
+				<div class="row introduction">
 					<h2 class="sr-only">What GDT is</h2>
-					<section class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+					<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
 						<h2>GDT - Nottingham's Driving School</h2>
 						<p>"Hi, welcome to Gary's Driver Training, Nottingham's premier driving school."</p>
 						<p>At GDT we are a team of  DSA  and Pass Plus registered driving instructors. And we are all fully qualified driving instructors. GDT is Nottingham's leading driving school and has been established since 2003.  Our aim is to provide you with safe driver training of the highest possible standard. That means we will endeavour to pass on all our years of driving skills onto you, the learner driver, making you a safe and confident driver. </p>
-						<p>GDT offer many courses and packages, and these can be tailored to suit your insectionidual needs, including <a href="courses.html" target="_blank">Intensive Driving Courses</a>, <a href="courses.html" target="_blank">Block Booking Courses</a>, <a href="#">Student Discount</a> and <a href="courses.html" target="_blank">Pass Plus</a> courses. Here at GDT we cater for all types of learner, including beginner, confident and nervous.
-						I have a dual controlled car for your piece of mind, and your safety, and only do 1 on 1 tution. There will never be another learner in the back of the car whilst you are on your lesson.</p>
-						<p>You will recieve <strong>FREE</strong> <a href="#">Theory Test</a> and hazard perception training in your lessons.</p>
+						<p>GDT offer many courses and packages, and these can be tailored to suit your individual needs, including <a href="courses.php" target="_blank">Intensive Driving Courses</a>, <a href="courses.php" target="_blank">Block Booking Courses</a>, <a href="#">Student Discount</a> and <a href="courses.php" target="_blank">Pass Plus</a> courses. Here at GDT we cater for all types of learner, including beginner, confident and nervous.
+						I have a dual controlled car for your piece of mind, and your safety, and only do 1 on 1 tuition. There will never be another learner in the back of the car whilst you are on your lesson.</p>
+						<p>You will receive <strong>FREE</strong> <a href="#">Theory Test</a> and hazard perception training in your lessons.</p>
 						<p>We pride ourselves on having a <a href="#">Pass Rate</a> that is well above the national average. GDT are exceptionally reliable and offer very competitive prices in comparison with other driving schools in and around Nottingham. There are no hidden charges.
 						Driving is fun and your lessons will be structured around you to make them fun and enjoyable, so let GDT pass on their years of experience onto you, and guide you through your <a href="#">Practical Driving Test</a>.</p>
-						<p><strong>For your ease, you are able to make payments online, via</strong> <a href="#">Paypal</a>. Perfect for <a href="courses.html" target="_blank">Block Lesson Bookings</a>, <a href="courses.html" target="_blank">Intensive Driving Courses</a> or <a href="#">Driving Lesson Gift Vouchers</a>.</p>
+						<p><strong>For your ease, you are able to make payments online, via</strong> <a href="#">Paypal</a>. Perfect for <a href="courses.php" target="_blank">Block Lesson Bookings</a>, <a href="courses.php" target="_blank">Intensive Driving Courses</a> or <a href="#">Driving Lesson Gift Vouchers</a>.</p>
 						<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
-					</section>
-				</section>
-				<section class="row nextsection">
+					</div>
+				</div>
+				<div class="row nextsection">
 					<h2 class="sr-only">Additional information</h2>				
-					<section class="col-sm-6 col-md-3 category">
-						<h2 class="cat-title"><a href="discounts.html">Offers &amp; Discounts</a></h2>
+					<div class="col-sm-6 col-md-4 category">
+						<h2 class="cat-title"><a href="discounts.php">Offers &amp; Discounts</a></h2>
 						<p>For that special gift they will always remember.</p>
-					</section>
-					<section class="col-sm-6 col-md-3 category">
-						<h2><a href="discounts.html">Gift vouchers</a></h2>
+					</div>
+					<div class="col-sm-6 col-md-4 category">
+						<h2><a href="discounts.php">Gift vouchers</a></h2>
 						<p>For that special gift they will always remember.</p>
-					</section>
-					<section class="col-sm-6 col-md-3 category">
+					</div>
+					<div class="col-sm-6 col-md-4 category">
 						<h2>What our customers say</h2>
 						<!--<marquee scrolldelay="30" scrollamount="11" class="col-sm-6 col-md-3 category">
 							<strong>Thanks to Gary I Passed First Time!</strong> Thanks to Gary I passed first time, he is an excellent instructor, very calm and relaxed approach to teaching, he doesn't put you under any pressure & is good at reassuring you when you have a bad lesson. He reviews your progress at the end of each lesson, which is helpful, so you know what areas you need to concentrate on. Make sure you have a good sense of humour as he like to tell jokes, even when you've passed he'll still be sending you jokes by text! - Emily Raymond from Arnold.
@@ -58,13 +58,9 @@
 							<strong>I'd Pass You on to Anyone Who Wanted to Start Driving!</strong> Hi gary, thank you so much for helping me with my driving u made me feel so welcome and calm that made me believe I could pass! I'd pass you on two anyone who wanted two start driving! - Claire Redmile from Arnold.
 							<strong>He Was Able to Taylor his Teaching Style to Suit my Learning!</strong> Gary was a fine instuctor who knows his stuff. He was able to taylor his teaching style to suit my learning abilities. His advice on lesson lengths proved to be the best option for me as it allowed me to pass first time. I would recommend Gary to anyone I know about to start taking lessons. - Ian Peck.
 						</marquee>-->
-					</section>
-					<section class="col-sm-6 col-md-3 category">
-						<h2>Motorcycle training</h2>
-						<p>With Roadcraft, you can be rest assured you are in safe hands.</p>
-					</section>
-				</section>
-			</section>
+					</div>
+				</div>
+			</div>
 	<?php include('Includes/footer.html'); ?>
 	</body>
 </html>

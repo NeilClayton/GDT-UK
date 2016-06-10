@@ -41,28 +41,13 @@
 								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
 								<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
 							</div>
-							<div id="10lessons" class="tab-pane fade">
-								<h3>10 driving lessons for £215</h3>
-								<p>This offer is an option for cheaper lessons, which can be booked for you to take the lessons when it suits you. You can either take your lessons hourly or you can book more than 1 lesson a week, or you may like to book lessons by 1.1/2, 2 hour, 3 hours up to a maximum of 4 hours a day.</p>
-								<p><b class="asterisk">*&nbsp;</b>If four hours are booked, there will be a 20 minute comfort break after the second hour, keeping your safety in mind.</p>
-								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
-								<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
-							</div>
 							<div id="vouchers" class="tab-pane fade">
 								<h3>Driving lesson gift vouchers</h3>
 								<p>At GDT we can offer that special present for someone who wants to learn to drive, but never got started on it, or it could be a birthday present or just a gift ,so why not treat them to a Driving Lesson Gift Voucher from GDT.</p>
 								<p>The Driving Lesson Gift Voucher's can be paid for directly through the GDT website via a Paypal account and you will recieve a confirmation email within 24 hours, and the gift voucher's 2-3 working days from order. The Driving Lesson Gift Voucher's can be personalised for the person you are purchasing them for.</p>
 								<h4>Please select from the following to make your payment via PayPal:</h4>
 								<div class="jumbotron">
-									<h3>10 Driving Lessons for <b class="pull-right price">£215</b></h3>
-									<p><b class="asterisk">*&nbsp;</b>This offer is an option for cheaper lessons, which can be booked for you to take the lessons when it suits you. You can either take your lessons hourly or you can book more than 1 lesson a week, or you may like to book lessons by 1.1/2, 2 hour, 3 hours upto a maximum of 4 hours a day.</p>
-									<p>If four hours are booked, there will be a 20 minute comfort break after the second hour, keeping your safety in mind.</p>
-									<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
-									<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
-									<button type="button" class="btn btn-primary centerblock">Buy Now</button>
-								</div>
-								<div class="jumbotron">
-									<h3>Intense Driving Course (Bronze)<b class="pull-right price">£215</b></h3>
+									<h3>Intense Driving Course (Bronze)<b class="pull-right price">£220</b></h3>
 									<p>With the Intensive Driving Course Bronze you will get 11 hours of driving tution. You can either take your lessons hourly or you can book more than 1 lesson a week, or you may like to book lessons by 1.1/2, 2 hour, 3 hours up to a maximum of 4 hours a day.</p>
 									<button type="button" class="btn btn-primary centerblock">Buy Now</button>
 								</div>
