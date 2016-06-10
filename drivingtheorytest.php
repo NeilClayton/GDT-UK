@@ -57,7 +57,7 @@
 							</section>
 							<section id="whattoexpect" class="tab-pane fade">
 								<h3>What to expect</h3>
-								<p>When you turn up for your Theory Test , which the address details will be on your confirmation letter once you have booked your Theory Test. You will need to provide both parts of your Provisional Driving Licence if you have the photo card licence, (paper counterpart and photo card ). Or if you have the old style paper licence, then you will need to take with you a valid passport as proof of ID.</p>
+								<p>When you turn up for your Theory Test , which the address details will be on your confirmation letter once you have booked your Theory Test. You will need to provide both parts of your Provisional Driving Licence if you have the photo card licence. Or if you have the old style paper licence, then you will need to take with you a valid passport as proof of ID.</p>
 								<p>The staff at the desk will tell you to wait till your called , then once your called you will be shown to your computer for the commencement of your Theory Test.
 								You are not allowed to take any personal belongings in with you, so you will be asked to put them in the lockers provided, and these are locked for your security.
 								If you purchase a CD rom for practice you will find it is practically the same as when you go for the real Theory Test and Hazard Perception Test  so you will then know what to expect.</p>

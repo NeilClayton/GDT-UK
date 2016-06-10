@@ -26,7 +26,7 @@
 				<div class="row introduction">
 					<div class="col-md-10 col-md-offset-1">
 						<h2>Driving Lessons and Courses</h2>
-						<p>Here at GDT Driving School we offer a variety of Driving Courses all designed to suit your needs, all at competative prices.  Here are list of Driving lesson prices and the courses we offer:</p>
+						<p>Here at GDT Driving School we offer a variety of Driving Courses all designed to suit your needs, all at competitive prices.  Here are list of Driving lesson prices and the courses we offer:</p>
 						<table class="table table-bordered">
 							<tr>
 								<th>Time</th>
@@ -53,13 +53,12 @@
 							<li><a data-toggle="tab" href="#passplus">Pass plus driving course</a></li>
 							<li><a data-toggle="tab" href="#refresher">Refresher driving lessons</a></li>
 							<li><a data-toggle="tab" href="#motorway">Motorway driving lessons</a></li>
-							<li><a data-toggle="tab" href="#blockbook">Block book driving lessons</a></li>
 						</ul>
 						<div class="tab-content">
 							<div id="bronze" class="tab-pane fade in active">
 								<h3>Bronze driving course</h3>
 								<p>This offer is an option for cheaper driving lessons, which can be booked for you to take the lessons when it suits you.</p>
-								<p>With this course you get <strong>11</strong> hours of driving tuition.</p>
+								<p>With this course you get <strong>10</strong> hours of driving tuition.</p>
 								<p>You can either take your lessons hourly or you can book more than 1 lesson a week, or you may like to book lessons by 1.1/2 , 2 hour , 3 hours up to a maximum of 4 hours a day.</p>
 								<p>The price of this course is <strong>£220</strong>.</p>
 								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
@@ -124,15 +123,6 @@
 							<div id="motorway" class="tab-pane fade">
 								<h3>Motorway lessons</h3>
 								<p>Motorway lessons are available for anyone, whether you have just passed your Practical Driving Test, or have been driving for a while and not yet got the confidence to drive on the motorway.</p>
-							</div>
-							<div id="blockbook" class="tab-pane fade">
-								<h3>Block book lessons</h3>
-								<p>Here at GDT we appreciate how busy your life can be, and that every learner driver is different.  That's why we offer our specially designed block driving lesson bookings that have been built with you in mind. </p>
-								<p>These can be taken as slowly or as quickly as you like, as one hour or in multiples, or up to a maximum of four hours*, suitably tailoring your driver training to meet your individual needs.
-								Block Bookings can be booked in groups of ten, but without the additional benefits of the Intensive Driving Courses.</p>
-								<p><strong>10</strong> hours = <strong>£215</strong>.</p>
-								<p><strong>20</strong> hours = <strong>£400</strong> plus 1 <strong>FREE</strong> hour.</p>
-								<p><strong>30</strong> hours = <strong>£650</strong> plus 2 <strong>FREE</strong> hours.</p>
 							</div>
 						</div>
 					</div>
