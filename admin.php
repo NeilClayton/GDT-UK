@@ -189,8 +189,6 @@
 					</div>
 				</div>
 			</div>
-
 		<?php include('Includes/footer.html'); ?>
-
 	</body>
 </html>

@@ -80,7 +80,7 @@
 								<p>Here at GDT we appreciate how busy your life can be, and that every learner is different. That's why we offer our specially designed intensive courses that have been built with you in mind.</p>
 								<p>These can be taken as quickly as you like, as one hour or up to four hours maximum, suitably tailoring your driver training to meet your individual needs.</p>
 								<p>Our <strong>Gold</strong> intensive course costs <strong>£700</strong> and this includes:</p>
-								<p><strong>30</strong> hours driving tuition plus one <strong>FREE</strong> attempt at the Driving Theory Test and one <strong>FREE</strong> attempt at the <a href="drivingpracticaltest.html" target="_blank">practical driving test</a>.</p>
+								<p><strong>30</strong> hours driving tuition plus one <strong>FREE</strong> attempt at the Driving Theory Test and one <strong>FREE</strong> attempt at the <a href="drivingpracticaltest.php" target="_blank">practical driving test</a>.</p>
 								<p>However, if you feel that our intensive courses aren't right for you, then why not check out our deals on <a href="#" target="_blank">block driving lesson bookings</a>.</p>
 								<p>If a four hour driving lesson is booked, there will be a 20 minute comfort break after the second hour, keeping your safety in mind.</p>
 								<p>The <strong>FREE</strong> attempt at the <a href="#" target="_blank">driving theory test</a> and the <a href="#" target="_blank">practical driving test</a> <strong>are</strong> included in the price, and can be booked by your instructor.</p>
@@ -97,7 +97,7 @@
 							</div>								
 							<div id="passplus" class="tab-pane fade">
 								<h3>Pass plus driving course</h3>
-								<p>Pass plus is available for any driver who has already passed their <a href="#" target="_blank">practical driving test</a>. The benefits of completing a pass plus course are cheaper car insurance and more advanced driver training.
+								<p>Pass plus is available for any driver who has already passed their <a href="drivingpracticaltest.php" target="_blank">practical driving test</a>. The benefits of completing a pass plus course are cheaper car insurance and more advanced driver training.
 								There are six modules taught over a six hour block, in one or two days.  There will be comfort breaks when required, for your safety.</p>
 								<h4>The six modules are:</h4>
 								<ul>
@@ -108,7 +108,7 @@
 									<li>Module 5: Dual carriageways.</li>
 									<li>Module 6: Motorways.</li>
 								</ul>
-								<p>The cost of a pass plus course is <strong>£150</strong> if you pass your <a href="#" target="_blank">practical driving test</a> with GDT.</p>
+								<p>The cost of a pass plus course is <strong>£150</strong> if you pass your <a href="drivingpracticaltest.php" target="_blank">practical driving test</a> with GDT.</p>
 								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
 								<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
 							</div>

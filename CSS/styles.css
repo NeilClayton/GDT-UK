@@ -1,6 +1,4 @@
 html {
-	height: 100%;
-	box-sizing: border-box;
 	background:url(../Images/bg2.jpg) center center no-repeat;
 	background-size:cover;
 	background-attachment:fixed;
@@ -22,9 +20,7 @@ html {
 body {
 	background:none;
 	margin:0;
-	padding:50px 0 250px 0;
-	position: relative;
-	min-height: 100%;
+	padding:50px 0 0 0;
 }
 textarea {
 	resize:none;
@@ -70,9 +66,9 @@ header img {
 	border:none;
 	border-radius:0;
 	z-index:9999;
-	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.75);
+	-moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.75);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.75);
 }
 .navbar-inverse {
 	border:none;
@@ -123,15 +119,12 @@ header img {
 	font-family: 'Montserrat', sans-serif;
 	text-transform:uppercase;
 }
-.introduction p, .introduction li, marquee, .profile-1 p {
+.introduction p, .introduction li, .profile-1 p {
 	margin-top:1.5%;
 	font-family: 'Lato', sans-serif;
 	font-weight:300;
 	font-size:1.6rem;
 	text-align:justify;
-}
-marquee {
-	margin:0;
 }
 h2 a {
 	color:black;
@@ -140,8 +133,28 @@ h2 a {
 	color:#0d3f83;
 }
 .nextsection {
-	padding:0 0 3% 0;
+	padding:0 0 30px 0;
 	background:white;
+}
+.nextsection h3 {
+	width:95%;
+	margin:0 0 0 2.5%;
+	padding:0;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:1.5rem;
+}
+#slideshow {
+	margin:0 auto 100px 0;
+	position: relative;
+	width: 100%;
+	padding:0;
+	text-align:justify;
+}
+#slideshow > div {
+	width:100%;
+	position: absolute;
+	text-align:justify;
 }
 .category {
 	padding:0;
@@ -165,15 +178,15 @@ h2 a {
 .login-form {
 	position:relative;
 	top:50%;
-	transform:transformY(-50%);
+	transform:translateY(-50%);
 	width:30%;
 	background:#202020;
 	padding:2%;
 	margin:0 auto;
 	border-radius:15px;
-	-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.75);
+box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.75);
 }
 .login-form h1 {
 	font-family: 'Montserrat', sans-serif;
@@ -212,7 +225,7 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 	width:100%;
 	background:#202020;
 	margin:-1% auto 0 auto;
-	padding:1.5% 0;
+	padding:15px 0;
 	font-family: 'Lato', sans-serif;
 	font-weight:300;
 	font-size:1.8rem;
@@ -223,7 +236,7 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 	border-radius:0;	
 }
 .login-form p {
-	width:100;
+	width:100%;
 	margin-top:2%;
 	font-family: 'Lato', sans-serif;
 	font-weight:300;
@@ -278,7 +291,7 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 	font-size:inherit;
 }
 .contact form input {
-	padding:1.5%;
+	padding:15px;
 }
 .contact form label {
 	font-family: 'Montserrat', sans-serif;
@@ -309,7 +322,7 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 	padding:1.5%;
 }
 .jumbotron .btn-primary {
-	padding:0.5% 2%;
+	padding:5px 20px;
 	font-family: 'Lato', sans-serif;
 	font-weight:300;
 	font-size:1.6rem;
@@ -411,7 +424,7 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 }
 .new-post button[type=submit] {
 	margin-top:0.5%;
-	padding:0.5% 3.5%;
+	padding:5px 35px;
 	font-family: 'Lato', sans-serif;
 	font-size:1.7rem;
 	border-radius:0;
@@ -511,7 +524,7 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 }
 .new-reply button[type=submit] {
 	margin-top:0.5%;
-	padding:0.5% 3.5%;
+	padding:5px 35px;
 	font-family: 'Lato', sans-serif;
 	font-size:1.4rem;
 	border-radius:0;
@@ -622,7 +635,7 @@ p.comment {
 }
 .admin form button {
 	margin-top:0.5%;
-	padding:0.5% 3.5%;
+	padding:5px 35px;
 	font-family: 'Lato', sans-serif;
 	font-size:1.7rem;
 	line-height:1.7rem;
@@ -632,21 +645,26 @@ p.comment {
 
 /* --- Footer Begins --- */
 footer {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	height:250px;
 	width:100%;
-	padding:25px 0;
+	padding:15px 0;
 	background:#202020;
 	font-family: 'Lato', sans-serif;
+	font-size:1.4rem;
 }
 footer ul {
 	margin:0;
 	list-style-type:none;
-	font-size:1.6rem;
 	color:#f0ed08;
+	text-align:center;
+}
+footer ul li {
+	display:inline-block;
+	text-align:center;
+}
+footer ul li a {
+	padding:0 50px;
+	color:#f0ed08;
+	font-weight:300;
 }
 .head {
 	font-weight:bold;
@@ -654,40 +672,20 @@ footer ul {
 	text-transform:uppercase;
 	color:#f0ed08;
 }
-footer .glyphicon {
-	margin-right:2%;
-}
-footer ul li a {
-	color:#f0ed08;
-	font-weight:300;
-}
-footer ul li a:hover, footer ul li a:active, footer ul li a:focus {
-	color:#f0ed08;
-}
 footer p {
 	width:100%;
-	font-size:1.5rem;
-	padding:0;
+	padding-top:15px;
 	margin:0;
 	color:#f0ed08;
 	font-weight:300;
+	text-align:center;
 }
-.call {
-	width:100%;
+footer p a {
 	color:#f0ed08;
-	margin:0;
 }
 /* --- Footer Ends --- */
 @media all and (max-width:1024px) {
-	footer {
-		height:430px;
-	}
-	body {
-		padding-bottom:430px;
-	}
-	footer ul {
-	margin-bottom:2%;
-	}
+
 }
 @media all and (max-width:768px) {
 	.navbar-inverse .navbar-nav>li:hover {
@@ -696,23 +694,13 @@ footer p {
 	.login-form {
 		width:50%;
 	}
-	footer {
-		height:700px;
-	}
-	body {
-		padding-bottom:700px;
-	}
+
 	.user-details h2 {
 		margin:3.5% 0 0 0;  
 	}
 }
 @media all and (max-width:414px) {
-	footer {
-		height:650px;
-	}
-	body {
-		padding-bottom:650px;
-	}	
+	
 	.user-details h2 {
 		margin:6% 0 0 0;  
 	}
