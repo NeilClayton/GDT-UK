@@ -58,7 +58,7 @@
 							<div id="howtoprepare" class="tab-pane fade">
 								<h3>How to prepare</h3>
 								<p>To prepare for that big day when you are going to take your Practical Driving Test you will have been having professional lessons from your Fully Approved Driving Instructor.
-								The amount of lessons you have is based on your ability, some may take only a handfull of lessons but another person may take 30 hours, there is no set limit for the amount of lessons that a pupil will take.
+								The amount of lessons you have is based on your ability, some may take only a handful of lessons but another person may take 30 hours, there is no set limit for the amount of lessons that a pupil will take.
 								Your lessons will be structured to teach you all aspects of driving that is required for you to become a safe and competent driver, that will enable you to be to pass your Practical Driving Test.</p>
 							</div>
 							<div id="doanddont" class="tab-pane fade">
@@ -72,14 +72,14 @@
 							<div id="passtest" class="tab-pane fade">
 								<h3>If you pass your test</h3>
 								<p>Your examiner will tell you immediately after your Practical Driving Test that you have passed ,if you have proved that you are a safe and competent driver, they will debrief you on what you have done and any areas that you may need to brush up on.</p>
-								<p>You will then be told about the <a href="#" target="_blank">Pass Plus Driving Course</a> that's available to people after they have passed their driving test, and that you should discuss this with your instructor.
+								<p>You will then be told about the <a href="courses.php" target="_blank">Pass Plus Driving Course</a> that's available to people after they have passed their driving test, and that you should discuss this with your instructor.
 								The benefits of doing the Pass Plus Driving Course is that this can reduce your insurance premium.</p>
 								<p>The examiner will also send your Provisional Driving Licence off for you to DVLA to get your new FULL Driving Licence.( if you already have the 2 part photo i.d. Licence )</p>
 								<p>f you have the old 1 part paper licence then you will be required to send it off yourself with a recent photo of yourself. And the relevant forms from the post office D1 Application for a Driving Licence, or apply online at <a href="#" target="_blank">www.direct.gov.uk/exchangelicence</a>.</p>
 							</div>
 							<div id="failtest" class="tab-pane fade">
 								<h3>If you fail your test</h3>
-								<p>If you fail your Practical Driving Test your examiner will debrief you on where you need to strengthen up your driving skills, and if your Driving Instructor is present this can help in what additional work needs to done to brush up on your driving skills ready for your next <a href="#" target="_blank">Practical Driving Test</a>.</p>
+								<p>If you fail your Practical Driving Test your examiner will debrief you on where you need to strengthen up your driving skills, and if your Driving Instructor is present this can help in what additional work needs to done to brush up on your driving skills ready for your next <a href="drivingpracticaltest.php" target="_blank">Practical Driving Test</a>.</p>
 								<p>The examiner will then wish you luck for your next Practical Driving Test. It is a myth that the examiners are only allowed to pass so many test's a day.</p>
 							</div>
 							<div id="driving" class="tab-pane fade">
