@@ -147,21 +147,14 @@ h2 a {
 	font-weight:300;
 	font-size:1.6rem;
 }
-#slideshow {
-    min-height:100px;
-    margin:0 auto;
-    width:60%;
-    overflow:hidden;
-    position:relative;
-    text-align:center;
+.marquee {
+	overflow: hidden;
+	white-space: nowrap;
+	margin:0 auto;
+	width:60%;
+	text-align:center;
 }
-#slideshow-content {
-    margin:0 auto;
-    cursor:pointer;
-    overflow:hidden;
-    position:absolute;
-    text-align:center;
-}
+
 .nowrap {
     white-space: nowrap ;
 }
