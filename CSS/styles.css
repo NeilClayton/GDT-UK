@@ -28,6 +28,9 @@ textarea {
 .asterisk, .price {
 	color:red;
 }
+.table-mobile {
+    display:none;
+}
 strong {
 	color:red;
 }
@@ -43,6 +46,19 @@ header {
 }
 header p, .header p {
 	text-align:center;
+	margin:0;
+}
+.second {
+    display:block;
+    position:absolute;
+    z-index:3;
+    left:50%;
+    transform:translateX(-50%);
+    top:75%;
+}
+.second a {
+	color:#f0ed08;
+    font-size:2.5rem;
 }
 header img {
 	margin:0 auto;
@@ -114,7 +130,8 @@ header img {
 	padding:3% 0;
 	color:black;
 }
-.introduction h2, .contact h2 {
+.introduction h2, .contact h3 {
+    font-size:2.25rem;
 	margin-top:0;
 	font-family: 'Montserrat', sans-serif;
 	text-transform:uppercase;
@@ -126,19 +143,20 @@ header img {
 	font-size:1.6rem;
 	text-align:justify;
 }
+.introduction a, .introduction a:visited, .introduction a:active, .introduction a:hover {
+    color:#333;
+    text-decoration:underline;
+}
 h2 a {
 	color:black;
-}
-.introduction a {
-	color:#0d3f83;
 }
 .nextsection {
 	padding:0 0 30px 0;
 	background:white;
 }
 .nextsection h3 {
-	width:95%;
-	margin:0 0 0 2.5%;
+	width:90%;
+	margin:0 0 0 5%;
 	padding:0;
 	font-family: 'Lato', sans-serif;
 	font-weight:300;
@@ -276,9 +294,6 @@ box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.75);
 	background:white;
 	padding:3% 0;
 }
-.contact h2 {
-	text-align:center;
-}
 .contact form {
 	font-family: 'Lato', sans-serif;
 	font-weight:300;
@@ -293,9 +308,9 @@ box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.75);
 .contact form input {
 	padding:15px;
 }
-.contact form label {
-	font-family: 'Montserrat', sans-serif;
-	font-size:1.8rem;
+label {
+	font-family: 'Lato', sans-serif;
+	font-size:1.6rem;
 	font-weight:normal;
 }
 /* --- Contact Page Ends --- */
@@ -303,19 +318,22 @@ box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.75);
 /* --- Driving pages Begin --- */
 .introduction h3 {
 	font-family: 'Montserrat', sans-serif;
-	font-size:2rem;
+	font-size:2.25rem;
 	font-weight:normal;	
 	margin-bottom:2%;
+    text-transform:uppercase;
 }
 .introduction h4 {
 	font-family: 'Montserrat', sans-serif;
 	font-size:1.7rem;
 	font-weight:normal;	
 }
-.nav-tabs>li>a, .nav-tabs>li>a:focus, .nav-tabs>li>a:hover {
-	font-family: 'Montserrat', sans-serif;
-	font-size:1.5rem;
+.nav-pills>li>a, .nav-pills>li>a:focus, .nav-pills>li>a:hover {
+	font-family: 'Lato', sans-serif;
+	font-size:1.6rem;
 	font-weight:normal;
+    text-decoration:none;
+    border-radius:0;
 }
 .jumbotron {
 	margin-top:1%;
@@ -330,8 +348,13 @@ box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.75);
 .introduction li  {
 	margin:0;
 }
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-	color:black;
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	color:#f0ed08;
+    background:#202020;
+    text-decoration:none;
+}
+.panel-default>.panel-heading a:hover {
+    text-decoration:none;
 }
 .panel-heading [data-toggle="collapse"]:after {
     font-family: 'Glyphicons';
@@ -347,7 +370,6 @@ box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.75);
     transform: rotate(-90deg);
 }
 .panel-heading [data-toggle="collapse"].collapsed:after {
-
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -371,7 +393,7 @@ box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.75);
 .panel .panel-body {
 	font-family: 'Lato', sans-serif;
 	font-weight:300;
-	font-size:1.5rem;	
+	font-size:1.7rem;
 }
 /* --- Driving pages end --- */
 
@@ -620,11 +642,6 @@ p.comment {
 .table-responsive {
 	overflow-x:auto;
 }
-.admin form label {
-	font-family: 'Montserrat', sans-serif;
-	font-size:1.8rem;
-	font-weight:normal;		
-}
 .admin form input, .admin form select {
 	border-radius:0;
 	font-family: 'Lato', sans-serif;
@@ -633,20 +650,25 @@ p.comment {
 	line-height:1.7rem;
 	padding:1%;	
 }
-.admin form button {
+.admin form button, .contact form button {
 	margin-top:0.5%;
-	padding:5px 35px;
+	padding:12px 55px;
 	font-family: 'Lato', sans-serif;
 	font-size:1.7rem;
 	line-height:1.7rem;
 	border-radius:0;
+}
+.admin h6 {
+    font-family: 'Lato', sans-serif;
+    font-size:1.6rem;
+    font-weight:normal;
 }
 /* --- Admin page ends --- */
 
 /* --- Footer Begins --- */
 footer {
 	width:100%;
-	padding:15px 0;
+	padding:30px 0;
 	background:#202020;
 	font-family: 'Lato', sans-serif;
 	font-size:1.4rem;
@@ -656,6 +678,7 @@ footer ul {
 	list-style-type:none;
 	color:#f0ed08;
 	text-align:center;
+    padding:0;
 }
 footer ul li {
 	display:inline-block;
@@ -664,7 +687,6 @@ footer ul li {
 footer ul li a {
 	padding:0 50px;
 	color:#f0ed08;
-	font-weight:300;
 }
 .head {
 	font-weight:bold;
@@ -674,10 +696,9 @@ footer ul li a {
 }
 footer p {
 	width:100%;
-	padding-top:15px;
+	padding-top:30px;
 	margin:0;
 	color:#f0ed08;
-	font-weight:300;
 	text-align:center;
 }
 footer p a {
@@ -700,10 +721,22 @@ footer p a {
 	}
 }
 @media all and (max-width:414px) {
-	
 	.user-details h2 {
-		margin:6% 0 0 0;  
-	}
+        margin: 6% 0 0 0;
+    }
+    .admin form button, .contact form button {
+        width: 100%;
+    }
+    .table-responsive {
+        display:none;
+    }
+    .table-mobile {
+        display:block;
+        text-align:center;
+    }
+    .table-mobile th {
+        text-align:center;
+    }
 }
 @media all and (max-width:320px) {
 	.user-details h2 {

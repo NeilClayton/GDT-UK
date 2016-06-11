@@ -38,33 +38,27 @@
 								<h2>Booked Lessons</h2>
 								<div class="table-responsive">
 									<table class="table table-hover">
-										<tr>
-											<th>Booking ID</th>
-											<th>Full name</th>
-											<th>Date</th>
-											<th>Time</th>
-											<th>Duration</th>
-											<th>Edit</th>
-											<th>Delete</th>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>John Smith</td>
-											<td>29/05/2016</td>
-											<td>15:55</td>
-											<td>1 hour</td>
-											<td><i class="fa fa-edit"></i></td>
-											<td><i class="fa fa-remove"></i></td>
-										</tr>
-										<tr>
-											<td>2</td>
-											<td>Joe Bloggs</td>
-											<td>05/06/2016</td>
-											<td>14:40</td>
-											<td>2 hours</td>
-											<td><i class="fa fa-edit"></i></td>
-											<td><i class="fa fa-remove"></i></td>
-										</tr>
+										<tr><th>Booking ID</th><th>Full Name</th><th>Date</th><th>Time</th><th>Duration</th><th>Edit</th><th>Delete</th</tr>
+										<tr><td>1</td><td>John Smith</td><td>29/05/2016</td><td>15:55</td><td>1 hour</td><td><i class="fa fa-edit"></i></td><td><i class="fa fa-remove"></i></td></tr>
+										<tr><td>2</td><td>Joe Bloggs</td><td>05/06/2016</td><td>14:40</td><td>2 hours</td><td><i class="fa fa-edit"></i></td><td><i class="fa fa-remove"></i></td></tr>
+									</table>
+								</div>
+								<div class="table-mobile">
+									<table class="table table-bordered">
+										<tr><th>Booking ID</th></tr>
+										<tr><td>1</td></tr>
+										<tr><th>Full Name</th></tr>
+										<tr><td>John Smith</td></tr>
+										<tr><th>Date</th></tr>
+										<tr><td>29/05/2016</td></tr>
+										<tr><th>Time</th></tr>
+										<tr><td>15:55</td></tr>
+										<tr><th>Duration</th></tr>
+										<tr><td>1 hour</td></tr>
+										<tr><th>Edit</th></tr>
+										<tr><td><i class="fa fa-edit"></i></td></tr>
+										<tr><th>Delete</th></tr>
+										<tr><td><i class="fa fa-remove"></i></td></tr>
 									</table>
 								</div>
 							</div>
@@ -77,11 +71,11 @@
 									</div>			
 									<div class="form-group">
 										<label for="date">Date</label>
-										<input type="text" class="form-control" id="date" required>
+										<input type="text" class="form-control" id="date" placeholder="Enter a date" required>
 									</div>
 									<div class="form-group">
 										<label for="time">Time</label>
-										<input type="text" class="form-control" id="time" required>
+										<input type="text" class="form-control" id="time" placeholder="Enter a time" required>
 									</div>
 									<div class="form-group">
 										<label for="time">Duration</label>
@@ -92,6 +86,21 @@
 											<option value="#">2 hours</option>
 										</select>
 									</div>
+									<div class="form-group">
+										<h6>How many lessons are being booked?</h6>
+										<label class="radio-inline">
+											<input type="radio" name="optradio">1
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="optradio">10
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="optradio">20
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="optradio">30
+										</label>
+									</div>
 									<button type="submit" class="btn btn-success">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
 								</form>
 							</div>
@@ -99,33 +108,27 @@
 								<h2>User Management</h2>
 								<div class="table-responsive">
 									<table class="table table-hover">
-										<tr>
-											<th>User ID</th>
-											<th>Full name</th>
-											<th>Email</th>
-											<th>Mobile No</th>
-											<th>Address</th>
-											<th>Edit</th>
-											<th>Delete</th>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>John Smith</td>
-											<td>jsmith@email.com</td>
-											<td>123 4567 8901</td>
-											<td>1 Dashboard Avenue</td>
-											<td><i class="fa fa-edit"></i></td>
-											<td><i class="fa fa-remove"></i></td>
-										</tr>
-										<tr>
-											<td>2</td>
-											<td>Joe Bloggs</td>
-											<td>jbloggs@email.com</td>
-											<td>123 4567 8901</td>
-											<td>2 Dashboard Avenue</td>
-											<td><i class="fa fa-edit"></i></td>
-											<td><i class="fa fa-remove"></i></td>
-										</tr>
+										<tr><th>User ID</th><th>Full name</th><th>Email</th><th>Mobile No</th><th>Address</th><th>Edit</th><th>Delete</th</tr>
+										<tr><td>1</td><td>John Smith</td><td>jsmith@email.com</td><td>123 4567 8901</td><td>1 Dashboard Avenue</td><td><i class="fa fa-edit"></i></td><td><i class="fa fa-remove"></i></td></tr>
+										<tr><td>2</td><td>Joe Bloggs</td><td>jbloggs@email.com</td><td>123 4567 8901</td><td>2 Dashboard Avenue</td><td><i class="fa fa-edit"></i></td><td><i class="fa fa-remove"></i></td></tr>
+									</table>
+								</div>
+								<div class="table-mobile">
+									<table class="table table-bordered">
+										<tr><th>User ID</th></tr>
+										<tr><td>1</td></tr>
+										<tr><th>Full Name</th></tr>
+										<tr><td>John Smith</td></tr>
+										<tr><th>Email</th></tr>
+										<tr><td>jsmith:email.com</td></tr>
+										<tr><th>Mobile No</th></tr>
+										<tr><td>123 4567 8901</td></tr>
+										<tr><th>Address</th></tr>
+										<tr><td>1 Dashboard Avenue</td></tr>
+										<tr><th>Edit</th></tr>
+										<tr><td><i class="fa fa-edit"></i></td></tr>
+										<tr><th>Delete</th></tr>
+										<tr><td><i class="fa fa-remove"></i></td></tr>
 									</table>
 								</div>
 							</div>
