@@ -684,13 +684,19 @@ footer a:hover {
 }
 footer p {
 	width:100%;
-	padding-top:30px;
 	margin:0;
+	padding-top:5px;
 	color:#f0ed08;
 	text-align:center;
 }
-footer p a {
+.first {
+	padding-top:30px;
+}
+footer  a, footer a:visited, footer a:active, footer a:focus, footer a:hover {
 	color:#f0ed08;
+}
+footer img {
+	padding-top:10px;
 }
 /* --- Footer Ends --- */
 @media all and (max-width:1024px) {
