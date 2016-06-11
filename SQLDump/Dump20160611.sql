@@ -49,7 +49,7 @@ DROP TABLE IF EXISTS `user_list`;
 CREATE TABLE `user_list` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(45) NOT NULL,
-  `password` varchar(60) NOT NULL,
+  `password` varchar(45) NOT NULL,
   `access_level` varchar(45) NOT NULL,
   `client_id` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`user_id`)
@@ -62,7 +62,7 @@ CREATE TABLE `user_list` (
 
 LOCK TABLES `user_list` WRITE;
 /*!40000 ALTER TABLE `user_list` DISABLE KEYS */;
-INSERT INTO `user_list` VALUES (1,'garyspencer','$2y$10$DY70dLsI80qKN7/6Fx290OdaozKKHMCUQohQK4je3U.Qoic1RT5Ty','1','1'),(2,'neilclayton','$2y$10$XhXzT9DZVT34ZHPqp6b2veu71eRLRVzBBFG.Rsiou8q7Wkb9PL1Vy','2','2');
+INSERT INTO `user_list` VALUES (1,'garyspencer','e4fd00259c498a3a96ddcfcf8bb1689b','1','1'),(2,'neilclayton','21232f297a57a5a743894a0e4a801fc3','2','2');
 /*!40000 ALTER TABLE `user_list` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -75,4 +75,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-06-11 19:46:13
+-- Dump completed on 2016-06-11 16:39:57

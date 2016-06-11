@@ -158,33 +158,27 @@
 								<h2>Videos</h2>
 								<div class="table-responsive">
 									<table class="table table-hover">
-										<tr>
-											<th>Video ID</th>
-											<th>Title</th>
-											<th>Code</th>
-											<th>Client</th>
-											<th>Date</th>
-											<th>Edit</th>
-											<th>Delete</th>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>John's lesson</td>
-											<td>345JJ34K7SD</td>
-											<td>John Smith</td>
-											<td>29/05/2016</td>
-											<td><i class="fa fa-edit"></i></td>
-											<td><i class="fa fa-remove"></i></td>
-										</tr>
-										<tr>
-											<td>2</td>
-											<td>Joe's lesson</td>
-											<td>345JJ34K7SD</td>
-											<td>Joe Bloggs</td>
-											<td>29/05/2016</td>
-											<td><i class="fa fa-edit"></i></td>
-											<td><i class="fa fa-remove"></i></td>
-										</tr>
+										<tr><th>Video ID</th><th>Title</th><th>Code</th><th>Client</th><th>Date</th><th>Edit</th><th>Delete</th></tr>
+										<tr><td>1</td><td>John's lesson</td><td>345JJ34K7SD</td><td>John Smith</td><td>29/05/2016</td><td><i class="fa fa-edit"></i></td><td><i class="fa fa-remove"></i></td></tr>
+										<tr><td>2</td><td>Joe's lesson</td><td>345JJ34K7SD</td><td>Joe Bloggs</td><td>29/05/2016</td><td><i class="fa fa-edit"></i></td><td><i class="fa fa-remove"></i></td></tr>
+									</table>
+								</div>
+								<div class="table-mobile">
+									<table class="table table-bordered">
+										<tr><th>Video ID</th></tr>
+										<tr><td>1</td></tr>
+										<tr><th>Title</th></tr>
+										<tr><td>John's Lesson</td></tr>
+										<tr><th>Code</th></tr>
+										<tr><td>345JJ34K7SD</td></tr>
+										<tr><th>Client</th></tr>
+										<tr><td>John Smith</td></tr>
+										<tr><th>Date</th></tr>
+										<tr><td>29/05/2016</td></tr>
+										<tr><th>Edit</th></tr>
+										<tr><td><i class="fa fa-edit"></i></td></tr>
+										<tr><th>Delete</th></tr>
+										<tr><td>i class="fa fa-remove"></i></td></tr>
 									</table>
 								</div>
 							</div>
