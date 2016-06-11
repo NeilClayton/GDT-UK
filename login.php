@@ -1,3 +1,11 @@
+<?php
+	if ((isset($_POST['username'])) && (isset($_POST['password']))){
+		include_once ('Actions/login_class.php');
+		$login = new login();
+		$login->attemptLogin();
+	}
+
+?>
 <!DOCTYPE html>
 <html class="login-html" lang="en">
 	<head>
@@ -18,15 +26,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body id="login-body">
-		<form class="login-form" method="post" action="#" autocomplete="off">
+		<form class="login-form" method="post" action="<?php $_SERVER['PHP_SELF']; ?> " autocomplete="off">
 			<h1><i class="fa fa-lock"></i>&nbsp;Sign in</h1>
 			<div class="form-group">
 				<label for="usernameInput" class="sr-only">Username:</label>
-				<input type="text" class="form-control" id="usernameInput" placeholder="Username">
+				<input type="text" class="form-control" id="usernameInput" name="username" placeholder="Username">
 			</div>
 			<div class="form-group">
 				<label for="passwordInput" class="sr-only">Password:</label>
-				<input type="password" class="form-control" id="passwordInput" placeholder="Password">
+				<input type="password" class="form-control" id="passwordInput" name="password" placeholder="Password">
 			</div>
 			<input type="submit" class="btn btn-primary center-block" value="Submit">
 			<p><a href="index.php">Back to homepage</a>&nbsp;&nbsp;&#10072;&nbsp;&nbsp;<a href="#">Forgotten your password</a></p>
