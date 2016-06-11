@@ -23,6 +23,7 @@
 			<div class="container-fluid">
 				<div class="row contact">	
 					<div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+						<h3>Contact GDT-UK</h3>
 						<form>
 							<div class="form-group">
 								<label for="name">Full Name</label>
@@ -50,7 +51,7 @@
 								<input type="checkbox" required>I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a>
 								</label>
 							</div>
-							<button type="submit" class="btn btn-primary">Submit</button>
+							<button type="submit" class="btn btn-success">Submit&nbsp;&nbsp;<i class="fa fa-send" aria-hidden="true"></i></button>
 						</form>
 					</div>
 				</div>

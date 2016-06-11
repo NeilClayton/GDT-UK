@@ -18,10 +18,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-
 		<?php include('Includes/header2.html'); ?>
 		<?php include('Includes/nav.html'); ?>
-
 			<div class="container-fluid">
 				<div class="row introduction">
 					<div class="col-md-10 col-md-offset-1">
@@ -45,7 +43,7 @@
 								<td>£49.00</td>
 							</tr>
 						</table>
-						<ul class="nav nav-tabs">
+						<ul class="nav nav-pills">
 							<li class="active"><a data-toggle="tab" href="#bronze">Intensive driving courses (Bronze)</a></li>
 							<li><a data-toggle="tab" href="#silver">Intensive driving courses (Silver)</a></li>
 							<li><a data-toggle="tab" href="#gold">Intensive driving courses (Gold)</a></li>
@@ -62,7 +60,7 @@
 								<p>You can either take your lessons hourly or you can book more than 1 lesson a week, or you may like to book lessons by 1.1/2 , 2 hour , 3 hours up to a maximum of 4 hours a day.</p>
 								<p>The price of this course is <strong>£220</strong>.</p>
 								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
-								<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
+								<p>Or email me at <a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a>.</p>
 							</div>
 							<div id="silver" class="tab-pane fade">
 								<h3>Silver driving courses</h3>
@@ -73,7 +71,7 @@
 								<p>If four hours are booked, there will be a 20 minute comfort break after the second hour, keeping your safety in mind.</p>
 								<p>The <strong>FREE</strong> attempt at the <a href="#" target="_blank">driving theory test</a> is included in the price and can be booked by your instructor.</p>
 								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
-								<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
+								<p>Or email me at <a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a>.</p>
 							</div>
 							<div id="gold" class="tab-pane fade">
 								<h3>Gold driving courses</h3>
@@ -85,7 +83,7 @@
 								<p>If a four hour driving lesson is booked, there will be a 20 minute comfort break after the second hour, keeping your safety in mind.</p>
 								<p>The <strong>FREE</strong> attempt at the <a href="#" target="_blank">driving theory test</a> and the <a href="#" target="_blank">practical driving test</a> <strong>are</strong> included in the price, and can be booked by your instructor.</p>
 								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
-								<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
+								<p>Or email me at <a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a>.</p>
 							</div>
 							<div id="satellite" class="tab-pane fade">
 								<h3>Satellite navigation lessons</h3>
@@ -93,7 +91,7 @@
 								<p>Well thats where these lessons will be invaluable. Even sat nav's can be wrong, and these lessons will teach you not only how to get from A to B safely, but how not to panic and to continue driving safely.</p>
 								<p>Lesson prices are <strong>£24.50</strong> per hour.</p>
 								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
-								<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
+								<p>Or email me at <a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a>.</p>
 							</div>								
 							<div id="passplus" class="tab-pane fade">
 								<h3>Pass plus driving course</h3>
@@ -110,7 +108,7 @@
 								</ul>
 								<p>The cost of a pass plus course is <strong>£150</strong> if you pass your <a href="drivingpracticaltest.php" target="_blank">practical driving test</a> with GDT.</p>
 								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
-								<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
+								<p>Or email me at <a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a>.</p>
 							</div>
 							<div id="refresher" class="tab-pane fade">
 								<h3>Refresher lessons</h3>
@@ -118,7 +116,7 @@
 								So at GDT we will endevour to boost your self esteem, turning you into a safe and confident driver.</p>
 								<p>Lesson prices are <strong>£24.50</strong> per hour and you can take as little or as many hours as you like until you feel confident.</p>
 								<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
-								<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
+								<p>Or email me at <a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a>.</p>
 							</div>
 							<div id="motorway" class="tab-pane fade">
 								<h3>Motorway lessons</h3>
@@ -128,8 +126,6 @@
 					</div>
 				</div>
 			</div>
-
 		<?php include('Includes/footer.html'); ?>
-
 	</body>
 </html>

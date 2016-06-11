@@ -25,7 +25,7 @@
 			<div class="container-fluid">
 				<div class="row introduction">
 					<div class="col-md-10 col-md-offset-1">				
-						<ul class="nav nav-tabs">
+						<ul class="nav nav-pills">
 							<li class="active"><a data-toggle="tab" href="#thedrivingtest">The driving test</a></li>
 							<li><a data-toggle="tab" href="#howtoprepare">How to prepare</a></li>
 							<li><a data-toggle="tab" href="#doanddont">Driving test do's &amp; dont's</a></li>

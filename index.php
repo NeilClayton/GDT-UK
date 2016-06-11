@@ -22,12 +22,11 @@
 		<?php include('Includes/header.html'); ?>
 		<?php include('Includes/nav.html'); ?>
 			<div class="container-fluid">
-				<h2 class="sr-only">Main page content</h2>
-				<div class="row introduction">
+				<div class="row introduction" id="intro">
 					<h2 class="sr-only">What GDT is</h2>
 					<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
 						<h2>GDT - Nottingham's Driving School</h2>
-						<p>"Hi, welcome to Gary's Driver Training, Nottingham's premier driving school."</p>
+						<p><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;&nbsp;Hi, welcome to Gary's Driver Training, Nottingham's premier driving school.&nbsp;&nbsp;<i class="fa fa-quote-right" aria-hidden="true"></i></p>
 						<p>At GDT we are a team of  DSA  and Pass Plus registered driving instructors. And we are all fully qualified driving instructors. GDT is Nottingham's leading driving school and has been established since 2003.  Our aim is to provide you with safe driver training of the highest possible standard. That means we will endeavour to pass on all our years of driving skills onto you, the learner driver, making you a safe and confident driver. </p>
 						<p>GDT offer many courses and packages, and these can be tailored to suit your individual needs, including <a href="courses.php" target="_blank">Intensive Driving Courses</a>, <a href="courses.php" target="_blank">Block Booking Courses</a>, <a href="discounts.php">Student Discount</a> and <a href="courses.php" target="_blank">Pass Plus</a> courses. Here at GDT we cater for all types of learner, including beginner, confident and nervous.
 						I have a dual controlled car for your piece of mind, and your safety, and only do 1 on 1 tuition. There will never be another learner in the back of the car whilst you are on your lesson.</p>
@@ -35,11 +34,10 @@
 						<p>We pride ourselves on having a <a href="#">Pass Rate</a> that is well above the national average. GDT are exceptionally reliable and offer very competitive prices in comparison with other driving schools in and around Nottingham. There are no hidden charges.
 						Driving is fun and your lessons will be structured around you to make them fun and enjoyable, so let GDT pass on their years of experience onto you, and guide you through your <a href="drivingpracticaltest.php">Practical Driving Test</a>.</p>
 						<p><strong>For your ease, you are able to make payments online, via</strong> <a href="#">Paypal</a>. Perfect for <a href="courses.php" target="_blank">Block Lesson Bookings</a>, <a href="courses.php" target="_blank">Intensive Driving Courses</a> or <a href="#">Driving Lesson Gift Vouchers</a>.</p>
-						<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
+						<p>Or email me at <a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a>.</p>
 					</div>
 				</div>
 				<div class="row nextsection">
-					<h2 class="sr-only">Additional information</h2>				
 					<div class="col-sm-6 col-md-4 category">
 						<h2 class="cat-title"><a href="discounts.php">Offers &amp; Discounts</a></h2>
 						<p>For that special gift they will always remember.</p>

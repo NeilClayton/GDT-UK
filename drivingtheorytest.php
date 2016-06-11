@@ -25,7 +25,7 @@
 			<section class="container-fluid">
 				<section class="row introduction">
 					<section class="col-md-10 col-md-offset-1">
-						<ul class="nav nav-tabs">
+						<ul class="nav nav-pills">
 							<li class="active"><a data-toggle="tab" href="#abouttheory">About the theory test</a></li>
 							<li><a data-toggle="tab" href="#howtoprepare">How to prepare</a></li>
 							<li><a data-toggle="tab" href="#recommendedbooks">Recommended reading/books</a></li>
@@ -75,7 +75,7 @@
 							</section>
 							<section id="booktheory" class="tab-pane fade">
 								<h3>Book a driving theory test</h3>
-								<p>To book your Driving Theory Test or manage your Driving Theory Test use <a href="www.dsa.gov.uk" target="_blank">this link</a> below.</p>
+								<p>To book your Driving Theory Test or manage your Driving Theory Test click <a href="www.dsa.gov.uk" target="_blank">this link</a>.</p>
 								<p>Then select book your theory test.</p>
 							</section>
 							<section id="practicetheory" class="tab-pane fade">

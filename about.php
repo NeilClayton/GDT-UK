@@ -33,7 +33,7 @@
 						Driving is fun and your lessons will be structured around you to make them fun and enjoyable, so let GDT pass on their years of experience onto you, and guide you through your <a href="drivingpracticaltest.php" target="_blank">Practical Driving Test</a>.</p>
 						<p><strong>For your ease, you are able to make payments online, via Paypal</strong>. Perfect for <a href="courses.php" target="_blank">Block Lesson Bookings</a>, <a href="courses.php" target="_blank">Intensive Driving Courses</a> or Driving Lesson Gift Vouchers.</p>
 						<p>For more information please contact Gary on <a href="telno:07870438438" target="_top">07870 438 438</a>.</p>
-						<p>Or email me at <strong><a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a></strong>.</p>
+						<p>Or email me at <a href="mailto:gdt1@hotmail.co.uk?Subject=Enquiry" target="_top">gdt1@hotmail.co.uk</a>.</p>
 					</div>
 				</div>
 			</div>
