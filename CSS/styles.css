@@ -36,35 +36,24 @@ strong {
 }
 header {
 	height:100vh;
-    display:flex;
-    align-items: center;
-    justify-content: center;
 	width:100%;
 	padding:0;
 	margin:0;
 	background:rgba(0, 0 , 0, 0.2);
 }
-header p, .header p {
+.header-content {
+	position:relative;
+	transform:translateY(-50%);
+	top:50%;
 	text-align:center;
-	margin:0;
 }
-.second {
-    display:block;
-    position:absolute;
-    z-index:3;
-    left:50%;
-    transform:translateX(-50%);
-    top:75%;
-}
-.second a {
+.header-content a {
 	color:#f0ed08;
     font-size:2.5rem;
 }
 header img {
 	margin:0 auto;
 	padding:0;
-    vertical-align:middle; /*middle centred*/
-    display:table-cell; /*acts like a table cell*/
 }
 .header {
 	height:50vh;
@@ -102,7 +91,7 @@ header img {
 	background:none;
 }
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
-	color:#f0ed08;	
+	color:#f0ed08;
 }
 .navbar .navbar-nav {
   display: inline-block;
@@ -720,7 +709,23 @@ footer p a {
 		margin:3.5% 0 0 0;  
 	}
 }
+@media all and (max-width:667px) {
+	.header-content {
+		transform:translateY(-40%);
+		top:40%;
+	}
+	header img {
+		width:60%;
+	}
+}
 @media all and (max-width:414px) {
+	.header-content {
+		transform:translateY(-50%);
+		top:50%;
+	}
+	header img {
+		width:100%;
+	}
 	.user-details h2 {
         margin: 6% 0 0 0;
     }
