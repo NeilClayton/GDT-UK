@@ -127,5 +127,6 @@
 				</div>
 			</div>
 		<?php include('Includes/footer.html'); ?>
+		<?php include('Includes/socialicons.html');?>
 	</body>
 </html>

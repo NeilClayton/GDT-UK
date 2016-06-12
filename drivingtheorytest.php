@@ -84,8 +84,7 @@
 					</section>
 				</section>
 			</section>
-
 		<?php include('Includes/footer.html'); ?>
-
+		<?php include('Includes/socialicons.html');?>
 	</body>
 </html>
