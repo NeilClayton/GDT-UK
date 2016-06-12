@@ -13,6 +13,7 @@
 	<script src="https://use.fontawesome.com/71ebc9e44c.js"></script>
 	<!-- Custom CSS -->
 	<link href="CSS/styles.css" rel="stylesheet">
+	<link href="CSS/social-styles.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
