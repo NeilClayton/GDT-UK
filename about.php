@@ -18,10 +18,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-
 		<?php include('Includes/header2.html'); ?>
 		<?php include('Includes/nav.html'); ?>
-
 			<div class="container-fluid">
 				<div class="row introduction">					
 					<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
@@ -37,9 +35,7 @@
 					</div>
 				</div>
 			</div>
-
-
 		<?php include('Includes/footer.html'); ?>
-
+		<?php include('Includes/socialicons.html');?>
 	</body>
 </html>

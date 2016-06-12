@@ -14,13 +14,14 @@
 	<script src="https://use.fontawesome.com/71ebc9e44c.js"></script>
 	<!-- Custom CSS -->
 	<link href="CSS/styles.css" rel="stylesheet">
+	<link href="CSS/social-styles.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-		<?php include('Includes/header.html'); ?>
-		<?php include('Includes/nav.html'); ?>
+		<?php include('Includes/header.html');?>
+		<?php include('Includes/nav.html');?>
 			<div class="container-fluid">
 				<div class="row introduction" id="intro">
 					<h2 class="sr-only">What GDT is</h2>
@@ -57,6 +58,6 @@
 	<?php include('Includes/footer.html'); ?>
     <script src="JS/marquee.js"></script>
 	<script src="JS/scroll-text.js"></script>
-
+	<?php include('Includes/socialicons.html');?>
 	</body>
 </html>
