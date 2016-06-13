@@ -1,13 +1,8 @@
-<?php
-	include_once ('Actions/login_class.php');
-   	$login = new login();
-	$login->attemptLogin();
-?>
 <!DOCTYPE html>
-<html class="login-html" lang="en">
+<html lang="en">
 	<head>
-	<meta charset="UTF-8">
 	<title>GDT: Nottingham Driving School - Driving Lessons UK</title>
+	<meta charset="UTF-8">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="CSS/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -21,19 +16,26 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	<body id="login-body">
-		<form class="login-form" method="post" action="<?php $_SERVER['PHP_SELF']; ?>" autocomplete="off">
-			<h1><i class="fa fa-lock"></i>&nbsp;Sign in</h1>
+	<body id="edit-body">
+		<form class="edit-form" method="post" action="#">
+			<h1><i class="fa fa-lock"></i>&nbsp;Edit Video</h1>
 			<div class="form-group">
-				<label for="usernameInput" class="sr-only">Username:</label>
-				<input type="text" class="form-control" id="usernameInput" name="username" placeholder="Username">
+				<label for="v-title">Title</label>
+				<input type="text" class="form-control" id="v-title" name="v-title" placeholder="Enter a title" required>
 			</div>
 			<div class="form-group">
-				<label for="passwordInput" class="sr-only">Password:</label>
-				<input type="password" class="form-control" id="passwordInput" name="password" placeholder="Password">
+				<label for="v-code">Email</label>
+				<input type="text" class="form-control" id="v-code" name="v-code" placeholder="Enter the video code" required>
 			</div>
-			<input type="submit" class="btn btn-primary center-block" value="Submit">
-			<p><a href="index.php">Back to homepage</a>&nbsp;&nbsp;&#10072;&nbsp;&nbsp;<a href="#">Forgotten your password</a></p>
+			<div class="form-group">
+				<label for="v-client">Client</label>
+				<select class="form-control" id="v-client" name="v-client" required>
+					<option value="" selected>...</option>
+					<option value="JoeBloggs">Joe Bloggs</option>
+					<option value="JohnDoe">John Doe</option>
+				</select>
+			</div>
+			<button type="submit" class="btn btn-success center-block">Edit Video</button>
 		</form>
 	</body>
 </html>
