@@ -1,10 +1,5 @@
-<?php
-	include_once ('Actions/login_class.php');
-   	$login = new login();
-	$login->attemptLogin();
-?>
 <!DOCTYPE html>
-<html class="login-html" lang="en">
+<html lang="en">
 	<head>
 	<meta charset="UTF-8">
 	<title>GDT: Nottingham Driving School - Driving Lessons UK</title>
@@ -21,19 +16,26 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	<body id="login-body">
-		<form class="login-form" method="post" action="<?php $_SERVER['PHP_SELF']; ?>" autocomplete="off">
-			<h1><i class="fa fa-lock"></i>&nbsp;Sign in</h1>
+	<body id="edit-body">
+		<form class="edit-form" method="post" action="#">
+			<h1><i class="fa fa-lock"></i>&nbsp;Edit User</h1>
 			<div class="form-group">
-				<label for="usernameInput" class="sr-only">Username:</label>
-				<input type="text" class="form-control" id="usernameInput" name="username" placeholder="Username">
+				<label for="f-name">Full Name</label>
+				<input type="text" class="form-control" id="f-name" placeholder="Enter a name" required>
 			</div>
 			<div class="form-group">
-				<label for="passwordInput" class="sr-only">Password:</label>
-				<input type="password" class="form-control" id="passwordInput" name="password" placeholder="Password">
+				<label for="email">Email</label>
+				<input type="text" class="form-control" id="email" placeholder="Enter an email address" required>
 			</div>
-			<input type="submit" class="btn btn-primary center-block" value="Submit">
-			<p><a href="index.php">Back to homepage</a>&nbsp;&nbsp;&#10072;&nbsp;&nbsp;<a href="#">Forgotten your password</a></p>
+			<div class="form-group">
+				<label for="mobile">Mobile No</label>
+				<input type="text" class="form-control" id="mobile" placeholder="Enter a mobile number" required>
+			</div>
+			<div class="form-group">
+				<label for="mobile">Address</label>
+				<input type="text" class="form-control" id="address" placeholder="Enter a street address" required>
+			</div>
+			<button type="submit" class="btn btn-success center-block">Edit User</button>
 		</form>
 	</body>
 </html>
