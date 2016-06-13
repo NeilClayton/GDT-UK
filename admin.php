@@ -75,7 +75,7 @@
 											<input type="radio" name="23-lesson">30
 										</label>
 									</div>
-									<button type="submit" class="btn btn-success">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
+									<button type="submit" class="btn btn-success" onclick="refreshWindow()">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
 								</form>
 							</div>
 							<div id="man-lessons" class="tab-pane fade">
@@ -125,7 +125,7 @@
 										<label for="u-address">Address</label>
 										<input type="text" class="form-control" id="u-address" name="u-address" placeholder="Enter a street address" required>
 									</div>
-									<button type="submit" class="btn btn-success">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
+									<button type="submit" class="btn btn-success" onclick="refreshWindow()">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
 								</form>
 							</div>
 							<div id="man-users" class="tab-pane fade">
@@ -175,7 +175,7 @@
 											<option value="JohnDoe">John Doe</option>
 										</select>
 									</div>
-									<button type="submit" class="btn btn-success">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
+									<button type="submit" class="btn btn-success" onclick="refreshWindow()">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
 								</form>
 							</div>
 							<div id="man-videos" class="tab-pane fade">
@@ -212,5 +212,6 @@
 			</div>
 		<?php include('Includes/footer.html'); ?>
 		<script src="JS/fixed-window.js"></script>
+		<script src="JS/refresh.js"></script>
 	</body>
 </html>

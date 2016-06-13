@@ -20,9 +20,10 @@
 		<form class="del-form" method="post" action="#">
 			<p>Are you sure you want to delete user (1)?</p>
 			<div class="del-buttons center-block">
-				<button type="submit" class="btn btn-default">Yes</button>
-				<button type="button" class="btn btn-primary">No</button>
+				<button type="submit" class="btn btn-default" onclick="refreshWindow()">Yes</button>
+				<button type="button" class="btn btn-primary" onclick="closeWindow()">No</button>
 			</div>
 		</form>
 	</body>
+	<script src="JS/refresh.js"></script>
 </html>
