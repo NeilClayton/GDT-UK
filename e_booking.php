@@ -44,7 +44,8 @@
 					<option value="#">2 hours</option>
 				</select>
 			</div>
-			<button type="submit" class="btn btn-success center-block">Edit Booking</button>
+			<button type="submit" class="btn btn-success center-block" onclick="refreshBookings()">Edit Booking</button>
 		</form>
 	</body>
+	<script src="JS/refresh.js"></script>
 </html>
