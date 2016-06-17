@@ -1,3 +1,9 @@
+<?php
+    session_start();
+	include_once ('Actions/login_class.php');
+	date_default_timezone_set("Europe/London");
+	
+?>
 <!DOCTYPE html>
 <html class="other-html" lang="en">
 	<head>
@@ -24,8 +30,8 @@
 				<section class="row profile-1">
 					<section class="col-md-8 col-md-offset-2">
 						<img src="Images/user.png" width="200" height="200" class="img-responsive img-thumbnail" alt="profile">
-						<h1>John Doe</h1>
-						<p>Male from Toton, Nottingham</p>
+						<h1><?php echo $_SESSION['firstname'] . " " . $_SESSION['lastname']; ?></h1>
+						<p>Male from <?php echo $_SESSION['town'];?>, Nottingham</p>
 						<p class="slogan">I really like driving.</p>
 					</section>
 				</section>
@@ -86,23 +92,29 @@
 								<section class="about-details">
 									<section class="about-detail">
 										<p class="about-title">Name:</p>
-										<p class="about-content">John Smith</p>
+										<p class="about-content"><?php echo $_SESSION['firstname'] . " " . $_SESSION['lastname']; ?></p>
 									</section>
 									<section class="about-detail">
 										<p class="about-title">Age:</p>
-										<p class="about-content">21</p>
+										<p class="about-content"><?php list($day,$month,$year) = explode("/",$_SESSION['dob']);
+											$year_diff  = date("Y") - $year;
+											$month_diff = date("m") - $month;
+											$day_diff   = date("d") - $day;
+											if ($day_diff < 0 || $month_diff < 0) $year_diff--;
+											echo $year_diff;  ?></p>
+
 									</section>
 									<section class="about-detail">
 										<p class="about-title">Gender:</p>
-										<p class="about-content">Male</p>
+										<p class="about-content"><?php echo $_SESSION['gender'] ;?></p>
 									</section>
 									<section class="about-detail">
 										<p class="about-title">Hobbies:</p>
-										<p class="about-content">Football, Gaming</p>
+										<p class="about-content"><?php echo $_SESSION['hobbies']; ?></p>
 									</section>
 									<section class="about-detail">
 										<p class="about-title">Town:</p>
-										<p class="about-content">Toton</p>
+										<p class="about-content"><?php echo $_SESSION['town']; ?></p>
 									</section>
 								</section>
 								<button type="button" class="btn btn-info">Edit</button>
