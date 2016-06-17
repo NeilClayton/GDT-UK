@@ -16,6 +16,20 @@ html {
 #login-body {
 	height:100vh; 
 	background:rgba(0, 0 , 0, 0.7);
+	padding:0;
+	margin:0;
+}
+#edit-body {
+	height:100vh;
+	padding:0;
+	margin:0;
+	background:#202020;
+}
+#del-body {
+	height:100vh;
+	background:white;
+	padding:0;
+	margin:0;
 }
 body {
 	background:none;
@@ -24,6 +38,12 @@ body {
 }
 textarea {
 	resize:none;
+}
+td button, td button:active, td button:visited, td button:focus, td button.focus {
+	background:transparent;
+	border:none;
+	margin:0;
+	padding:0;
 }
 .asterisk, .price {
 	color:red;
@@ -183,12 +203,12 @@ h2 a {
 	transform:translateY(-50%);
 	width:30%;
 	background:#202020;
-	padding:2%;
+	padding:25px;
 	margin:0 auto;
 	border-radius:15px;
 	-webkit-box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.75);
 	-moz-box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.75);
-box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.75);
 }
 .login-form h1 {
 	font-family: 'Montserrat', sans-serif;
@@ -320,6 +340,7 @@ label {
 	font-weight:normal;
     text-decoration:none;
     border-radius:0;
+	color:#333;
 }
 .jumbotron {
 	margin-top:1%;
@@ -400,7 +421,7 @@ label {
 .profile-2 a {
 	color:#588ed3;
 }
-.profile-2 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, .nav-tabs>li>a:hover, .admin .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, .nav-tabs>li>a:hover {
+.profile-2 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover, .nav-pills>li>a:hover, .admin .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover, .nav-pills>li>a:hover {
 	border-bottom-color:#ddd;
 	border-radius:2px 2px 0 0;
 }
@@ -621,21 +642,21 @@ p.comment {
 	font-size:1.8rem;
 	font-weight:normal;	
 }
+.admin td .fa {
+	font-size:2rem;
+}
 .admin td {
 	font-family: 'Lato', sans-serif;
 	font-size:1.6rem;		
 }
-.table-responsive {
-	overflow-x:auto;
-}
-.admin form input, .admin form select {
+.admin form input, .admin form select, .edit-form input, .edit-form select {
 	border-radius:0;
 	font-family: 'Lato', sans-serif;
 	font-weight:300;
 	font-size:1.6rem;
 	padding-top:3px;
 }
-.admin form button, .contact form button {
+.admin form button, .contact form button, .edit-form button {
 	margin-top:0.5%;
 	padding:12px 55px;
 	font-family: 'Lato', sans-serif;
@@ -647,6 +668,69 @@ p.comment {
     font-family: 'Lato', sans-serif;
     font-size:1.6rem;
     font-weight:normal;
+}
+.edit-form {
+	width:50%;
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+	margin:0 auto;
+	background:white;
+	padding:20px 40px;
+}
+.edit-form h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size:4.5rem;
+	font-weight:normal;
+	text-align:center;
+}
+.edit-form input[type=text], .edit-form input[type=email], .edit-form input[type=text],:focus, .edit-form select  {
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:1.7rem;
+	margin:0;
+	border-radius:0;
+	box-shadow:none;
+	border:1px solid #202020;
+	outline:none;
+	background:none;
+	color:#202020;
+}
+.edit-form .btn-success, .edit-form .btn-success:active, .edit-form .btn-success:visited, .edit-form .btn-success:focus, .edit-form .btn-success:hover, .edit-form .btn-success.focus {
+	margin:20px auto 0 auto;
+	background:#202020;
+	color:white;
+	border:none;
+	border-radius:0;
+	outline:none;
+	box-shadow:none;
+}
+.del-form {
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+	margin:0 auto;
+	width:100%;
+	padding:20px 0;
+}
+.del-form p {
+	text-align:center;
+	font-family: 'Lato', sans-serif;
+	font-size:1.7rem;
+	margin:0 0 20px 0;
+	padding:0;
+}
+.del-buttons {
+	width:211px;
+	margin:0 auto;
+}
+.del-buttons button {
+	margin-top:0.5%;
+	padding:10px 40px;
+	font-family: 'Lato', sans-serif;
+	font-size:1.5rem;
+	line-height:1.5rem;
+	border-radius:0;
 }
 /* --- Admin page ends --- */
 
@@ -684,13 +768,19 @@ footer a:hover {
 }
 footer p {
 	width:100%;
-	padding-top:30px;
 	margin:0;
+	padding-top:5px;
 	color:#f0ed08;
 	text-align:center;
 }
-footer p a {
+.first {
+	padding-top:30px;
+}
+footer  a, footer a:visited, footer a:active, footer a:focus, footer a:hover {
 	color:#f0ed08;
+}
+footer img {
+	padding-top:10px;
 }
 /* --- Footer Ends --- */
 @media all and (max-width:1024px) {

@@ -3,7 +3,6 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>GDT: Nottingham Driving School - Driving Lessons UK</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="CSS/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -13,6 +12,7 @@
 	<script src="https://use.fontawesome.com/71ebc9e44c.js"></script>
 	<!-- Custom CSS -->
 	<link href="CSS/styles.css" rel="stylesheet">
+	<link href="CSS/social-styles.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -309,7 +309,7 @@
 								<h4>Once you are at the test centre either:</h4>
 								<p><strong>Colwick</strong> (MPTC), Nottingham</p>
 								<p><strong>Chalfont Drive</strong>, Nottingham</p>
-								<p>Your examiner will call your name and ask you to sign a declaration on the test form, whilst they check your Driving Licence, both parts, the counter part and the plastic card ( if you have the new photo i.d.) or if you have the old style paper licence you will be asked to prove photographic i.d. of yourself (valid passport).</p>
+								<p>Your examiner will call your name and ask you to sign a declaration on the test form, whilst they check your Driving Licence, the new photo I.D or if you have the old style paper licence you will be asked to prove photographic i.d. of yourself (valid passport).</p>
 								<p>You may also request to the examiner at the start of your test that you would like your instructor to be present during the test. At the start of your test you will be required to read a number plate at 67ft/ 20.5 mtrs and once you have done this you will be asked 2 <a href="#" target="_blank">Car Safety Questions</a> (show me/tell me).
 								There are a number of test routes that will test all your skills as a driver, and you will be tested on 2 manoeuvres , and possibly be asked to do the Emergency Stop.</p>
 								<p>At the end of your Practical Driving Test the examiner will give you a debriefing on your test after they have given you the result, you may request that your instructor be present to listen in to the debrief also,this can be very useful if your Driving Instructor was not present during your Practical Driving Test, which is always helpful as they can give you more advice or help on anything that your examiner mentions.</p>
@@ -318,8 +318,7 @@
 					</div>
 				</div>
 			</div>
-
 		<?php include('Includes/footer.html'); ?>
-
+		<?php include('Includes/socialicons.html');?>
 	</body>
 </html>
