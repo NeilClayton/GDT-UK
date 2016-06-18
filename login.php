@@ -26,7 +26,7 @@
 			<h1><i class="fa fa-lock"></i>&nbsp;Sign in</h1>
 			<div class="form-group">
 				<label for="usernameInput" class="sr-only">Username:</label>
-				<input type="text" class="form-control" id="usernameInput" name="username" placeholder="Username">
+				<input type="text" class="form-control" id="usernameInput" name="username" placeholder="Username" autofocus>
 			</div>
 			<div class="form-group">
 				<label for="passwordInput" class="sr-only">Password:</label>

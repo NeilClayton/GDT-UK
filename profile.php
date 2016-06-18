@@ -149,7 +149,7 @@
 												<label for="e-town">Town:</label>
 												<input type="text" class="form-control" id="e-town" name="e-town" value="<?php echo $_SESSION['town'];?>">
 											</div>
-											<button type="submit" class="btn btn-success">Submit&nbsp;&nbsp;<i class="fa fa-send" aria-hidden="true"></i></button>
+											<button type="submit" class="btn btn-success" onclick="refreshWindow()">Submit&nbsp;&nbsp;<i class="fa fa-send" aria-hidden="true"></i></button>
 										</form>
 									</div>
 								</div>
@@ -191,10 +191,9 @@
 				</div>
 
 			</div>
-
 		<?php include('Includes/footer.html');?>
 		<?php include('Includes/socialicons.html');?>
-
+		<script src="JS/refresh.js"></script>
 	</body>
 
 </html>
