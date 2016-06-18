@@ -1,10 +1,10 @@
 <?php
     class video{
 
-        public function __construct(){
+        //default constructor
+        public function __construct(){}
 
-        }
-
+        //get all videos associated to the logged-in profile and display them
         function getTaggedVideos($id){
             include_once('Resources/db.php');
             try{
@@ -12,7 +12,7 @@
                 $result = $pdo->prepare($sql);
                 $result->bindParam(":id", $id);
                 $result->execute();
-                
+
                 while($row = $result->fetch(PDO::FETCH_ASSOC)){
                     if ($row > 1) {
                         $date = date("d-m-Y", strtotime($row['v_date']));
@@ -27,7 +27,6 @@
                         echo '<h1>No Videos!</h1>h1>';
                     }
                 }
-
             }
             catch (PDOException $e)
             {
@@ -35,7 +34,6 @@
                 exit;
             }
         }
-
     }
 
 
