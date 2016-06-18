@@ -1,5 +1,5 @@
 <?php
-    /session_start();
+    session_start();
 	date_default_timezone_set("Europe/London");
 	include_once ('Actions/video.php');
 	$vid = new video();
@@ -33,7 +33,7 @@
 					<div class="col-md-8 col-md-offset-2">
 						<img src="Images/user.png" width="200" height="200" class="img-responsive img-thumbnail" alt="profile">
 						<h1><?php echo $_SESSION['firstname'] . " " . $_SESSION['lastname']; ?></h1>
-						<p>Male from <?php echo $_SESSION['town'];?>, Nottingham</p>
+						<p><?php $_SESSION['gender'];?> from <?php echo $_SESSION['town'];?>, Nottingham</p>
 						<p class="slogan">I really like driving.</p>
 					</div>
 				</div>
@@ -120,41 +120,42 @@
 									</div>
 								</div>
 								<button type="button" onclick="overlay()" class="btn btn-info">Edit</button>
-                                    
-                                <!--EDIT OVERLAY-->
-                                <div id="overlay">
-                                    <div class="form-container">
-                                        <!-- PUT NEW FORM HERE -->
+								<div id="overlay">
+									<div class="form-container">
+										<!-- PUT NEW FORM HERE -->
 										<button type="button" onclick="overlay()" class="pull-right"><i class="fa fa-remove" aria-hidden="true"></i></button><br>
-                                        <form method="post" action="#">
+										<form method="post" action="#">
 											<div class="form-group">
 												<label for="e-name">Name:</label>
-												<input type="text" class="form-control" id="e-name" name="e-name">
+												<input type="text" class="form-control" id="e-name" name="e-name" value="<?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname'];?>">
 											</div>
 											<div class="form-group">
 												<label for="e-date">Date:</label>
-												<input type="text" class="form-control" id="e-date" name="e-date">
+												<input type="text" class="form-control" id="e-date" name="e-date" value="<?php echo $_SESSION['dob'] ;?>">
 											</div>
 											<div class="form-group">
 												<label class="radio-inline">
-													<input type="radio" name="male">Male
+													<input type="radio" name="gender" value="Male" <?php if ($_SESSION['gender']=='Male'){echo 'checked';}?>>Male
 												</label>
 												<label class="radio-inline">
-													<input type="radio" name="female">Female
+													<input type="radio" name="gender" value="Female" <?php if ($_SESSION['gender']=='Female'){echo 'checked';}?> >Female
 												</label>
 											</div>
 											<div class="form-group">
 												<label for="e-hobbies">Hobbies:</label>
-												<input type="text" class="form-control" id="e-hobbies" name="e-hobbies">
+												<input type="text" class="form-control" id="e-hobbies" name="e-hobbies" value="<?php echo $_SESSION['hobbies'];?>">
 											</div>
 											<div class="form-group">
 												<label for="e-town">Town:</label>
-												<input type="text" class="form-control" id="e-town" name="e-town">
+												<input type="text" class="form-control" id="e-town" name="e-town" value="<?php echo $_SESSION['town'];?>">
 											</div>
 											<button type="submit" class="btn btn-success">Submit&nbsp;&nbsp;<i class="fa fa-send" aria-hidden="true"></i></button>
 										</form>
-                                    </div>
-                                </div>
+									</div>
+								</div>
+
+
+
 							</div>
 							<div id="lessons" class="tab-pane fade">
 								<h3>Booked Lessons</h3>
@@ -188,8 +189,12 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
+
 		<?php include('Includes/footer.html');?>
 		<?php include('Includes/socialicons.html');?>
+
 	</body>
+
 </html>
