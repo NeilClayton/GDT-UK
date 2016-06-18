@@ -1,8 +1,9 @@
 <?php
     session_start();
-	include_once ('Actions/login_class.php');
 	date_default_timezone_set("Europe/London");
-	
+	include_once ('Actions/video.php');
+	$vid = new video();
+
 ?>
 <!DOCTYPE html>
 <html class="other-html" lang="en">
@@ -145,54 +146,8 @@
 							<section id="videos" class="tab-pane fade">
 								<h3>Videos</h3>
 								<section class="videos">
-									<section class="col-sm-6 col-md-3">
-										<section class="embed-responsive embed-responsive-16by9 user-video">
-											<iframe class="embed-responsive-item" allowfullscreen width="800" height="450" src="https://www.youtube.com/embed/0vrdgDdPApQ"></iframe>
-										</section>
-										<p class="comment">Haha, you almost crashed!<b class="pull-right">27/05/16</b></p>
-									</section>
-									<section class="col-sm-6 col-md-3">
-										<section class="embed-responsive embed-responsive-16by9 user-video">
-											<iframe class="embed-responsive-item" allowfullscreen width="800" height="450" src="https://www.youtube.com/embed/0vrdgDdPApQ"></iframe>
-										</section>
-										<p class="comment">Haha, you almost crashed!<b class="pull-right">27/05/16</b></p>
-									</section>
-									<section class="col-sm-6 col-md-3">
-										<section class="embed-responsive embed-responsive-16by9 user-video">
-											<iframe class="embed-responsive-item" allowfullscreen width="800" height="450" src="https://www.youtube.com/embed/0vrdgDdPApQ"></iframe>
-										</section>
-										<p class="comment">Haha, you almost crashed!<b class="pull-right">27/05/16</b></p>
-									</section>
-									<section class="col-sm-6 col-md-3">
-										<section class="embed-responsive embed-responsive-16by9 user-video">
-											<iframe class="embed-responsive-item" allowfullscreen width="800" height="450" src="https://www.youtube.com/embed/0vrdgDdPApQ"></iframe>
-										</section>
-										<p class="comment">Haha, you almost crashed!<b class="pull-right">27/05/16</b></p>
-									</section>
-									<section class="col-sm-6 col-md-3">
-										<section class="embed-responsive embed-responsive-16by9 user-video">
-											<iframe class="embed-responsive-item" allowfullscreen width="800" height="450" src="https://www.youtube.com/embed/0vrdgDdPApQ"></iframe>
-										</section>
-										<p class="comment">Haha, you almost crashed!<b class="pull-right">27/05/16</b></p>
-									</section>
-									<section class="col-sm-6 col-md-3">
-										<section class="embed-responsive embed-responsive-16by9 user-video">
-											<iframe class="embed-responsive-item" allowfullscreen width="800" height="450" src="https://www.youtube.com/embed/0vrdgDdPApQ"></iframe>
-										</section>
-										<p class="comment">Haha, you almost crashed!<b class="pull-right">27/05/16</b></p>
-									</section>
-									<section class="col-sm-6 col-md-3">
-										<section class="embed-responsive embed-responsive-16by9 user-video">
-											<iframe class="embed-responsive-item" allowfullscreen width="800" height="450" src="https://www.youtube.com/embed/0vrdgDdPApQ"></iframe>
-										</section>
-										<p class="comment">Haha, you almost crashed!<b class="pull-right">27/05/16</b></p>
-									</section>
-									<section class="col-sm-6 col-md-3">
-										<section class="embed-responsive embed-responsive-16by9 user-video">
-											<iframe class="embed-responsive-item" allowfullscreen width="800" height="450" src="https://www.youtube.com/embed/0vrdgDdPApQ"></iframe>
-										</section>
-										<p class="comment">Haha, you almost crashed!<b class="pull-right">27/05/16</b></p>
-									</section>
+									<?php $vid->getTaggedVideos($_SESSION['clientID']);?>
+								</section>
 								</section>
 							</section>
 						</section>
