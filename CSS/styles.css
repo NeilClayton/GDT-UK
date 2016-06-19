@@ -630,7 +630,7 @@ p.comment {
 	margin-bottom:5%;
 }
 /* Profile edit overlay */
-#overlay, #overlay-b, #overlay-u, #overlay-v {
+#overlay, #overlay-b, #overlay-b2, #overlay-u, #overlay-u2, #overlay-v, #overlay-v2 {
 	visibility: hidden;
 	position: fixed;
 	left: 0;
@@ -654,14 +654,13 @@ p.comment {
 	box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
 	padding:10px;
 }
-#overlay button[type=button], #overlay-b button[type=button], #overlay-u button[type=button], #overlay-v button[type=button] {
+.close-window {
 	background:#e84a4a;
 	color:white;
 	border:1px solid #b33030;
 	padding:5px 20px;
 }
-#overlay button[type=submit], #overlay-b button[type=submit], #overlay-u button[type=submit], #overlay-v button[type=submit] {
-	display:block;
+#overlay button[type=submit], #overlay-b button[type=submit], #overlay-u button[type=submit], #overlay-u2 button[type=submit], #overlay-v button[type=submit], #overlay-v2 button[type=submit], #overlay-b2 button[type=submit] {
 	margin:0 auto;
 	padding:10px 40px;
 	font-family: 'Lato', sans-serif;
@@ -734,33 +733,28 @@ p.comment {
     font-size:1.6rem;
     font-weight:normal;
 }
-
 .del-form {
-	position:relative;
-	top:50%;
-	transform:translateY(-50%);
-	margin:0 auto;
-	width:100%;
-	padding:20px 0;
+	padding:15px;
 }
 .del-form p {
-	text-align:center;
+	text-align:center !important;
 	font-family: 'Lato', sans-serif;
 	font-size:1.7rem;
 	margin:0 0 20px 0;
 	padding:0;
+	font-weight:300;
 }
 .del-buttons {
-	width:211px;
-	margin:0 auto;
+	margin:0 0 0 25%;
 }
-.del-buttons button {
-	margin-top:0.5%;
+.del-buttons .btn-primary {
+	margin:0 auto;
 	padding:10px 40px;
 	font-family: 'Lato', sans-serif;
-	font-size:1.5rem;
-	line-height:1.5rem;
+	font-size:1.7rem;
+	line-height:1.7rem;
 	border-radius:0;
+
 }
 /* --- Admin page ends --- */
 
