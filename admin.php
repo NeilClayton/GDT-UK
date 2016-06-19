@@ -9,7 +9,8 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="JS/bootstrap.min.js"></script>
 	<!-- Custom JS -->
-		<script src="JS/refresh.js"></script>
+	<script src="JS/refresh.js"></script>
+	<script src="JS/filter-table.js"></script>
 	<script src="https://use.fontawesome.com/71ebc9e44c.js"></script>
 	<!-- Custom CSS -->
 	<link href="CSS/styles.css" rel="stylesheet">
@@ -82,7 +83,7 @@
 							<div id="man-lessons" class="tab-pane fade">
 								<h2>Booked Lessons</h2>
 								<div class="table-responsive">
-									<table class="table table-hover">
+									<table class="table table-hover" id="bookings">
 										<tr><th>Booking ID</th><th>Full Name</th><th>Date</th><th>Time</th><th>Duration</th><th>Edit</th><th>Delete</th></tr>
 										<tr><td>1</td><td>John Smith</td><td>29/05/2016</td><td>15:55</td><td>1 hour</td><td><button type="button" onclick="overlay_b()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="delWindowB()"><i class="fa fa-remove"></i></button></td></tr>
 										<tr><td>2</td><td>Joe Bloggs</td><td>05/06/2016</td><td>14:40</td><td>2 hours</td><td><button type="button" onclick="overlay_b()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="delWindowB()"><i class="fa fa-remove"></i></button></td></tr>

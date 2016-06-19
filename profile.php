@@ -39,7 +39,7 @@
 				</div>
 				<div class="row profile-2">
 					<div class="col-md-8 col-md-offset-2">
-						<ul class="nav nav-tabs">
+						<ul class="nav nav-pills">
 							<li class="active"><a data-toggle="tab" href="#posts"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;User Feed</a></li>
 							<li><a data-toggle="tab" href="#information"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;Information</a></li>
 							<li><a data-toggle="tab" href="#lessons"><i class="fa fa-book"></i>&nbsp;&nbsp;Lesson bookings</a></li>

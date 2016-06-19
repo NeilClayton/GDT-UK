@@ -39,6 +39,17 @@ body {
 textarea {
 	resize:none;
 }
+.filter-table .quick {
+	margin-left: 0.5em;
+	font-size: 0.8em;
+	text-decoration: none; }
+.filter-table .quick:hover {
+	text-decoration: underline;
+}
+td.alt {
+	background-color: #ececec;
+}
+
 td button, td button:active, td button:visited, td button:focus, td button.focus {
 	background:transparent;
 	border:none;
@@ -676,6 +687,20 @@ p.comment {
 	font-size:3rem;
 	font-weight:normal;
 	margin-bottom:2%;	
+}
+.admin .filter-table {
+	font-family: 'Lato', sans-serif;
+	font-size:1.6rem;
+}
+.admin input[type=search] {
+	border:1px solid #ddd;
+	box-shadow:none;
+	outline:none;
+	padding:2px 5px;
+	margin-left:10px;
+	font-family: 'Lato', sans-serif;
+	font-size:1.6rem;
+	font-weight:300;
 }
 .admin th {
 	font-family: 'Montserrat', sans-serif;
