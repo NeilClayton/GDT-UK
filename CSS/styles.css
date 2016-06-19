@@ -582,9 +582,9 @@ p.about-content {
 	font-weight:300;
 	margin:0;
 }
-#information button {
+#information #edit-self {
 	margin:0;
-	padding:0.6% 4%;
+	padding:7px 40px;
 	font-family: 'Lato', sans-serif;
 	font-weight:300;
 	font-size:1.6rem;
@@ -619,7 +619,7 @@ p.comment {
 	margin-bottom:5%;
 }
 /* Profile edit overlay */
-#overlay {
+#overlay, #overlay-b, #overlay-u, #overlay-v {
 	visibility: hidden;
 	position: fixed;
 	left: 0;
@@ -631,6 +631,9 @@ p.comment {
 	z-index: 100;
 	background-color: rgba(0,0,0,0.5);
 }
+#overlay-b h2, #overlay-u h2, #overlay-v h2 {
+	text-align:center;
+}
 .form-container {
 	width: 500px;
 	margin:15% auto 0 auto;
@@ -640,24 +643,21 @@ p.comment {
 	box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
 	padding:10px;
 }
-#overlay button[type=button] {
+#overlay button[type=button], #overlay-b button[type=button], #overlay-u button[type=button], #overlay-v button[type=button] {
 	background:#e84a4a;
 	color:white;
 	border:1px solid #b33030;
+	padding:5px 20px;
 }
-#overlay form {
-}
-#overlay button[type=submit] {
+#overlay button[type=submit], #overlay-b button[type=submit], #overlay-u button[type=submit], #overlay-v button[type=submit] {
 	display:block;
 	margin:0 auto;
-	margin-top:0.5%;
 	padding:10px 40px;
 	font-family: 'Lato', sans-serif;
 	font-size:1.7rem;
 	line-height:1.7rem;
 	border-radius:0;
 }
-
 /* --- Profile page ends --- */
 
 /* --- Admin page begins --- */
@@ -696,7 +696,7 @@ p.comment {
 	font-size:1.6rem;
 	padding-top:3px;
 }
-.admin form button, .contact form button, .edit-form button {
+.admin form button[type=submit], .contact form button {
 	margin-top:0.5%;
 	padding:12px 55px;
 	font-family: 'Lato', sans-serif;
@@ -709,42 +709,7 @@ p.comment {
     font-size:1.6rem;
     font-weight:normal;
 }
-.edit-form {
-	width:50%;
-	position:relative;
-	top:50%;
-	transform:translateY(-50%);
-	margin:0 auto;
-	background:white;
-	padding:20px 40px;
-}
-.edit-form h1 {
-	font-family: 'Montserrat', sans-serif;
-	font-size:4.5rem;
-	font-weight:normal;
-	text-align:center;
-}
-.edit-form input[type=text], .edit-form input[type=email], .edit-form input[type=text],:focus, .edit-form select  {
-	font-family: 'Lato', sans-serif;
-	font-weight:300;
-	font-size:1.7rem;
-	margin:0;
-	border-radius:0;
-	box-shadow:none;
-	border:1px solid #202020;
-	outline:none;
-	background:none;
-	color:#202020;
-}
-.edit-form .btn-success, .edit-form .btn-success:active, .edit-form .btn-success:visited, .edit-form .btn-success:focus, .edit-form .btn-success:hover, .edit-form .btn-success.focus {
-	margin:20px auto 0 auto;
-	background:#202020;
-	color:white;
-	border:none;
-	border-radius:0;
-	outline:none;
-	box-shadow:none;
-}
+
 .del-form {
 	position:relative;
 	top:50%;

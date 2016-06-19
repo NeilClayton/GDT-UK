@@ -16,7 +16,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="JS/bootstrap.min.js"></script>
 	<!-- Custom JS -->
-    <script src="JS/text-slider.js"></script>
+    <script src="JS/refresh.js"></script>
 	<script src="https://use.fontawesome.com/71ebc9e44c.js"></script>
 	<!-- Custom CSS -->
 	<link href="CSS/styles.css" rel="stylesheet">
@@ -119,7 +119,7 @@
 										<p class="about-content"><?php echo $_SESSION['town']; ?></p>
 									</div>
 								</div>
-								<button type="button" onclick="overlay()" class="btn btn-info">Edit</button>
+								<button type="button" id="edit-self" onclick="overlay()" class="btn btn-info">Edit</button>
 								<div id="overlay">
 									<div class="form-container">
 										<!-- PUT NEW FORM HERE -->
@@ -153,9 +153,6 @@
 										</form>
 									</div>
 								</div>
-
-
-
 							</div>
 							<div id="lessons" class="tab-pane fade">
 								<h3>Booked Lessons</h3>
