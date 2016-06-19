@@ -18,7 +18,7 @@
 	</head>
 	<body>
 		<?php include('Includes/header2.html'); ?>
-		<?php include('Includes/nav.html'); ?>
+		<?php include('Includes/nav.php'); ?>
 			<div class="container-fluid">
 				<div class="row admin">
 					<div class="col-md-8 col-md-offset-2">
