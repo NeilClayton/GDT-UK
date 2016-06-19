@@ -9,6 +9,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="JS/bootstrap.min.js"></script>
 	<!-- Custom JS -->
+		<script src="JS/refresh.js"></script>
 	<script src="https://use.fontawesome.com/71ebc9e44c.js"></script>
 	<!-- Custom CSS -->
 	<link href="CSS/styles.css" rel="stylesheet">
@@ -83,8 +84,8 @@
 								<div class="table-responsive">
 									<table class="table table-hover">
 										<tr><th>Booking ID</th><th>Full Name</th><th>Date</th><th>Time</th><th>Duration</th><th>Edit</th><th>Delete</th></tr>
-										<tr><td>1</td><td>John Smith</td><td>29/05/2016</td><td>15:55</td><td>1 hour</td><td><button type="button" onclick="editWindowB()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="delWindowB()"><i class="fa fa-remove"></i></button></td></tr>
-										<tr><td>2</td><td>Joe Bloggs</td><td>05/06/2016</td><td>14:40</td><td>2 hours</td><td><button type="button" onclick="editWindowB()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="delWindowB()"><i class="fa fa-remove"></i></button></td></tr>
+										<tr><td>1</td><td>John Smith</td><td>29/05/2016</td><td>15:55</td><td>1 hour</td><td><button type="button" onclick="overlay_b()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="delWindowB()"><i class="fa fa-remove"></i></button></td></tr>
+										<tr><td>2</td><td>Joe Bloggs</td><td>05/06/2016</td><td>14:40</td><td>2 hours</td><td><button type="button" onclick="overlay_b()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="delWindowB()"><i class="fa fa-remove"></i></button></td></tr>
 									</table>
 								</div>
 								<div class="table-mobile">
@@ -100,10 +101,45 @@
 										<tr><th>Duration</th></tr>
 										<tr><td>1 hour</td></tr>
 										<tr><th>Edit</th></tr>
-										<tr><td><button type="button" onclick="editWindowB()"><i class="fa fa-pencil"></i></button></td></tr>
+										<tr><td><button type="button" onclick="overlay_b()"><i class="fa fa-pencil"></i></button></td></tr>
 										<tr><th>Delete</th></tr>
-										<tr><td><button type="button" onclick="delWindowB()"><i class="fa fa-remove"></i></button></td></tr>
+										<tr><td><button type="button" onclick="overlay_b()"><i class="fa fa-remove"></i></button></td></tr>
 									</table>
+								</div>
+							</div>
+							<div id="overlay-b">
+								<div class="form-container">
+									<!-- PUT NEW FORM HERE -->
+									<button type="button" onclick="overlay_b()" class="pull-right"><i class="fa fa-remove" aria-hidden="true"></i></button><br>
+									<form method="post" action="#">
+										<h2>Edit Booking</h2>
+										<div class="form-group">
+											<label for="name">Client</label>
+											<select class="form-control" id="name" required>
+												<option value="" selected>...</option>
+												<option value="JoeBloggs">Joe Bloggs</option>
+												<option value="JohnDoe">John Doe</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="b-date">Date</label>
+											<input type="text" class="form-control" id="eb-date" name="e-bdate" required>
+										</div>
+										<div class="form-group">
+											<label for="b-time">Time</label>
+											<input type="text" class="form-control" id="e-btime" name="e-btime" required>
+										</div>
+										<div class="form-group">
+											<label for="duration">Duration</label>
+											<select class="form-control" id="duration" required>
+												<option selected value="">...</option>
+												<option value="#">1 hour</option>
+												<option value="#">1.5 hours</option>
+												<option value="#">2 hours</option>
+											</select>
+										</div>
+										<button type="submit" class="btn btn-success center-block" onclick="refresh()">Edit Booking&nbsp;&nbsp;<i class="fa fa-pencil" aria-hidden="true"></i></button>
+									</form>
 								</div>
 							</div>
 							<div id="add-users" class="tab-pane fade">
@@ -133,8 +169,8 @@
 								<div class="table-responsive">
 									<table class="table table-hover">
 										<tr><th>User ID</th><th>Full name</th><th>Email</th><th>Mobile No</th><th>Address</th><th>Edit</th><th>Delete</th></tr>
-										<tr><td>1</td><td>John Smith</td><td>jsmith@email.com</td><td>123 4567 8901</td><td>1 Dashboard Avenue</td><td><button type="button" onclick="editWindowU()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="delWindowU()"><i class="fa fa-remove"></i></button></td></tr>
-										<tr><td>2</td><td>Joe Bloggs</td><td>jbloggs@email.com</td><td>123 4567 8901</td><td>2 Dashboard Avenue</td><td><button type="button" onclick="editWindowU()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="delWindowU()"><i class="fa fa-remove"></i></button></td></tr>
+										<tr><td>1</td><td>John Smith</td><td>jsmith@email.com</td><td>123 4567 8901</td><td>1 Dashboard Avenue</td><td><button type="button" onclick="overlay_u()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="delWindowU()"><i class="fa fa-remove"></i></button></td></tr>
+										<tr><td>2</td><td>Joe Bloggs</td><td>jbloggs@email.com</td><td>123 4567 8901</td><td>2 Dashboard Avenue</td><td><button type="button" onclick="overlay_u()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="delWindowU()"><i class="fa fa-remove"></i></button></td></tr>
 									</table>
 								</div>
 								<div class="table-mobile">
@@ -150,10 +186,36 @@
 										<tr><th>Address</th></tr>
 										<tr><td>1 Dashboard Avenue</td></tr>
 										<tr><th>Edit</th></tr>
-										<tr><td><button type="button" onclick="editWindowU()"><i class="fa fa-pencil"></i></button></td></tr>
+										<tr><td><button type="button" onclick="overlay_u()"><i class="fa fa-pencil"></i></button></td></tr>
 										<tr><th>Delete</th></tr>
 										<tr><td><button type="button" onclick="delWindowU()"><i class="fa fa-remove"></i></button></td></tr>
 									</table>
+								</div>
+							</div>
+							<div id="overlay-u">
+								<div class="form-container">
+									<!-- PUT NEW FORM HERE -->
+									<button type="button" onclick="overlay_u()" class="pull-right"><i class="fa fa-remove" aria-hidden="true"></i></button><br>
+									<form method="post" action="#">
+										<h2>Edit User</h2>
+										<div class="form-group">
+											<label for="e-uname">Full Name</label>
+											<input type="text" class="form-control" id="e-uname" required>
+										</div>
+										<div class="form-group">
+											<label for="e-uemail">Email</label>
+											<input type="text" class="form-control" id="e-uemail" required>
+										</div>
+										<div class="form-group">
+											<label for="e-umobile">Mobile No</label>
+											<input type="text" class="form-control" id="e-umobile" required>
+										</div>
+										<div class="form-group">
+											<label for="e-uaddress">Address</label>
+											<input type="text" class="form-control" id="e-uaddress" required>
+										</div>
+										<button type="submit" class="btn btn-success center-block" onclick="refresh()">Edit User&nbsp;&nbsp;<i class="fa fa-pencil" aria-hidden="true"></i></button>
+									</form>
 								</div>
 							</div>
 							<div id="add-videos" class="tab-pane fade">
@@ -164,7 +226,7 @@
 										<input type="text" class="form-control" id="v-title" name="v-title" placeholder="Enter a title" required>
 									</div>
 									<div class="form-group">
-										<label for="v-code">Email</label>
+										<label for="v-code">Video code</label>
 										<input type="text" class="form-control" id="v-code" name="v-code" placeholder="Enter the video code" required>
 									</div>
 									<div class="form-group">
@@ -183,8 +245,8 @@
 								<div class="table-responsive">
 									<table class="table table-hover">
 										<tr><th>Video ID</th><th>Title</th><th>Code</th><th>Client</th><th>Date</th><th>Edit</th><th>Delete</th></tr>
-										<tr><td>1</td><td>John's lesson</td><td>345JJ34K7SD</td><td>John Smith</td><td>29/05/2016</td><td><button type="button" onclick="editWindowV()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="delWindowV()"><i class="fa fa-remove"></i></button></td></tr>
-										<tr><td>2</td><td>Joe's lesson</td><td>345JJ34K7SD</td><td>Joe Bloggs</td><td>29/05/2016</td><td><button type="button" onclick="editWindowV()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="delWindowV()"><i class="fa fa-remove"></i></button></td></tr>
+										<tr><td>1</td><td>John's lesson</td><td>345JJ34K7SD</td><td>John Smith</td><td>29/05/2016</td><td><button type="button" onclick="overlay_v()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="delWindowV()"><i class="fa fa-remove"></i></button></td></tr>
+										<tr><td>2</td><td>Joe's lesson</td><td>345JJ34K7SD</td><td>Joe Bloggs</td><td>29/05/2016</td><td><button type="button" onclick="overlay_v()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="delWindowV()"><i class="fa fa-remove"></i></button></td></tr>
 									</table>
 								</div>
 								<div class="table-mobile">
@@ -200,10 +262,36 @@
 										<tr><th>Date</th></tr>
 										<tr><td>29/05/2016</td></tr>
 										<tr><th>Edit</th></tr>
-										<tr><td><button type="button" onclick="editWindowV()"><i class="fa fa-pencil"></i></button></td></tr>
+										<tr><td><button type="button" onclick="overlay_v()"><i class="fa fa-pencil"></i></button></td></tr>
 										<tr><th>Delete</th></tr>
 										<tr><td><button type="button" onclick="delWindowV()"><i class="fa fa-remove"></i></button></td></tr>
 									</table>
+								</div>
+							</div>
+							<div id="overlay-v">
+								<div class="form-container">
+									<!-- PUT NEW FORM HERE -->
+									<button type="button" onclick="overlay_v()" class="pull-right"><i class="fa fa-remove" aria-hidden="true"></i></button><br>
+									<form method="post" action="#">
+										<h2>Edit Video</h2>
+										<div class="form-group">
+											<label for="e-vtitle">Title</label>
+											<input type="text" class="form-control" id="e-vtitle" name="e-vtitle" required>
+										</div>
+										<div class="form-group">
+											<label for="e-vcode">Video code</label>
+											<input type="text" class="form-control" id="e-vcode" name="e-vcode" required>
+										</div>
+										<div class="form-group">
+											<label for="e-vclient">Client</label>
+											<select class="form-control" id="v-client" name="e-vclient" required>
+												<option value="" selected>...</option>
+												<option value="JoeBloggs">Joe Bloggs</option>
+												<option value="JohnDoe">John Doe</option>
+											</select>
+										</div>
+										<button type="submit" class="btn btn-success center-block" onclick="refresh()">Edit Video&nbsp;&nbsp;<i class="fa fa-pencil" aria-hidden="true"></i></button>
+									</form>
 								</div>
 							</div>
 						</div>
@@ -212,6 +300,5 @@
 			</div>
 		<?php include('Includes/footer.html'); ?>
 		<script src="JS/fixed-window.js"></script>
-		<script src="JS/refresh.js"></script>
 	</body>
 </html>
