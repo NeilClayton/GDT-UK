@@ -20,7 +20,7 @@
 	</head>
 	<body>
 		<?php include('Includes/header.html');?>
-		<?php include('Includes/nav.html');?>
+		<?php include('Includes/nav.php');?>
 			<div class="container-fluid">
 				<div class="row introduction" id="intro">
 					<h2 class="sr-only">What GDT is</h2>

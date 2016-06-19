@@ -19,7 +19,7 @@
 	</head>
 	<body>
 		<?php include('Includes/header2.html'); ?>
-		<?php include('Includes/nav.html'); ?>
+		<?php include('Includes/nav.php'); ?>
 			<div class="container-fluid">
 				<div class="row introduction">
 					<div class="col-md-10 col-md-offset-1">

@@ -20,7 +20,7 @@
 	<body>
 
 		<?php include('Includes/header2.html'); ?>
-		<?php include('Includes/nav.html'); ?>
+		<?php include('Includes/nav.php'); ?>
 
 			<section class="container-fluid">
 				<section class="row introduction">
