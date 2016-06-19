@@ -151,7 +151,7 @@
 										<p>Are you sure you want to delete this booking?</p>
 										<div class="del-buttons">
 											<button type="submit" class="btn btn-default" onclick="refreshWindow()">Yes</button>
-											<button type="button" class="btn btn-primary no-button" onclick="closeWindow()">No</button>
+											<button type="button" class="btn btn-primary no-button" onclick="overlay_b2()">No</button>
 										</div>
 									</form>
 								</div>
@@ -240,7 +240,7 @@
 										<p>Are you sure you want to delete this user?</p>
 										<div class="del-buttons">
 											<button type="submit" class="btn btn-default" onclick="refreshWindow()">Yes</button>
-											<button type="button" class="btn btn-primary no-button" onclick="closeWindow()">No</button>
+											<button type="button" class="btn btn-primary no-button" onclick="overlay_u2()">No</button>
 										</div>
 									</form>
 								</div>
@@ -329,7 +329,7 @@
 										<p>Are you sure you want to delete this video?</p>
 										<div class="del-buttons">
 											<button type="submit" class="btn btn-default" onclick="refreshWindow()">Yes</button>
-											<button type="button" class="btn btn-primary no-button" onclick="closeWindow()">No</button>
+											<button type="button" class="btn btn-primary no-button" onclick="overlay_v2()">No</button>
 										</div>
 									</form>
 								</div>
