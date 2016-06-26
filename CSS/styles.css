@@ -642,7 +642,7 @@ p.comment {
 	z-index: 100;
 	background-color: rgba(0,0,0,0.5);
 }
-#overlay-b h2, #overlay-u h2, #overlay-v h2 {
+#overlay-b h2, #overlay-u h2, #overlay-v h2, #calendar h2 {
 	text-align:center;
 }
 .form-container {
@@ -668,6 +668,7 @@ p.comment {
 	line-height:1.7rem;
 	border-radius:0;
 }
+
 /* --- Profile page ends --- */
 
 /* --- Admin page begins --- */

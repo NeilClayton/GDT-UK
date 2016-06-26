@@ -82,6 +82,7 @@
 							</div>
 							<div id="man-lessons" class="tab-pane fade">
 								<h2>Booked Lessons</h2>
+								<a role="button" class="btn btn-info" href="calendar.php" target="_blank">View Calendar</a>
 								<div class="table-responsive">
 									<table class="table table-hover" id="bookings">
 										<tr><th>Booking ID</th><th>Full Name</th><th>Date</th><th>Time</th><th>Duration</th><th>Edit</th><th>Delete</th></tr>
