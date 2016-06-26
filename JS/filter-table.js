@@ -139,7 +139,7 @@
                 inputType:         'search',            // tag name of the filter input tag
                 label:             'Search:',           // text to precede the filter input tag
                 minChars:          1,                   // filter only when at least this number of characters are in the filter input field
-                minRows:           8,                   // don't show the filter on tables with at least this number of rows
+                minRows:           1,                   // don't show the filter on tables with at least this number of rows
                 placeholder:       'Enter a search term', // HTML5 placeholder text for the filter field
                 preventReturnKey:  true,                // prevent the return key in the filter input field from trigger form submits
                 quickList:         [],                  // list of phrases to quick fill the search

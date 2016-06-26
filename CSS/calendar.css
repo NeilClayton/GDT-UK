@@ -1,0 +1,268 @@
+/* --- Calendar --- */
+.calendar {
+	background:white;
+	padding:30px 0;
+}
+#calendar {
+	text-align:center;
+	border-spacing:0;
+}
+#calendar th {
+	text-align:center;
+	background-color:transparent;
+	font-family: 'Montserrat', sans-serif;
+	font-size:2.25rem;
+	color:#333;
+	width:86px;
+	padding:5px 0;
+}
+#calendar #week {
+	color:white;
+	background:transparent;
+}
+#calendar #week a {
+	font-size:34px;
+	text-decoration:none;
+	padding:0;
+}
+#calendar .fa-chevron-left, #calendar .fa-chevron-right {
+	font-size:1.5rem;
+	color:#333;
+}
+#calendar #center_date {
+	font-family: 'Montserrat', sans-serif;
+	font-size:2.25rem;
+	margin:0 auto;
+	font-weight:bold;
+	color:#333;
+}
+.green {
+	text-decoration:none;
+	margin:0;
+	padding:0;
+	width:86px;
+	height:86px;
+	background:green;
+	line-height: 86px;
+	font-family: 'Lato', sans-serif;
+	border:1px solid white;
+	font-size:2rem;
+}
+.green a, .part_booked a, .fully_booked a {
+	color:white;
+}
+.green  span {
+	display:none;
+}
+.green  span a:hover  {
+	display: block;
+	position: absolute;  width: 25px;
+	padding: 5px; margin: 10px; z-index: 100;
+	color: #AAA; background: black;
+	font: 10px Verdana, sans-serif; text-align: center;
+}
+.closed {
+	text-decoration:none;
+	color:#FFFFFF;
+	margin:0;
+	padding:0;
+	width:86px;
+	height:86px;
+	background:red;
+	line-height: 86px;
+	font-size:2rem;
+	border:1px solid white;
+}
+.closed .fa, .unavailable .fa {
+	line-height: 86px;
+}
+.unavailable {
+	text-decoration:none;
+	color:#FFFFFF;
+	margin:0;
+	padding:0;
+	width:86px;
+	height:86px;
+	background:#a9a9a9;
+	line-height: 86px;
+	font-size:2rem;
+	border:1px solid white;
+}
+.past {
+	text-decoration:none;
+	color:#FFFFFF;
+	margin:0;
+	padding:0;
+	width:86px;
+	height:86px;
+	background:#797979;
+	line-height: 86px;
+	font-size:2rem;
+	border:1px solid white;
+}
+.part_booked {
+	text-decoration:none;
+	color:#FFFFFF;
+	margin:0;
+	padding:0;
+	width:86px;
+	height:86px;
+	background:#f29503;
+	line-height: 86px;
+	font-size:2rem;
+	border:1px solid white;
+}
+.fully_booked{
+	text-decoration:none;
+	color:#FFFFFF;
+	margin:0;
+	padding:0;
+	width:86px;
+	height:86px;
+	background: url("../images/block_fully_booked.gif") no-repeat;
+	text-align: center;
+	line-height: 86px;
+	font-size:2rem;
+	border:1px solid white;
+}
+
+/* --- Booking list --- */
+#outer_booking {
+	padding:0;
+	text-align:center;
+	margin:0;
+	width:100%;
+	background-color:transparent;
+}
+#outer_booking table {
+	margin:0 auto;
+	border-collapse:collapse;
+}
+#outer_booking #booking th {
+	width:300px;
+	text-align:center;
+	font-family: 'Montserrat', sans-serif;
+	font-size:1.7rem;
+	padding:10px 0;
+	color:#333;
+	border:1px solid #333;
+}
+#outer_booking #booking td {
+	border:1px solid #333;
+	padding:5px;
+	font-family: 'Lato', sans-serif;
+	text-align:center;
+}
+#outer_booking h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size:2.5rem;
+	color:#333;
+	margin-top:0;
+}
+#outer_booking p {
+	font-family: 'Lato', sans-serif;
+	font-size:1.7rem;
+	color:#333;
+}
+#outer_booking span {
+	color:red;
+}
+#outer_price {width:200px; float:left; height:22px; margin-top:6px;}
+#outer_basket {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding:0;
+	margin:0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.5);
+}
+.basket-container {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 550px;
+	margin: 0 auto;
+	background: white;
+	padding: 20px;
+	-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+}
+#outer_basket h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size:2.5rem;
+	color:#595858;
+	margin-top:0;
+}
+
+#outer_basket form button[type=submit] {
+	margin-top:0.5%;
+	padding:10px 30px;
+	font-family: 'Lato', sans-serif;
+	font-size:1.7rem;
+	line-height:1.7rem;
+	border-radius:0;
+}
+#outer_basket button[type=submit] .fa {
+	margin-left:10px;
+}
+#outer_basket h6 {
+	font-family: 'Lato', sans-serif;
+	font-size:1.7rem;
+}
+#outer_basket #selected_slots {width:130px; min-height:20px; font-size:14px; float:left; line-height:1.6em; color:#666666; font-family: 'Droid Serif',Georgia,Times,serif}
+
+#basket_details {float:left; width:200px; height:250px; padding-left:60px; font-family: 'Droid Serif',Georgia,Times,serif; font-size:13px; color:#666666}
+#basket_details .text_box {width:200px; margin-bottom:10px}
+#basket_details #currency {font-family:arial; float:left; color:purple; font-weight:bold; font-size:23px; padding:0 0 0 0}
+#basket_details #total {font-family:arial; width:100px; height:22px; float:left; color:purple; font-weight:bold; font-size:23px; background-color:transparent; border:none}
+
+#btn_book {margin:10px 0 0 320px}
+
+#key {margin-top:25px; width:275px; height:60px; border:#CCCCCC 1px solid; font-family:arial; color:#666666; font-size:11px}
+#key td {text-align:center; width:45px}
+#key_1 {background-color:#d80000}
+#key_2 {background-color:#a295dd}
+#key_3 {background-color:#d18800}
+#key_4 {background-color:#019500}
+#key_5 {background-color:#948e8e}
+
+#book {background:transparent url("../images/book.png") no-repeat; width:135px; height:32px; border:none; margin-top:5px}
+#book:hover {background:transparent url("../images/book_mo.png"); }
+#selected_date {width:288px; height:20px; background-color:#dfeefa; border:#4085d1 1px solid; font-family:arial; font-size:14px; padding:4px 0 4px 10px; color:#4085d1; margin:20px 0 10px 0}
+
+.info, .error, .success {  
+	width:250px;    
+    margin:20px 0 0 0;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;    
+    font-size:12px; font-weight:bold;
+    background-position: 10px center;
+    font-family:Arial, Helvetica, sans-serif; 
+    line-height:1.2em;
+}
+
+.error, .error a {
+    color: #D8000C;
+    border:#cf0023 1px solid;
+    background-color: #FFBABA;
+    background-image: url('images/knobs/error.png');
+}
+
+.info, .info a {
+    color: #00529B;
+    border:#294b99 1px solid;
+    background-image:url('images/knobs/info.png');
+    background-color:#c1e4f8
+}
+
+.success, .success a {
+    color: #4F8A10;
+    border:#528f11 1px solid;
+    background-color: #DFF2BF;
+    background-image:url('images/knobs/success.png');
+}*/
