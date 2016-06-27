@@ -1,4 +1,6 @@
 <?php
+;
+
     class video{
 
         //default constructor
@@ -6,10 +8,14 @@
 
         //get all videos associated to the logged-in profile and display them
         function getTaggedVideos($id){
-            include_once('Resources/db.php');
+
             try{
+
+                include_once('Resources/db.php');
+                $db = new db();
+
                 $sql = "SELECT v_link, v_comment, v_date FROM videos WHERE client_id = :id ORDER BY v_date DESC";
-                $result = $pdo->prepare($sql);
+                $result = $db->pdo->prepare($sql);
                 $result->bindParam(":id", $id);
                 $result->execute();
 
@@ -33,6 +39,8 @@
                 echo '<h1>Oops something went wrong, please try again';
                 exit;
             }
+
+
         }
     }
 
