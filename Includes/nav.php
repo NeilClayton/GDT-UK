@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    //session_start(); duplicated start on profile page
 ?>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">

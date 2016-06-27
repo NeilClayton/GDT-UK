@@ -26,8 +26,9 @@
             }
 
             try {
+                $db = new db();
                 $sql = "SELECT * FROM user_list LEFT JOIN client_list ON client_list.client_id = user_list.client_id WHERE username = :username";
-                $result = $pdo->prepare($sql);
+                $result = $db->pdo->prepare($sql);
 
                 $result->bindParam(":username", $thisuser);
                 $result->execute();

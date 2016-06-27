@@ -2,8 +2,10 @@
     session_start();
 	date_default_timezone_set("Europe/London");
 	include_once ('Actions/video.php');
+	include_once ('Actions/messages.php');
+	
 	$vid = new video();
-
+	$messages = new messages();
 ?>
 <!DOCTYPE html>
 <html class="other-html" lang="en">
@@ -15,9 +17,12 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="JS/bootstrap.min.js"></script>
+	<!-- Latest JQuery -->
+	<script src="JS/jquery.js"></script>
 	<!-- Custom JS -->
     <script src="JS/refresh.js"></script>
 	<script src="https://use.fontawesome.com/71ebc9e44c.js"></script>
+	<script src="JS/messagePosting.js"></script>
 	<!-- Custom CSS -->
 	<link href="CSS/styles.css" rel="stylesheet">
 	<link href="CSS/social-styles.css" rel="stylesheet">
@@ -31,7 +36,7 @@
 			<div class="container-fluid">
 				<div class="row profile-1">
 					<div class="col-md-8 col-md-offset-2">
-						<img src="Images/user.png" width="200" height="200" class="img-responsive img-thumbnail" alt="profile">
+						<img src="http://graph.facebook.com/1354146691/picture?type=large" width="200" height="200" class="img-responsive img-thumbnail" alt="profile">
 						<h1><?php echo $_SESSION['firstname'] . " " . $_SESSION['lastname']; ?></h1>
 						<p><?php $_SESSION['gender'];?> from <?php echo $_SESSION['town'];?>, Nottingham</p>
 						<p class="slogan">I really like driving.</p>
@@ -53,42 +58,15 @@
 										<button type="submit" class="btn btn-success pull-right">Post&nbsp;&nbsp;<i class="fa fa-send"></i></button>
 									<form>
 								</div>
-								<div class="user-post">
-									<div class="user-details">
-										<img src="Images/user.png" width="75" height="75" class="img-responsive img-circle" alt="profile">
-										<h2><a href="#">John Smith</a><b class="pull-right datetime">16:37 27/05/16</b></h2>
-									</div>
-									<div class="user-message">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec odio vitae dui sagittis posuere a id est. Sed iaculis magna orci, a posuere arcu finibus id.</p>
-									</div>
-										<div class="user-replies">
-											<div class="user-reply">
-												<div class="reply-details">
-													<img src="Images/user.png" width="50" height="50" class="img-responsive img-circle" alt="profile">
-													<h4><a href="#">Joe Bloggs</a><b class="pull-right r-datetime">16:39 27/05/16</b></h4>
-												</div>
-												<div class="reply-message">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec odio vitae dui sagittis posuere a id est. Sed iaculis magna orci, a posuere arcu finibus id.</p>
-												</div>
-											</div>
-											<div class="user-reply">
-												<div class="reply-details">
-													<img src="Images/user.png" width="50" height="50" class="img-responsive img-circle" alt="profile">
-													<h4><a href="#">John Smith</a><b class="pull-right r-datetime">12:00 28/05/16</b></h4>
-												</div>
-												<div class="reply-message">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec odio vitae dui sagittis posuere a id est. Sed iaculis magna orci, a posuere arcu finibus id.</p>
-												</div>
-											</div>
-											<div class="new-reply">
-												<form method="post" action="#">
-													<textarea class="form-control" id="reply-message" rows="3" cols="100" maxlength="600" required placeholder="Write a reply..."></textarea>
-													<button type="submit" class="btn btn-success pull-right">Reply&nbsp;&nbsp;<i class="fa fa-comments"></i></button>
-												</form>
-											</div>
-										</div>
-								</div>
+								
+								<?php
+								$id = $_SESSION['clientID'];
+								$messages->getMessages($id)?>
+
+									
 							</div>
+
+
 							<div id="information" class="tab-pane fade">
 								<h3>Information</h3>
 								<div class="about-details">
@@ -98,7 +76,7 @@
 									</div>
 									<div class="about-detail">
 										<p class="about-title">Age:</p>
-										<p class="about-content"><?php list($day,$month,$year) = explode("/",$_SESSION['dob']);
+										<p class="about-content"><?php list($day,$month,$year) = explode("/",$_SESSION['DOB']);
 											$year_diff  = date("Y") - $year;
 											$month_diff = date("m") - $month;
 											$day_diff   = date("d") - $day;
@@ -186,7 +164,6 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 		<?php include('Includes/footer.html');?>
 		<?php include('Includes/socialicons.html');?>
