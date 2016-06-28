@@ -3,13 +3,11 @@
  */
 $(document).on("click", "#insertComment", function () {
     var name = this.name;
-    var textareaname = "comment"+name;
-    var text = $('textarea#'+textareaname).val();
-    alert(text);
-    $.ajax({
-        url: 'Actions/messages.php',
-        type: 'post',
-        data: {action: name, param: text},
-        success: function (output) {
-            alert('success');}
-})});
+    var textareaname = "comment" + name;
+    var text = $('textarea#' + textareaname).val();
+    $.get('Actions/messages.php', {id:name, msg:text}, function(data){
+        $('#posts').load(location.href + ' #posts');
+
+    })
+    
+});
