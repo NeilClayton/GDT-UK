@@ -1,6 +1,6 @@
 <?php
 
-include_once ('Resources/INIT.php');
+//include_once ('Resources/INIT.php');
 
 class db{
 

@@ -6,6 +6,8 @@
 	
 	$vid = new video();
 	$messages = new messages();
+
+	
 ?>
 <!DOCTYPE html>
 <html class="other-html" lang="en">
@@ -53,7 +55,7 @@
 						<div class="tab-content">
 							<div id="posts" class="tab-pane fade in active">
 								<div class="new-post">
-									<form method="post" action="#">
+									<form method="post" action="">
 										<textarea class="form-control" id="post-message" rows="5" cols="100" maxlength="600" required placeholder="Write a message..."></textarea>
 										<button type="submit" class="btn btn-success pull-right">Post&nbsp;&nbsp;<i class="fa fa-send"></i></button>
 									<form>

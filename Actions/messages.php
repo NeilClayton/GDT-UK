@@ -1,16 +1,20 @@
 <?php
-
+session_start();
 /**
  * Created by PhpStorm.
  * User: Neil
  * Date: 27/06/2016
  * Time: 09:25
  */
-if(isset($_POST['name'])){
-    $id = $_POST['name'];
-    $text = $_POST['param'];
-    //variables passed from jquery add to database
+if(isset($_GET['msg'])){
+    $mess = new messages();
+    $conversationID = filter_var($_GET['id'], FILTER_SANITIZE_STRING);
+    $msgText = filter_var($_GET['msg'], FILTER_SANITIZE_STRING);
+    $mess->addMessage($conversationID,$msgText);
+
 }
+
+
 
 class messages
 {
@@ -34,7 +38,7 @@ class messages
                 if ($row > 1) {
                     $date = date("h:i d-m-Y", strtotime($row['m_date']));
                     if ($messageIndex == 0 && $conversationIndex == $row['conv_id']) {
-                        echo '<div class="user-post">';
+                        echo '<div "class="user-post">';
                         echo '<div class="user-details">';
                         echo '<img src="' . $row['image'] . '" width="75" height="75" class="img-responsive img-circle" alt="profile">';
                         echo '<h2><a href="#">' . $row['firstname'] . " " . $row['lastname'] . '</a><b class="pull-right datetime">' . $date . '</b></h2>';
@@ -46,7 +50,6 @@ class messages
                         $messageIndex++;
                         $firstMessagePrinted++;
                     } elseif ($messageIndex != 0 && $conversationIndex == $row['conv_id']) {
-
                         echo '<div class="user-reply">';
                         echo '<div class="reply-details">';
                         echo '<img src="' . $row['image'] . '" width="50" height="50" class="img-responsive img-circle" alt="profile">';
@@ -56,8 +59,6 @@ class messages
                         echo '<p>' . $row['message'] . '</p>';
                         echo '</div>';
                         echo '</div>';
-
-
                         $messageIndex++;
                     } elseif ($conversationIndex != $row['conv_id']) {
                         if ($firstMessagePrinted > 0) {
@@ -87,10 +88,7 @@ class messages
                     } else {
                         echo 'There are no current conversations';
                     }
-
-
                 }
-
             }
             
             echo '<div class="new-reply">';
@@ -102,14 +100,32 @@ class messages
             echo '</div>';
             echo '</div>';
             echo '</div>';
-
         }
         catch (PDOException $e)
         {
             echo '<h1>Oops something went wrong, please try again';
             exit;
         }
+    }
+    
+    public function addMessage($id, $msg)
+    {
 
+        try {
+            include_once('../Resources/db.php');
+
+            $db = new db();
+            $sql = 'INSERT INTO messages (sender_id, to_id, message, conv_id) VALUES (:clientID, "1" , :text, :id)';
+            $result = $db->pdo->prepare($sql);
+            $result->bindParam(":clientID", $_SESSION['clientID']);
+            $result->bindParam(":text", $msg);
+            $result->bindParam(":id", $id);
+            $result->execute();
+            
+        }
+        catch (PDOException $e){
+            echo 'Oops!, something is not quite working as it should';
+        }
     }
 }
 
