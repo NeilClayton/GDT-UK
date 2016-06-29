@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() == PHP_SESSION_NONE){
+    session_start();
+};
 /**
  * Created by PhpStorm.
  * User: Neil
@@ -19,7 +21,9 @@ if(isset($_GET['msg'])){
 class messages
 {
 
+
     public function __construct(){
+
 
     }
 
@@ -27,7 +31,7 @@ class messages
         include_once('Resources/db.php');
         $db = new db();
         try{
-            $sql = "SELECT sender_id, to_id, message, m_date, firstname, lastname, image, conv_id FROM messages LEFT JOIN client_list ON messages.sender_id=client_list.client_id WHERE sender_id = :id OR to_id = :id ORDER BY m_date ASC";
+            $sql = "SELECT sender_id, to_id, message, m_date, firstname, lastname, image, conv_id FROM messages LEFT JOIN client_list ON messages.sender_id=client_list.client_id WHERE sender_id = :id OR to_id = :id ORDER BY conv_id DESC, m_date ASC";
             $result = $db->pdo->prepare($sql);
             $result->bindParam(":id", $id);
             $result->execute();
