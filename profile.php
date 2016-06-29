@@ -57,18 +57,18 @@
 								<div class="new-post">
 									<form method="post" action="">
 										<textarea class="form-control" id="post-message" rows="5" cols="100" maxlength="600" required placeholder="Write a message..."></textarea>
-										<button type="submit" class="btn btn-success pull-right">Post&nbsp;&nbsp;<i class="fa fa-send"></i></button>
-									<form>
-								</div>
+										<button type="submit" id="newMessageFeed" class="btn btn-success pull-right">Post&nbsp;&nbsp;<i class="fa fa-send"></i></button>
+									</form>
+
 								
 								<?php
 								$id = $_SESSION['clientID'];
 								$messages->getMessages($id)?>
 
-									
+								</div>
 							</div>
 
-
+						
 							<div id="information" class="tab-pane fade">
 								<h3>Information</h3>
 								<div class="about-details">
@@ -104,21 +104,26 @@
 									<div class="form-container">
 										<!-- PUT NEW FORM HERE -->
 										<button type="button" onclick="overlay()" class="pull-right"><i class="fa fa-remove" aria-hidden="true"></i></button><br>
-										<form method="post" action="#">
+										<form method="post" action="Actions/learner.php">
 											<div class="form-group">
-												<label for="e-name">Name:</label>
-												<input type="text" class="form-control" id="e-name" name="e-name" value="<?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname'];?>">
+												<label for="e-firstname">First Name:</label>
+												<input type="text" class="form-control" id="e-firstname" name="e-firstname" value="<?php echo $_SESSION['firstname'];?>">
+											</div>
+											<div class="form-group">
+												<label for="e-lastname">Last Name:</label>
+												<input type="text" class="form-control" id="e-lastname" name="e-lastname" value="<?php echo  $_SESSION['lastname'];?>">
 											</div>
 											<div class="form-group">
 												<label for="e-date">Date:</label>
-												<input type="text" class="form-control" id="e-date" name="e-date" value="<?php echo $_SESSION['dob'] ;?>">
+
+												<input type="date" class="form-control" id="e-date" name="e-date" value="<?php list($day,$month,$year) = explode("/",$_SESSION['DOB']); echo $year . "-" . $month . "-" . $day ?>">
 											</div>
 											<div class="form-group">
 												<label class="radio-inline">
-													<input type="radio" name="gender" value="Male" <?php if ($_SESSION['gender']=='Male'){echo 'checked';}?>>Male
+													<input type="radio" name="e-gender" value="Male" <?php if ($_SESSION['gender']=='Male'){echo 'checked';}?>>Male
 												</label>
 												<label class="radio-inline">
-													<input type="radio" name="gender" value="Female" <?php if ($_SESSION['gender']=='Female'){echo 'checked';}?> >Female
+													<input type="radio" name="e-gender" value="Female" <?php if ($_SESSION['gender']=='Female'){echo 'checked';}?> >Female
 												</label>
 											</div>
 											<div class="form-group">
