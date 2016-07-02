@@ -1,16 +1,16 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html class="other-html" lang="en">
 	<head>
 	<meta charset="UTF-8">
 	<title>GDT: Nottingham Driving School - Driving Lessons UK</title>
-	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="CSS/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
 	<script src="JS/bootstrap.min.js"></script>
-	<!-- Custom JS -->
 	<script src="https://use.fontawesome.com/71ebc9e44c.js"></script>
-	<!-- Custom CSS -->
 	<link href="CSS/styles.css" rel="stylesheet">
 	<link href="CSS/social-styles.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -26,11 +26,11 @@
 						<h3>Contact GDT-UK</h3>
 						<form>
 							<div class="form-group">
-								<label for="name">Full Name</label>
+								<label for="name">Full Name<b class="asterisk">*</b></label>
 								<input type="text" class="form-control" id="name" placeholder="Who are you?" required>
 							</div>
 							<div class="form-group">
-								<label for="email">Email</label>
+								<label for="email">Email<b class="asterisk">*</b></label>
 								<input type="email" id="email" class="form-control" placeholder="Please enter your e-mail address"  required>
 							</div>
 							<div class="form-group">
@@ -38,20 +38,14 @@
 								<input type="text" id="mobile-number" class="form-control" placeholder="Please enter your mobile number">
 							</div>
 							<div class="form-group">
-								<label for="subject">Subject</label>
-								<input type="text" id="subject" class="form-control" placeholder="Enter a subject...">
+								<label for="subject">Subject<b class="asterisk">*</b></label>
+								<input type="text" id="subject" class="form-control" placeholder="Enter a subject..." required>
 							</div>
 							<div class="form-group">
-								<label for="message">Message</label>
+								<label for="message">Message<b class="asterisk">*</b></label>
 								<textarea class="form-control" id="message" rows="7" cols="100" maxlength="600" required placeholder="Please enter your message"></textarea>
-								<p id="countleft"></p><br>
 							</div>
-							<div class="checkbox">							
-								<label>
-								<input type="checkbox" required>I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a>
-								</label>
-							</div>
-							<button type="submit" class="btn btn-success">Submit&nbsp;&nbsp;<i class="fa fa-send" aria-hidden="true"></i></button>
+							<button type="submit" class="btn btn-success" name="submit">Submit<i class="fa fa-send" aria-hidden="true"></i></button>
 						</form>
 					</div>
 				</div>

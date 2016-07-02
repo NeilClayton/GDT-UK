@@ -1,5 +1,3 @@
-<script src="../JS/calendar.js"></script>
-
 <?php
 date_default_timezone_set('Europe/London');
 	
@@ -8,24 +6,24 @@ class booking_diary {
 
 // Mysqli connection
 function __construct($link) {
-    $this->link = $link;	
+    $this->link = $link;
 }
 
 // Settings you can change:
 
 
 // Time Related Variables
-public $booking_start_time          = "09:30";			// The time of the first slot in 24 hour H:M format  
-public $booking_end_time            = "19:00"; 			// The time of the last slot in 24 hour H:M format  
+public $booking_start_time          = "09:30";			// The time of the first slot in 24 hour H:M format
+public $booking_end_time            = "19:00"; 			// The time of the last slot in 24 hour H:M format
 public $booking_frequency           = 15;   			// The slot frequency per hour, expressed in minutes.
 
 // Day Related Variables
 
-public $day_format					= 1;				// Day format of the table header.  Possible values (1, 2, 3)   
+public $day_format					= 1;				// Day format of the table header.  Possible values (1, 2, 3)
 															// 1 = Show First digit, eg: "M"
 															// 2 = Show First 3 letters, eg: "Mon"
 															// 3 = Full Day, eg: "Monday"
-	
+
 public $day_closed					= array("Sunday", "Monday"); 	// If you don't want any 'closed' days, remove the day so it becomes: = array();
 public $day_closed_text				= "<i class='fa fa-lock' aria-hidden='true'></i>"; 		// If you don't want any any 'closed' remove the text so it becomes: = "";
 
@@ -46,84 +44,84 @@ public $day, $month, $year, $selected_date, $back, $back_month, $back_year, $for
 function make_calendar($selected_date, $back, $forward, $day, $month, $year) {
 
     // $day, $month and $year are the $_GET variables in the URL
-    $this->day = $day;    
+    $this->day = $day;
     $this->month = $month;
     $this->year = $year;
-    
-	// $back and $forward are Unix Timestamps of the previous / next month, used to give the back arrow the correct month and year 
-    $this->selected_date = $selected_date;       
+
+	// $back and $forward are Unix Timestamps of the previous / next month, used to give the back arrow the correct month and year
+    $this->selected_date = $selected_date;
     $this->back = $back;
     $this->back_month = date("m", $back);
     $this->back_year = date("Y", $back); // Minus one month back arrow
-    
+
     $this->forward = $forward;
     $this->forward_month = date("m", $forward);
-    $this->forward_year = date("Y", $forward); // Add one month forward arrow    
-    
+    $this->forward_year = date("Y", $forward); // Add one month forward arrow
+
     // Make the booking array
     $this->make_booking_array($year, $month);
-    
+
 }
 
 
-function make_booking_array($year, $month, $j = 0) { 
+function make_booking_array($year, $month, $j = 0) {
 
-	$stmt = $this->link->prepare("SELECT name, date, start FROM bookings WHERE date LIKE  CONCAT(?, '-', ?, '%')"); 
+	$stmt = $this->link->prepare("SELECT name, date, start FROM bookings WHERE date LIKE  CONCAT(?, '-', ?, '%')");
 	$this->is_slot_booked_today = 0; // Defaults to 0
 
-	$stmt->bind_param('ss', $year, $month);	
-	$stmt->bind_result($name, $date, $start);	
+	$stmt->bind_param('ss', $year, $month);
+	$stmt->bind_result($name, $date, $start);
 	$stmt->execute();
 	$stmt->store_result();
-	
-	while($stmt->fetch()) {    
+
+	while($stmt->fetch()) {
 
 		$this->bookings_per_day[$date][] = $start;
 
 		$this->bookings[] = array(
-            "name" => $name, 
-            "date" => $date, 
-            "start" => $start        
- 		); 
-	
-		// Used by the 'booking_form' function later to check whether there are any booked slots on the selected day  		
+            "name" => $name,
+            "date" => $date,
+            "start" => $start
+ 		);
+
+		// Used by the 'booking_form' function later to check whether there are any booked slots on the selected day
 		if($date == $this->year . '-' . $this->month . '-' . $this->day) {
 			$this->is_slot_booked_today = 1;
-		} 
+		}
 
 	}
 
 	// Calculate how many slots there are per day
-	$this->slots_per_day = 0;	
+	$this->slots_per_day = 0;
 	for($i = strtotime($this->booking_start_time); $i<= strtotime($this->booking_end_time); $i = $i + $this->booking_frequency * 60) {
 		$this->slots_per_day ++;
-	}	
+	}
 
-	$stmt->close();		
-    $this->make_days_array($year, $month);    
-            
+	$stmt->close();
+    $this->make_days_array($year, $month);
+
 } // Close function
 
- 
-function make_days_array($year, $month) { 
 
-    // Calculate the number of days in the selected month                 
-    $num_days_month = cal_days_in_month(CAL_GREGORIAN, $month, $year); 
-    
-    // Make $this->days array containing the Day Number and Day Number in the selected month	   
-	
-	for ($i = 1; $i <= $num_days_month; $i++) {	
-	
+function make_days_array($year, $month) {
+
+    // Calculate the number of days in the selected month
+    $num_days_month = cal_days_in_month(CAL_GREGORIAN, $month, $year);
+
+    // Make $this->days array containing the Day Number and Day Number in the selected month
+
+	for ($i = 1; $i <= $num_days_month; $i++) {
+
 		// Work out the Day Name ( Monday, Tuesday... ) from the $month and $year variables
-        $d = mktime(0, 0, 0, $month, $i, $year); 
-		
-		// Create the array
-        $this->days[] = array("daynumber" => $i, "dayname" => date("l", $d)); 		
-    }   
+        $d = mktime(0, 0, 0, $month, $i, $year);
 
-	/*	
+		// Create the array
+        $this->days[] = array("daynumber" => $i, "dayname" => date("l", $d));
+    }
+
+	/*
 	Sample output of the $this->days array:
-	
+
 	[0] => Array
         (
             [daynumber] => 1
@@ -136,9 +134,9 @@ function make_days_array($year, $month) {
             [dayname] => Tuesday
         )
 	*/
-	
+
 	$this->make_blank_start($year, $month);
-	$this->make_blank_end($year, $month);	
+	$this->make_blank_end($year, $month);
 
 } // Close function
 
@@ -149,34 +147,34 @@ function make_blank_start($year, $month) {
 	Calendar months start on different days
 	Therefore there are often blank 'unavailable' days at the beginning of the month which are showed as a grey block
 	The code below creates the blank days at the beginning of the month
-	*/	
-	
+	*/
+
 	// Get first record of the days array which will be the First Day in the month ( eg Wednesday )
 	$first_day = $this->days[0]['dayname'];	$s = 0;
-		
+
 		// Loop through $day_order array ( Monday, Tuesday ... )
 		foreach($this->day_order as $i => $r) {
-		
+
 			// Compare the $first_day to the Day Order
 			if($first_day == $r && $s == 0) {
-				
+
 				$s = 1;  // Set flag to 1 stop further processing
-				
+
 			} elseif($s == 0) {
 
 				$blank = array(
 					"daynumber" => 'blank',
 					"dayname" => 'blank'
 				);
-			
+
 				// Prepend elements to the beginning of the $day array
 				array_unshift($this->days, $blank);
 			}
-			
-	} // Close foreach	
+
+	} // Close foreach
 
 } // Close function
-	
+
 
 function make_blank_end($year, $month) {
 
@@ -185,28 +183,28 @@ function make_blank_end($year, $month) {
 	Therefore there are often blank 'unavailable' days at the end of the month which are showed as a grey block
 	The code below creates the blank days at the end of the month
 	*/
-	
+
 	// Add blank elements to end of array if required.
     $pad_end = 7 - (count($this->days) % 7);
 
     if ($pad_end < 7) {
-	
+
 		$blank = array(
 			"daynumber" => 'blank',
 			"dayname" => 'blank'
 		);
-	
-        for ($i = 1; $i <= $pad_end; $i++) {							
+
+        for ($i = 1; $i <= $pad_end; $i++) {
 			array_push($this->days, $blank);
 		}
-		
+
     } // Close if
-		
-	$this->calendar_top(); 
+
+	$this->calendar_top();
 
 } // Close function
-   
-    
+
+
 function calendar_top() {
 
 	// This function creates the top of the table containing the date and the forward and back arrows
@@ -253,11 +251,11 @@ function calendar_top() {
 
 				} // Close foreach
 
-			
+
 			echo "</tr>";
 
 	$this->make_cells();
-    
+
 } // Close function
 
 
@@ -267,93 +265,93 @@ function make_cells($table = '') {
 
 	foreach($this->days as $i => $r) { // Loop through the date array
 
-		$j = $i + 1; $tag = 0;	 		
+		$j = $i + 1; $tag = 0;
 
-		// If the the current day is found in the day_closed array, bookings are not allowed on this day  
-		if(in_array($r['dayname'], $this->day_closed)) {			
+		// If the the current day is found in the day_closed array, bookings are not allowed on this day
+		if(in_array($r['dayname'], $this->day_closed)) {
 			echo "\r\n<td width='21' valign='top' class='closed'>" . $this->day_closed_text . "</td>";
 			$tag = 1;
 		}
-		
+
 
 		// Past days are greyed out
-		if (mktime(0, 0, 0, $this->month, sprintf("%02s", $r['daynumber']) + 1, $this->year) < strtotime("now") && $tag != 1) {		
-			
-			echo "\r\n<td width='21' valign='top' class='past'>";			
-				// Output day number 
-				if($r['daynumber'] != 'blank') echo $r['daynumber']; 
+		if (mktime(0, 0, 0, $this->month, sprintf("%02s", $r['daynumber']) + 1, $this->year) < strtotime("now") && $tag != 1) {
 
-			echo "</td>";		
+			echo "\r\n<td width='21' valign='top' class='past'>";
+				// Output day number
+				if($r['daynumber'] != 'blank') echo $r['daynumber'];
+
+			echo "</td>";
 			$tag = 1;
 		}
-		
+
 
 		// If the element is set as 'blank', insert blank day
-		if($r['dayname'] == 'blank' && $tag != 1) {		
+		if($r['dayname'] == 'blank' && $tag != 1) {
 			echo "\r\n<td width='21' valign='top' class='unavailable'><i class='fa fa-times' aria-hidden='true'></i></td>";
 			$tag = 1;
 		}
-				
-				
-		// Now check the booking array $this->booking to see whether we have a booking on this day 				
+
+
+		// Now check the booking array $this->booking to see whether we have a booking on this day
 		$current_day = $this->year . '-' . $this->month . '-' . sprintf("%02s", $r['daynumber']);
 
 		if(isset($this->bookings_per_day[$current_day]) && $tag == 0) {
-		
+
 			$current_day_slots_booked = count($this->bookings_per_day[$current_day]);
 
 				if($current_day_slots_booked < $this->slots_per_day) {
-				
+
 					echo "\r\n<td class='part_booked' width='21' valign='top'>
 					<a href='calendar.php?month=" .  $this->month . "&amp;year=" .  $this->year . "&amp;day=" . sprintf("%02s", $r['daynumber']) . "' title='This day is part booked'>" .
-					$r['daynumber'] . "</a></td>"; 
+					$r['daynumber'] . "</a></td>";
 					$tag = 1;
-				
+
 				} else {
-				
+
 					echo "\r\n<td class='fully_booked' width='21' valign='top'>
 					<a href='calendar.php?month=" .  $this->month . "&amp;year=" .  $this->year . "&amp;day=" . sprintf("%02s", $r['daynumber']) . "' title='This day is fully booked'>" .
-					$r['daynumber'] . "</a></td>"; 
-					$tag = 1;			
-				
-				} // Close else	
-		
+					$r['daynumber'] . "</a></td>";
+					$tag = 1;
+
+				} // Close else
+
 		} // Close if
 
-		
+
 		if($tag == 0) {
-		
+
 			echo "\r\n<td class='green' width='21' valign='top'>
 			<a href='calendar.php?month=" .  $this->month . "&amp;year=" .  $this->year . "&amp;day=" . sprintf("%02s", $r['daynumber']) . "' title='Please click to view bookings'>" .
-			$r['daynumber'] . "</a></td>";			
-		
+			$r['daynumber'] . "</a></td>";
+
 		}
-		
+
 		// The modulus function below ($j % 7 == 0) adds a <tr> tag to every seventh cell + 1;
 			if($j % 7 == 0 && $i >1) {
 			echo "\r\n</tr>\r\n<tr>"; // Use modulus to give us a <tr> after every seven <td> cells
-		}		
-		
-	}		
-		
+		}
+
+	}
+
 	echo "</tr></table>
 			</div>";
-	
+
 	if(isset($_GET['year']))
 	$this->basket();
 
-	// Check booked slots for selected date and only show the booking form if there are available slots	
-	$current_day = $this->year . '-' . $this->month . '-' . $this->day;	
+	// Check booked slots for selected date and only show the booking form if there are available slots
+	$current_day = $this->year . '-' . $this->month . '-' . $this->day;
 	$slots_selected_day = 0;
-	
+
 	if(isset($this->bookings_per_day[$current_day]))
 	$slots_selected_day = count($this->bookings_per_day[$current_day]);
-	
-	if($this->day != 0 && $slots_selected_day < $this->slots_per_day) { 
+
+	if($this->day != 0 && $slots_selected_day < $this->slots_per_day) {
 		$this->booking_form();
 	}
-	
-	
+
+
 } // Close function
 
 
@@ -362,6 +360,7 @@ function booking_form() {
 	echo "<div class='col-md-4'>
 				<div id='outer_booking'><h2>Available Slots</h2>
 					<p>The following slots are available on <span> " . $this->day . "-" . $this->month . "-" . $this->year . "</span></p>
+					<button type='button' onclick='openBookForm()' class='btn'>Book Slot/s</button>
 					<table id='booking' class='center-block'>
 						<tr>
 							<th>Start</th>
@@ -402,7 +401,7 @@ function booking_form() {
 							<td>" . $start . "</td>\r\n
 							<td>" . date("H:i:s", $finish_time) . "</td>\r\n
 							<!--<td></td>\r\n-->
-							<td width='110'><input data-val='" . $start . " - " . date("H:i:s", $finish_time) . "' class='fields' type='checkbox'></td>
+							<td width='110'><input type='checkbox' data-val='" . $start . " - " . date("H:i:s", $finish_time) . "'></td>
 						</tr>";
 						} // Close foreach
 	echo "</table></div><!-- Close outer_booking DIV -->
@@ -415,16 +414,16 @@ function basket($selected_day = '') {
 	if(!isset($_GET['day']))
 	$day = '01';
 	else
-	$day = $_GET['day'];	
+	$day = $_GET['day'];
 
 	// Validate GET date values
 	if(checkdate($_GET['month'], $day, $_GET['year']) !== false) {
-		$selected_day = $_GET['year'] . '-' . $_GET['month'] . '-' . $day;	
-	} else { 
+		$selected_day = $_GET['year'] . '-' . $_GET['month'] . '-' . $day;
+	} else {
 		echo 'Invalid date!';
 		exit();
 	}
-	
+
 	echo "
 	<div id='outer_basket'>
 		<div class='basket-container'>
@@ -469,6 +468,7 @@ function basket($selected_day = '') {
 				<button type='submit' class='btn btn-success center-block'>Add booking<i class='fa fa-send' aria-hidden='true'></i></button>
 			</form>
 		</div>
-	</div>";
+	</div>
+	<script src='../JS/calendar.js'></script>";
 } // Close function
 } // Close Class

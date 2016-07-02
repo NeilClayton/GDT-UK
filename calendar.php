@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
 header("Cache-Control: post-check=0, pre-check=0", false);
@@ -30,15 +31,11 @@ $forward = strtotime("+1 month", $selected_date);
 <head>
 	<meta charset="UTF-8">
 	<title>GDT: Nottingham Driving School - Driving Lessons UK</title>
-	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="CSS/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
 	<script src="JS/bootstrap.min.js"></script>
-	<!-- Custom JS -->
 	<script src="JS/calendar.js"></script>
 	<script src="https://use.fontawesome.com/71ebc9e44c.js"></script>
-	<!-- Custom CSS -->
 	<link href="CSS/styles.css" rel="stylesheet">
 	<link href="CSS/calendar.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -46,14 +43,13 @@ $forward = strtotime("+1 month", $selected_date);
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
 <?php
 	include('Includes/header2.html');
 	include('Includes/nav.php');
         
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $calendar->after_post($month, $day, $year);  
-}   
+    $calendar->after_post($month, $day, $year);
+}
 
 // Call calendar function
 $calendar->make_calendar($selected_date, $back, $forward, $day, $month, $year);

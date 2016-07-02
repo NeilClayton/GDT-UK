@@ -71,6 +71,7 @@ class messages
                         echo '<img src="' . $row['image'] . '" width="75" height="75" class="img-responsive img-circle" alt="profile">';
                         echo '<h2><a href="#">' . $row['firstname'] . " " . $row['lastname'] . '</a><b class="pull-right datetime">' . $date . '</b></h2>';
                         echo '</div>';
+                        echo '<button type="button" class="d-button" onclick="d_message()">Delete</button>';
                         echo '<div class="user-message">';
                         echo '<p>' . $row['message'] . '</p>';
                         echo '</div>';
@@ -149,6 +150,6 @@ class messages
                     echo 'Message not posted, something when wrong';
                 }
             }
-
 }
 
+echo "<script src='../JS/refresh.js'></script>";
