@@ -37,6 +37,11 @@ function overlay_v2() {
     el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
 }
 
+function d_message() {
+    el = document.getElementById("overlay-dm");
+    el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+}
+
 $(document).ready(function() {
     $('table').filterTable({minRows: 0}); // apply filterTable to all tables on this page
 });

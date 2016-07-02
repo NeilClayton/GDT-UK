@@ -23,17 +23,17 @@
 	</head>
 	<body id="login-body">
 		<form class="login-form" method="post" action="<?php $_SERVER['PHP_SELF']; ?>" autocomplete="off">
-			<h1><i class="fa fa-lock"></i>&nbsp;Sign in</h1>
+			<img src="Images/gdt_logo3.png" class="img-responsive center-block" alt="gdt-logo" width="400" height="185">
 			<div class="form-group">
 				<label for="usernameInput" class="sr-only">Username:</label>
-				<input type="text" class="form-control" id="usernameInput" name="username" placeholder="Username" autofocus>
+				<input type="text" class="form-control" id="usernameInput" name="username" placeholder="Enter your username" autofocus>
 			</div>
 			<div class="form-group">
 				<label for="passwordInput" class="sr-only">Password:</label>
-				<input type="password" class="form-control" id="passwordInput" name="password" placeholder="Password">
+				<input type="password" class="form-control" id="passwordInput" name="password" placeholder="Enter your password">
 			</div>
-			<input type="submit" class="btn btn-primary center-block" value="Submit">
-			<p><a href="index.php">Back to homepage</a>&nbsp;&nbsp;&#10072;&nbsp;&nbsp;<a href="#">Forgotten your password</a></p>
+			<button type="submit" class="center-block">Submit</button>
+			<p><a href="#">Forgotten your password?</a></p>
 		</form>
 	</body>
 </html>

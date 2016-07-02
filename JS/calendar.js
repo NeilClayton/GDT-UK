@@ -6,11 +6,6 @@ $(document).ready(function(){
 
         dataval = $(this).data('val');
 
-        // Show the Selected Slots box if someone selects a slot
-        if($("#outer_basket").css("display") == 'none') {
-            $("#outer_basket").css("display", "block");
-        }
-
         if(jQuery.inArray(dataval, check_array) == -1) {
             check_array.push(dataval);
         } else {
@@ -66,12 +61,15 @@ $(document).ready(function(){
 
     });
 
-    // Firefox caches the checkbox state.  This resets all checkboxes on each page load 
+    // Firefox caches the checkbox state.  This resets all checkboxes on each page load
     $('input:checkbox').removeAttr('checked');
 
 });
 
+function openBookForm() {
+    $("#outer_basket").css("display", "block");
+}
+
 function closeBookForm() {
     $("#outer_basket").css("display", "none");
-
 }

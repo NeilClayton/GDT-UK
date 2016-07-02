@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html class="other-html" lang="en">
 	<head>
@@ -26,63 +30,20 @@
 					<div class="col-md-8 col-md-offset-2">
 						<h2>Admin Panel&nbsp;<i class="fa fa-lock"></i></h2>
 						<ul class="nav nav-pills">
-							<li class="active"><a data-toggle="tab" href="#add-lessons"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Add bookings</a></li>
-							<li><a data-toggle="tab" href="#man-lessons"><i class="fa fa-book"></i>&nbsp;&nbsp;Manage bookings</a></li>
-							<li><a data-toggle="tab" href="#add-users"><i class="fa fa-user-plus"></i>&nbsp;&nbsp;Add Users</a></li>
-							<li><a data-toggle="tab" href="#man-users"><i class="fa fa-users"></i>&nbsp;&nbsp;Manage Users</a></li>
-							<li><a data-toggle="tab" href="#add-videos"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Add Videos</a></li>
-							<li><a data-toggle="tab" href="#man-videos"><i class="fa fa-video-camera"></i>&nbsp;&nbsp;Manage Videos</a></li>
+							<li class="active"><a data-toggle="tab" href="#add-lessons"><i class="fa fa-plus-circle"></i>Add bookings</a></li>
+							<li><a data-toggle="tab" href="#man-lessons"><i class="fa fa-book"></i>Manage bookings</a></li>
+							<li><a data-toggle="tab" href="#add-users"><i class="fa fa-user-plus"></i>Add Users</a></li>
+							<li><a data-toggle="tab" href="#man-users"><i class="fa fa-users"></i>Manage Users</a></li>
+							<li><a data-toggle="tab" href="#add-videos"><i class="fa fa-plus-circle"></i>Add Videos</a></li>
+							<li><a data-toggle="tab" href="#man-videos"><i class="fa fa-video-camera"></i>Manage Videos</a></li>
 						</ul>
 						<div class="tab-content">
 							<div id="add-lessons" class="tab-pane fade in active">
 								<h2>Add bookings</h2>
-								<form method="post" action="#">
-									<div class="form-group">
-										<label for="name">Client</label>
-										<select class="form-control" id="name" required>
-											<option value="" selected>...</option>
-											<option value="JoeBloggs">Joe Bloggs</option>
-											<option value="JohnDoe">John Doe</option>
-										</select>
-									</div>
-									<div class="form-group">
-										<label for="b-date">Date</label>
-										<input type="text" class="form-control" id="b-date" name="b-date" placeholder="Enter a date" required>
-									</div>
-									<div class="form-group">
-										<label for="b-time">Time</label>
-										<input type="text" class="form-control" id="b-time" name="b-time" placeholder="Enter a time" required>
-									</div>
-									<div class="form-group">
-										<label for="duration">Duration</label>
-										<select class="form-control" id="duration" required>
-											<option selected value="">...</option>
-											<option value="#">1 hour</option>
-											<option value="#">1.5 hours</option>
-											<option value="#">2 hours</option>
-										</select>
-									</div>
-									<div class="form-group">
-										<h6>How many lessons are being booked?</h6>
-										<label class="radio-inline">
-											<input type="radio" name="1-lesson">1
-										</label>
-										<label class="radio-inline">
-											<input type="radio" name="10-lesson">10
-										</label>
-										<label class="radio-inline">
-											<input type="radio" name="20-lesson">20
-										</label>
-										<label class="radio-inline">
-											<input type="radio" name="23-lesson">30
-										</label>
-									</div>
-									<button type="submit" class="btn btn-success" onclick="refreshWindow()">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
-								</form>
+								<a role="button" class="btn btn-primary" href="calendar.php" target="_blank">View Calendar</a>
 							</div>
 							<div id="man-lessons" class="tab-pane fade">
 								<h2>Booked Lessons</h2>
-								<a role="button" class="btn btn-info" href="calendar.php" target="_blank">View Calendar</a>
 								<div class="table-responsive">
 									<table class="table table-hover" id="bookings">
 										<tr><th>Booking ID</th><th>Full Name</th><th>Date</th><th>Time</th><th>Duration</th><th>Edit</th><th>Delete</th></tr>
@@ -140,7 +101,7 @@
 												<option value="#">2 hours</option>
 											</select>
 										</div>
-										<button type="submit" class="btn btn-success center-block" onclick="refresh()">Edit Booking&nbsp;&nbsp;<i class="fa fa-pencil" aria-hidden="true"></i></button>
+										<button type="submit" class="btn btn-success center-block" onclick="refresh()" name="submit">Edit Booking&nbsp;&nbsp;<i class="fa fa-pencil" aria-hidden="true"></i></button>
 									</form>
 								</div>
 							</div>
@@ -151,7 +112,7 @@
 									<form method="post" action="#" class="del-form">
 										<p>Are you sure you want to delete this booking?</p>
 										<div class="del-buttons">
-											<button type="submit" class="btn btn-default" onclick="refreshWindow()">Yes</button>
+											<button type="submit" class="btn btn-default" onclick="refreshWindow()" name="submit">Yes</button>
 											<button type="button" class="btn btn-primary no-button" onclick="overlay_b2()">No</button>
 										</div>
 									</form>
@@ -173,10 +134,22 @@
 										<input type="text" class="form-control" id="u-mobile" name="u-mobile" placeholder="Enter a mobile number" required>
 									</div>
 									<div class="form-group">
-										<label for="u-address">Address</label>
-										<input type="text" class="form-control" id="u-address" name="u-address" placeholder="Enter a street address" required>
+										<label for="street">Street</label>
+										<input type="text" class="form-control" id="street" name="street" placeholder="Enter a street name" required>
 									</div>
-									<button type="submit" class="btn btn-success" onclick="refreshWindow()">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
+									<div class="form-group">
+										<label for="town">Town</label>
+										<input type="text" class="form-control" id="town" name="town" placeholder="Enter a town name" required>
+									</div>
+									<div class="form-group">
+										<label for="street3">City</label>
+										<input type="text" class="form-control" id="city" name="city" placeholder="Enter a city name" required>
+									</div>
+									<div class="form-group">
+										<label for="street3">Postcode</label>
+										<input type="text" class="form-control" id="postcode" name="postcode" placeholder="Enter a postcode" required>
+									</div>
+									<button type="submit" class="btn btn-success" onclick="refreshWindow()" name="submit">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
 								</form>
 							</div>
 							<div id="man-users" class="tab-pane fade">
@@ -215,21 +188,33 @@
 										<h2>Edit User</h2>
 										<div class="form-group">
 											<label for="e-uname">Full Name</label>
-											<input type="text" class="form-control" id="e-uname" required>
+											<input type="text" class="form-control" id="e-uname" name="e-uname">
 										</div>
 										<div class="form-group">
 											<label for="e-uemail">Email</label>
-											<input type="text" class="form-control" id="e-uemail" required>
+											<input type="text" class="form-control" id="e-uemail" name="e-uemail">
 										</div>
 										<div class="form-group">
 											<label for="e-umobile">Mobile No</label>
-											<input type="text" class="form-control" id="e-umobile" required>
+											<input type="text" class="form-control" id="e-umobile" name="e-umobile">
 										</div>
 										<div class="form-group">
-											<label for="e-uaddress">Address</label>
-											<input type="text" class="form-control" id="e-uaddress" required>
+											<label for="estreet">Street</label>
+											<input type="text" class="form-control" id="e-street" name="estreet">
 										</div>
-										<button type="submit" class="btn btn-success center-block" onclick="refresh()">Edit User&nbsp;&nbsp;<i class="fa fa-pencil" aria-hidden="true"></i></button>
+										<div class="form-group">
+											<label for="etown">Town</label>
+											<input type="text" class="form-control" id="e-town" name="e-town">
+										</div>
+										<div class="form-group">
+											<label for="epostcode">City</label>
+											<input type="text" class="form-control" id="e-city name="e-city">
+										</div>
+										<div class="form-group">
+											<label for="epostcode">Postcode</label>
+											<input type="text" class="form-control" id="e-postcode" name="e-postcode">
+										</div>
+										<button type="submit" class="btn btn-success center-block" onclick="refresh()" name="submit">Edit User</button>
 									</form>
 								</div>
 							</div>
@@ -240,7 +225,7 @@
 									<form method="post" action="#" class="del-form">
 										<p>Are you sure you want to delete this user?</p>
 										<div class="del-buttons">
-											<button type="submit" class="btn btn-default" onclick="refreshWindow()">Yes</button>
+											<button type="submit" class="btn btn-default" onclick="refreshWindow()" name="submit">Yes</button>
 											<button type="button" class="btn btn-primary no-button" onclick="overlay_u2()">No</button>
 										</div>
 									</form>
@@ -259,13 +244,15 @@
 									</div>
 									<div class="form-group">
 										<label for="v-client">Client</label>
-										<select class="form-control" id="v-client" name="v-client" required>
-											<option value="" selected>...</option>
-											<option value="JoeBloggs">Joe Bloggs</option>
-											<option value="JohnDoe">John Doe</option>
-										</select>
+										<div class="table-responsive">
+											<table class="table table-condensed">
+												<tr><th>First name</th><th>Last name</th><th>Street Address</th><th>Select</th></tr>
+												<tr><td>Joe</td><td>Bloggs</td><td>1 Large Crescent</td><td><input type="checkbox"></td></tr>
+												<tr><td>John</td><td>Smith</td><td>2 Field Drive</td><td><input type="checkbox"></td></tr>
+											</table>
+										</div>
 									</div>
-									<button type="submit" class="btn btn-success" onclick="refreshWindow()">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
+									<button type="submit" class="btn btn-success" onclick="refreshWindow()" name="submit">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
 								</form>
 							</div>
 							<div id="man-videos" class="tab-pane fade">
@@ -318,7 +305,7 @@
 												<option value="JohnDoe">John Doe</option>
 											</select>
 										</div>
-										<button type="submit" class="btn btn-success center-block" onclick="refresh()">Edit Video&nbsp;&nbsp;<i class="fa fa-pencil" aria-hidden="true"></i></button>
+										<button type="submit" class="btn btn-success center-block" onclick="refresh()" name="submit">Edit Video&nbsp;&nbsp;<i class="fa fa-pencil" aria-hidden="true"></i></button>
 									</form>
 								</div>
 							</div>
@@ -329,7 +316,7 @@
 									<form method="post" action="#" class="del-form">
 										<p>Are you sure you want to delete this video?</p>
 										<div class="del-buttons">
-											<button type="submit" class="btn btn-default" onclick="refreshWindow()">Yes</button>
+											<button type="submit" class="btn btn-default" onclick="refreshWindow()" name="submit">Yes</button>
 											<button type="button" class="btn btn-primary no-button" onclick="overlay_v2()">No</button>
 										</div>
 									</form>

@@ -14,18 +14,13 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>GDT: Nottingham Driving School - Driving Lessons UK</title>
-	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="CSS/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
 	<script src="JS/bootstrap.min.js"></script>
-	<!-- Latest JQuery -->
 	<script src="JS/jquery.js"></script>
-	<!-- Custom JS -->
     <script src="JS/refresh.js"></script>
 	<script src="https://use.fontawesome.com/71ebc9e44c.js"></script>
 	<script src="JS/messagePosting.js"></script>
-	<!-- Custom CSS -->
 	<link href="CSS/styles.css" rel="stylesheet">
 	<link href="CSS/social-styles.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -57,7 +52,7 @@
 								<div class="new-post">
 									<form method="post" action="">
 										<textarea class="form-control" id="post-message" rows="5" cols="100" maxlength="600" required placeholder="Write a message..."></textarea>
-										<button type="submit" id="newMessageFeed" class="btn btn-success pull-right">Post&nbsp;&nbsp;<i class="fa fa-send"></i></button>
+										<button type="submit" id="newMessageFeed" class="btn btn-success pull-right">Post<i class="fa fa-send"></i></button>
 									</form>
 
 								
@@ -134,7 +129,20 @@
 												<label for="e-town">Town:</label>
 												<input type="text" class="form-control" id="e-town" name="e-town" value="<?php echo $_SESSION['town'];?>">
 											</div>
-											<button type="submit" class="btn btn-success" onclick="refreshWindow()">Submit&nbsp;&nbsp;<i class="fa fa-send" aria-hidden="true"></i></button>
+											<button type="submit" class="btn btn-success" onclick="refreshWindow()">Submit<i class="fa fa-send" aria-hidden="true"></i></button>
+										</form>
+									</div>
+								</div>
+								<div id="overlay-dm">
+									<div class="form-container">
+										<!-- PUT NEW FORM HERE -->
+										<button type="button" onclick="overlay_b2()" class="pull-right close-window"><i class="fa fa-remove" aria-hidden="true"></i></button><br>
+										<form method="post" action="#" class="del-form">
+											<p>Are you sure you want to delete this booking?</p>
+											<div class="del-buttons">
+												<button type="submit" class="btn btn-default" onclick="refreshWindow()" name="submit">Yes</button>
+												<button type="button" class="btn btn-primary no-button" onclick="overlay_b2()">No</button>
+											</div>
 										</form>
 									</div>
 								</div>
