@@ -78,7 +78,7 @@
 									</div>
 									<div class="about-detail">
 										<p class="about-title">Age:</p>
-										<p class="about-content"><?php list($day,$month,$year) = explode("/",$_SESSION['DOB']);
+										<p class="about-content"><?php list($year,$month,$day) = explode("/",$_SESSION['DOB']);
 											$year_diff  = date("Y") - $year;
 											$month_diff = date("m") - $month;
 											$day_diff   = date("d") - $day;
