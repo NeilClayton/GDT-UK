@@ -13,7 +13,7 @@ function __construct($link) {
 
 
 // Time Related Variables
-public $booking_start_time          = "09:30";			// The time of the first slot in 24 hour H:M format
+public $booking_start_time          = "08:30";			// The time of the first slot in 24 hour H:M format
 public $booking_end_time            = "19:00"; 			// The time of the last slot in 24 hour H:M format
 public $booking_frequency           = 15;   			// The slot frequency per hour, expressed in minutes.
 
@@ -24,9 +24,9 @@ public $day_format					= 1;				// Day format of the table header.  Possible valu
 															// 2 = Show First 3 letters, eg: "Mon"
 															// 3 = Full Day, eg: "Monday"
 
-public $day_closed					= array("Sunday", "Monday"); 	// If you don't want any 'closed' days, remove the day so it becomes: = array();
+public $day_closed					= array(/*"Sunday", "Monday"*/); 	// If you don't want any 'closed' days, remove the day so it becomes: = array();
 public $day_closed_text				= "<i class='fa fa-lock' aria-hidden='true'></i>"; 		// If you don't want any any 'closed' remove the text so it becomes: = "";
-
+public $current_day;
 // Cost Related Variables
 //public $cost_per_slot				= 20.50;			// The cost per slot
 //F$public $cost_currency_tag			= "&pound;";		// The currency tag in HTML such as &euro; &pound; &yen;
@@ -398,15 +398,48 @@ function booking_form() {
 
 							echo "
 						<tr>\r\n
-							<td>" . $start . "</td>\r\n
-							<td>" . date("H:i:s", $finish_time) . "</td>\r\n
+							<td>" . $start . "</td>
+							<td>" . date("H:i:s", $finish_time) . "</td>
 							<!--<td></td>\r\n-->
 							<td width='110'><input type='checkbox' data-val='" . $start . " - " . date("H:i:s", $finish_time) . "'></td>
 						</tr>";
 						} // Close foreach
+						foreach ($this->bookings as $booking) {
+							var_dump(date($this->year.'-'.$this->month.'-'.$this->day));
+							if($booking['date'] == $this->year.'-'.$this->month.'-'.$this->day) {
+								foreach ($booking as $key => $value) {
+									$booking_name;
+									$time;
+
+									switch ($key) {
+										case "name":
+											$booking_name = $value;
+											break;
+										case "date":
+
+											break;
+
+
+										case "start":
+											$time = $value;
+											$endtime = strtotime("+15 minutes", strtotime($time));
+											echo "
+									<tr>
+									<td>" . $time . "</td>
+									<td>" . date('H:i:s', $endtime) . "</td>
+									<td>" . $booking_name . "</td>
+									</tr>";
+											break;
+									}
+
+								}
+							}
+						}
+
 	echo "</table></div><!-- Close outer_booking DIV -->
 			</div>
 		</div>";
+
 } // Close function
 
 function basket($selected_day = '') {
@@ -450,16 +483,16 @@ function basket($selected_day = '') {
 				<div class='form-group'>
 					<h6>How many lessons are being booked?</h6>
 					<label class='radio-inline'>
-						<input type='radio' name='1-lesson'>1
+						<input type='radio' name='lesson' value='1' checked>1
 					</label>
 					<label class='radio-inline'>
-						<input type='radio' name='10-lesson'>10
+						<input type='radio' name='lesson' value='10'>10
 					</label>
 					<label class='radio-inline'>
-						<input type='radio' name='20-lesson'>20
+						<input type='radio' name='lesson' value='20'>20
 					</label>
 					<label class='radio-inline'>
-						<input type='radio' name='23-lesson'>30
+						<input type='radio' name='lesson' value='30'>30
 					</label>
 				</div>						
 				<input type='hidden' name='slots_booked' id='slots_booked'>
