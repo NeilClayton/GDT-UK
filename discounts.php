@@ -1,31 +1,9 @@
 ﻿<?php
 	session_start();
+
+	include('Includes/header2.html');
+	include('Includes/nav.php');
 ?>
-
-<!DOCTYPE html>
-<html class="other-html" lang="en">
-	<head>
-	<meta charset="UTF-8">
-	<title>GDT: Nottingham Driving School - Driving Lessons UK</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="CSS/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="JS/bootstrap.min.js"></script>
-	<!-- Custom JS -->
-	<script src="https://use.fontawesome.com/71ebc9e44c.js"></script>
-	<!-- Custom CSS -->
-	<link href="CSS/styles.css" rel="stylesheet">
-	<link href="CSS/social-styles.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-	<body>
-
-		<?php include('Includes/header2.html'); ?>
-		<?php include('Includes/nav.php'); ?>
-
 			<div class="container-fluid">
 				<div class="row introduction">
 					<div class="col-md-10 col-md-offset-1">
@@ -78,7 +56,7 @@
 					</div>
 				</div>
 			</div>
-		<?php include('Includes/footer.html'); ?>
-		<?php include('Includes/socialicons.html');?>
-	</body>
-</html>
+<?php
+	include('Includes/socialicons.html');
+	include('Includes/footer.html');
+?>

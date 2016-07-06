@@ -1,29 +1,9 @@
 <?php
-	session_start();
-?>
+session_start();
 
-<!DOCTYPE html>
-<html class="other-html" lang="en">
-	<head>
-	<meta charset="UTF-8">
-	<title>GDT: Nottingham Driving School - Driving Lessons UK</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="CSS/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="JS/bootstrap.min.js"></script>
-	<!-- Custom JS -->
-	<script src="https://use.fontawesome.com/71ebc9e44c.js"></script>
-	<!-- Custom CSS -->
-	<link href="CSS/styles.css" rel="stylesheet">
-	<link href="CSS/social-styles.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-	<body>
-		<?php include('Includes/header2.html'); ?>
-		<?php include('Includes/nav.php'); ?>
+include('Includes/header2.html');
+include('Includes/nav.php');
+?>
 			<section class="container-fluid">
 				<section class="row introduction">
 					<section class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
@@ -59,7 +39,7 @@
 					</section>
 				</section>
 			</section>
-		<?php include('Includes/footer.html'); ?>
-		<?php include('Includes/socialicons.html');?>
-	</body>
-</html>
+<?php
+	include('Includes/socialicons.html');
+	include('Includes/footer.html');
+?>
