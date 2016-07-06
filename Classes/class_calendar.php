@@ -401,37 +401,31 @@ function booking_form() {
 							<td>" . $start . "</td>
 							<td>" . date("H:i:s", $finish_time) . "</td>
 							<!--<td></td>\r\n-->
-							<td width='110'><input type='checkbox' data-val='" . $start . " - " . date("H:i:s", $finish_time) . "'></td>
+							<td width='110'><input type='checkbox' data-val='" . $start . " - " . date("H:i:s", $finish_time) . "' class='fields' ></td>
 						</tr>";
 						} // Close foreach
 						foreach ($this->bookings as $booking) {
-							var_dump(date($this->year.'-'.$this->month.'-'.$this->day));
 							if($booking['date'] == $this->year.'-'.$this->month.'-'.$this->day) {
 								foreach ($booking as $key => $value) {
 									$booking_name;
 									$time;
-
 									switch ($key) {
 										case "name":
 											$booking_name = $value;
 											break;
 										case "date":
-
 											break;
-
-
 										case "start":
 											$time = $value;
 											$endtime = strtotime("+15 minutes", strtotime($time));
 											echo "
-									<tr>
-									<td>" . $time . "</td>
-									<td>" . date('H:i:s', $endtime) . "</td>
-									<td>" . $booking_name . "</td>
-									</tr>";
+											<tr>
+											<td>" . $time . "</td>
+											<td>" . date('H:i:s', $endtime) . "</td>
+											<td>" . $booking_name . "</td>
+											</tr>";
 											break;
 									}
-
 								}
 							}
 						}

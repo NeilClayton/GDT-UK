@@ -2,6 +2,7 @@
 	include_once ('Actions/login_class.php');
    	$login = new login();
 	$login->attemptLogin();
+	
 ?>
 <!DOCTYPE html>
 <html class="login-html" lang="en">
