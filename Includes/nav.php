@@ -1,11 +1,7 @@
-<?php
-    //session_start(); duplicated start on profile page
-?>
-
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <!-- Button to toggle drop down -->
+            <p class="navbar-text visible-xs-inline-block">MENU</p>
             <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" role="button" aria-haspopup="true">
                 <span class = "icon-bar"></span>
                 <span class = "icon-bar"></span>
@@ -13,7 +9,6 @@
             </a>
         </div>
         <div class="collapse navbar-collapse" id="navbar">
-            <!-- Align links to the right -->
             <ul class="nav navbar-nav">
                 <li><a href="index.php"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
                 <li><a href="about.php"><i class="fa fa-info-circle" aria-hidden="true"></i>About</a></li>

@@ -4,9 +4,9 @@ session_start();
 include('Includes/header2.html');
 include('Includes/nav.php');
 ?>
-			<section class="container-fluid">
-				<section class="row introduction">
-					<section class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+			<div class="container-fluid">
+				<div class="row introduction">
+					<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
 						<h1>Prices</h1>
 						<p>At GDT we offer various special offers for your individual needs.</p>
 						<div class="table-responsive">
@@ -36,10 +36,10 @@ include('Includes/nav.php');
 						<a class="price-link" href="discounts.php">Driving lesson gift vouchers</a> &#10072;
 						<a class="price-link" href="discounts.php">Student discounts</a> &#10072;
 						<a class="price-link" href="discounts.php">Recommend a friend</a>
-					</section>
-				</section>
-			</section>
+					</div>
+				</div>
+			</div>
 <?php
 	include('Includes/socialicons.html');
-	include('Includes/footer.html');
+	include('Includes/footer.php');
 ?>

@@ -1,15 +1,3 @@
-/**
- * jquery.filterTable
- *
- * This plugin will add a search filter to tables. When typing in the filter,
- * any rows that do not contain the filter will be hidden.
- *
- * Utilizes bindWithDelay() if available. https://github.com/bgrins/bindWithDelay
- *
- * @version v1.5.6
- * @author Sunny Walker, swalker@hawaii.edu
- * @license MIT
- */
 (function($) {
     var jversion = $.fn.jquery.split('.'),
         jmajor = parseFloat(jversion[0]),

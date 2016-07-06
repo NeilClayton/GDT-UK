@@ -7,7 +7,7 @@
 			<div class="container-fluid">
 				<div class="row admin">
 					<div class="col-md-8 col-md-offset-2">
-						<h2>Admin Panel&nbsp;<i class="fa fa-lock"></i></h2>
+						<h1>Admin Panel</h1>
 						<ul class="nav nav-pills">
 							<li class="active"><a data-toggle="tab" href="#add-lessons"><i class="fa fa-plus-circle"></i>Add bookings</a></li>
 							<li><a data-toggle="tab" href="#man-lessons"><i class="fa fa-book"></i>Manage bookings</a></li>
@@ -24,14 +24,18 @@
 							<div id="man-lessons" class="tab-pane fade">
 								<h2>Booked Lessons</h2>
 								<div class="table-responsive">
-									<table class="table table-hover" id="bookings">
-										<tr><th>Booking ID</th><th>Full Name</th><th>Date</th><th>Time</th><th>Duration</th><th>Edit</th><th>Delete</th></tr>
-										<tr><td>1</td><td>John Smith</td><td>29/05/2016</td><td>15:55</td><td>1 hour</td><td><button type="button" onclick="overlay_b()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_b2()"><i class="fa fa-remove"></i></button></td></tr>
-										<tr><td>2</td><td>Joe Bloggs</td><td>05/06/2016</td><td>14:40</td><td>2 hours</td><td><button type="button" onclick="overlay_b()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_b2()"><i class="fa fa-remove"></i></button></td></tr>
+									<table class="table filter-this" id="bookings">
+										<thead>
+											<tr><th>Booking ID</th><th>Full Name</th><th>Date</th><th>Time</th><th>Duration</th><th>Edit</th><th>Delete</th></tr>
+										</thead>
+										<tbody>
+											<tr><td>1</td><td>John Smith</td><td>29/05/2016</td><td>15:55</td><td>1 hour</td><td><button type="button" onclick="overlay_b()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_b2()"><i class="fa fa-remove"></i></button></td></tr>
+											<tr><td>2</td><td>Joe Bloggs</td><td>05/06/2016</td><td>14:40</td><td>2 hours</td><td><button type="button" onclick="overlay_b()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_b2()"><i class="fa fa-remove"></i></button></td></tr>
+										</tbody>
 									</table>
 								</div>
 								<div class="table-mobile">
-									<table class="table table-bordered">
+									<table class="table table-bordered filter-this">
 										<tr><th>Booking ID</th></tr>
 										<tr><td>1</td></tr>
 										<tr><th>Full Name</th></tr>
@@ -64,12 +68,12 @@
 											</select>
 										</div>
 										<div class="form-group">
-											<label for="b-date">Date</label>
-											<input type="text" class="form-control" id="eb-date" name="e-bdate" required>
+											<label for="ebdate">Date</label>
+											<input type="text" class="form-control" id="ebdate" name="ebdate" required>
 										</div>
 										<div class="form-group">
-											<label for="b-time">Time</label>
-											<input type="text" class="form-control" id="e-btime" name="e-btime" required>
+											<label for="ebtime">Time</label>
+											<input type="text" class="form-control" id="ebtime" name="ebtime" required>
 										</div>
 										<div class="form-group">
 											<label for="duration">Duration</label>
@@ -113,20 +117,20 @@
 										<input type="text" class="form-control" id="u-mobile" name="u-mobile" placeholder="Enter a mobile number" required>
 									</div>
 									<div class="form-group">
-										<label for="street">Street</label>
-										<input type="text" class="form-control" id="street" name="street" placeholder="Enter a street name" required>
+										<label for="u-street">Street</label>
+										<input type="text" class="form-control" id="u-street" name="u-street" placeholder="Enter a street name" required>
 									</div>
 									<div class="form-group">
-										<label for="town">Town</label>
-										<input type="text" class="form-control" id="town" name="town" placeholder="Enter a town name" required>
+										<label for="u-town">Town</label>
+										<input type="text" class="form-control" id="u-town" name="u-town" placeholder="Enter a town name" required>
 									</div>
 									<div class="form-group">
-										<label for="street3">City</label>
-										<input type="text" class="form-control" id="city" name="city" placeholder="Enter a city name" required>
+										<label for="u-city">City</label>
+										<input type="text" class="form-control" id="u-city" name="u-city" placeholder="Enter a city name" required>
 									</div>
 									<div class="form-group">
-										<label for="street3">Postcode</label>
-										<input type="text" class="form-control" id="postcode" name="postcode" placeholder="Enter a postcode" required>
+										<label for="u-postcode">Postcode</label>
+										<input type="text" class="form-control" id="u-postcode" name="u-postcode" placeholder="Enter a postcode" required>
 									</div>
 									<button type="submit" class="btn btn-success" onclick="refreshWindow()" name="submit">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
 								</form>
@@ -134,14 +138,18 @@
 							<div id="man-users" class="tab-pane fade">
 								<h2>User Management</h2>
 								<div class="table-responsive">
-									<table class="table table-hover">
-										<tr><th>User ID</th><th>Full name</th><th>Email</th><th>Mobile No</th><th>Address</th><th>Edit</th><th>Delete</th></tr>
-										<tr><td>1</td><td>John Smith</td><td>jsmith@email.com</td><td>123 4567 8901</td><td>1 Dashboard Avenue</td><td><button type="button" onclick="overlay_u()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_u2()"><i class="fa fa-remove"></i></button></td></tr>
-										<tr><td>2</td><td>Joe Bloggs</td><td>jbloggs@email.com</td><td>123 4567 8901</td><td>2 Dashboard Avenue</td><td><button type="button" onclick="overlay_u()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_u2()"><i class="fa fa-remove"></i></button></td></tr>
+									<table class="table filter-this">
+										<thead>
+											<tr><th>User ID</th><th>Full name</th><th>Email</th><th>Mobile No</th><th>Address</th><th>Edit</th><th>Delete</th></tr>
+										</thead>
+										<tbody>
+											<tr><td>1</td><td>John Smith</td><td>jsmith@email.com</td><td>123 4567 8901</td><td>1 Dashboard Avenue</td><td><button type="button" onclick="overlay_u()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_u2()"><i class="fa fa-remove"></i></button></td></tr>
+											<tr><td>2</td><td>Joe Bloggs</td><td>jbloggs@email.com</td><td>123 4567 8901</td><td>2 Dashboard Avenue</td><td><button type="button" onclick="overlay_u()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_u2()"><i class="fa fa-remove"></i></button></td></tr>
+										</tbody>
 									</table>
 								</div>
 								<div class="table-mobile">
-									<table class="table table-bordered">
+									<table class="table table-bordered filter-this">
 										<tr><th>User ID</th></tr>
 										<tr><td>1</td></tr>
 										<tr><th>Full Name</th></tr>
@@ -178,20 +186,20 @@
 											<input type="text" class="form-control" id="e-umobile" name="e-umobile">
 										</div>
 										<div class="form-group">
-											<label for="estreet">Street</label>
-											<input type="text" class="form-control" id="e-street" name="estreet">
+											<label for="e-ustreet">Street</label>
+											<input type="text" class="form-control" id="e-ustreet" name="e-ustreet">
 										</div>
 										<div class="form-group">
-											<label for="etown">Town</label>
-											<input type="text" class="form-control" id="e-town" name="e-town">
+											<label for="e-utown">Town</label>
+											<input type="text" class="form-control" id="e-utown" name="e-utown">
 										</div>
 										<div class="form-group">
-											<label for="epostcode">City</label>
-											<input type="text" class="form-control" id="e-city name="e-city">
+											<label for="e-upostcode">City</label>
+											<input type="text" class="form-control" id="e-ucity" name="e-ucity">
 										</div>
 										<div class="form-group">
-											<label for="epostcode">Postcode</label>
-											<input type="text" class="form-control" id="e-postcode" name="e-postcode">
+											<label for="e-upostcode">Postcode</label>
+											<input type="text" class="form-control" id="e-upostcode" name="e-upostcode">
 										</div>
 										<button type="submit" class="btn btn-success center-block" onclick="refresh()" name="submit">Edit User</button>
 									</form>
@@ -222,9 +230,9 @@
 										<input type="text" class="form-control" id="v-code" name="v-code" placeholder="Enter the video code" required>
 									</div>
 									<div class="form-group">
-										<label for="v-client">Client</label>
+										<label>Client</label>
 										<div class="table-responsive">
-											<table class="table table-condensed">
+											<table class="table table-condensed filter-this">
 												<tr><th>First name</th><th>Last name</th><th>Street Address</th><th>Select</th></tr>
 												<tr><td>Joe</td><td>Bloggs</td><td>1 Large Crescent</td><td><input type="checkbox"></td></tr>
 												<tr><td>John</td><td>Smith</td><td>2 Field Drive</td><td><input type="checkbox"></td></tr>
@@ -237,14 +245,18 @@
 							<div id="man-videos" class="tab-pane fade">
 								<h2>Videos</h2>
 								<div class="table-responsive">
-									<table class="table table-hover">
-										<tr><th>Video ID</th><th>Title</th><th>Code</th><th>Client</th><th>Date</th><th>Edit</th><th>Delete</th></tr>
-										<tr><td>1</td><td>John's lesson</td><td>345JJ34K7SD</td><td>John Smith</td><td>29/05/2016</td><td><button type="button" onclick="overlay_v()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_v2()"><i class="fa fa-remove"></i></button></td></tr>
-										<tr><td>2</td><td>Joe's lesson</td><td>345JJ34K7SD</td><td>Joe Bloggs</td><td>29/05/2016</td><td><button type="button" onclick="overlay_v()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_v2()"><i class="fa fa-remove"></i></button></td></tr>
+									<table class="table table-hover filter-this">
+										<thead>
+											<tr><th>Video ID</th><th>Title</th><th>Code</th><th>Client</th><th>Date</th><th>Edit</th><th>Delete</th></tr>
+										</thead>
+										<tbody>
+											<tr><td>1</td><td>John's lesson</td><td>345JJ34K7SD</td><td>John Smith</td><td>29/05/2016</td><td><button type="button" onclick="overlay_v()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_v2()"><i class="fa fa-remove"></i></button></td></tr>
+											<tr><td>2</td><td>Joe's lesson</td><td>345JJ34K7SD</td><td>Joe Bloggs</td><td>29/05/2016</td><td><button type="button" onclick="overlay_v()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_v2()"><i class="fa fa-remove"></i></button></td></tr>
+										</tbody>
 									</table>
 								</div>
 								<div class="table-mobile">
-									<table class="table table-bordered">
+									<table class="table table-bordered filter-this">
 										<tr><th>Video ID</th></tr>
 										<tr><td>1</td></tr>
 										<tr><th>Title</th></tr>
@@ -274,11 +286,12 @@
 										</div>
 										<div class="form-group">
 											<label for="e-vcode">Video code</label>
+											<label for="e-vcode">Video code</label>
 											<input type="text" class="form-control" id="e-vcode" name="e-vcode" required>
 										</div>
 										<div class="form-group">
 											<label for="e-vclient">Client</label>
-											<select class="form-control" id="v-client" name="e-vclient" required>
+											<select class="form-control" id="e-vclient" name="e-vclient" required>
 												<option value="" selected>...</option>
 												<option value="JoeBloggs">Joe Bloggs</option>
 												<option value="JohnDoe">John Doe</option>
@@ -305,4 +318,4 @@
 					</div>
 				</div>
 			</div>
-		<?php include('Includes/footer.html'); ?>
+		<?php include('Includes/footer.php'); ?>

@@ -43,5 +43,5 @@ function d_message() {
 }
 
 $(document).ready(function() {
-    $('table').filterTable({minRows: 0}); // apply filterTable to all tables on this page
+    $('.filter-this').filterTable({minRows: 0}); // apply filterTable to all tables on this page
 });
