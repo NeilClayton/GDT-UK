@@ -24,26 +24,6 @@ $back = strtotime("-1 month", $selected_date);
 // Unix Timestamp of the next month which is used to give the forward arrow the correct month and year
 $forward = strtotime("+1 month", $selected_date);
 
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>GDT: Nottingham Driving School - Driving Lessons UK</title>
-	<link rel="stylesheet" href="CSS/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="JS/bootstrap.min.js"></script>
-	<script src="JS/calendar.js"></script>
-	<script src="https://use.fontawesome.com/71ebc9e44c.js"></script>
-	<link href="CSS/styles.css" rel="stylesheet">
-	<link href="CSS/calendar.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-<?php
 	include('Includes/header2.html');
 	include('Includes/nav.php');
         
@@ -54,7 +34,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 // Call calendar function
 $calendar->make_calendar($selected_date, $back, $forward, $day, $month, $year);
 
-?>
-<?php //include "Includes/footer.html"; ?>
+ //include "Includes/footer.html"; ?>
+<script src="JS/calendar.js"></script>
 </body>
 </html>

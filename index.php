@@ -1,26 +1,9 @@
 <?php
-	session_start();
-?>
+session_start();
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-	<meta charset="UTF-8">
-	<title>GDT: Nottingham Driving School - Driving Lessons UK</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="CSS/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="JS/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/71ebc9e44c.js"></script>
-	<link href="CSS/styles.css" rel="stylesheet">
-	<link href="CSS/social-styles.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-	<body>
-		<?php include('Includes/header.html');?>
-		<?php include('Includes/nav.php');?>
+include('Includes/header.html');
+include('Includes/nav.php');
+?>
 			<div class="container-fluid">
 				<div class="row introduction" id="intro">
 					<h2 class="sr-only">What GDT is</h2>
@@ -54,9 +37,7 @@
 					</div>
 				</div>
 			</div>
-	<?php include('Includes/footer.html'); ?>
-	<?php include('Includes/socialicons.html');?>
-		<script src="JS/marquee.js"></script>
-		<script src="JS/scroll-text.js"></script
-	</body>
-</html>
+<?php
+	include('Includes/socialicons.html');
+	include('Includes/footer.html');
+?>
