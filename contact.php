@@ -7,7 +7,7 @@
 			<div class="container-fluid">
 				<div class="row contact">	
 					<div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
-						<h3>Contact GDT-UK</h3>
+						<h2>Contact GDT-UK</h2>
 						<form>
 							<div class="form-group">
 								<label for="name">Full Name<b class="asterisk">*</b></label>
@@ -36,5 +36,5 @@
 			</div>
 <?php
 	include('Includes/socialicons.html');
-	include('Includes/footer.html');
+	include('Includes/footer.php');
 ?>

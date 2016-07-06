@@ -34,7 +34,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 // Call calendar function
 $calendar->make_calendar($selected_date, $back, $forward, $day, $month, $year);
 
- //include "Includes/footer.html"; ?>
+ //include "Includes/footer.php"; ?>
 <script src="JS/calendar.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
 	include('Includes/nav.php');
 ?>
 			<div class="container-fluid">
-				<div class="row introduction">					
+				<div class="row content">
 					<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
 						<h2>About GDT Driving School</h2>
 						<p>GDT offer many courses and packages, and these can be tailored to suit your individual needs, including <a href="courses.php" target="_blank">Intensive Driving Courses</a>, <a href="courses.php" target="_blank">Block booking</a>, Student Discount and <a href="courses.php" target="_blank">Pass Plus courses</a>. Here at GDT we cater for all types of learner, including beginner, confident and nervous.</p>
@@ -21,5 +21,5 @@
 			</div>
 <?php
 	include('Includes/socialicons.html');
-	include('Includes/footer.html');
+	include('Includes/footer.php');
 ?>

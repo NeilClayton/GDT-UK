@@ -1,4 +1,4 @@
-<?php
+<?php
     session_start();
 	date_default_timezone_set("Europe/London");
 	include_once ('Actions/video.php');
@@ -161,7 +161,7 @@
 					</div>
 				</div>
 			</div>
-		<?php include('Includes/footer.html');?>
+		<?php include('Includes/footer.php');?>
 		<?php include('Includes/socialicons.html');?>
 		<script src="JS/refresh.js"></script>
 	</body>

@@ -5,7 +5,7 @@
 	include('Includes/nav.php');
 ?>
 			<div class="container-fluid">
-				<div class="row introduction">
+				<div class="row content">
 					<div class="col-md-10 col-md-offset-1">
 						<ul class="nav nav-tabs">
 							<li class="active"><a data-toggle="tab" href="#discounts">Student driving lesson discounts</a></li>
@@ -58,5 +58,5 @@
 			</div>
 <?php
 	include('Includes/socialicons.html');
-	include('Includes/footer.html');
+	include('Includes/footer.php');
 ?>

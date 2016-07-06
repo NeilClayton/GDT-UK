@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $("#hide").click(function(){
         $("#fb").toggle();
-		$("#twitter").toggle();
+		$("#call").toggle();
 		$("#print").toggle();
 		$("#email").toggle();
     });

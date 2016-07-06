@@ -5,28 +5,30 @@
 	include('Includes/nav.php');
 ?>
 			<div class="container-fluid">
-				<div class="row introduction">
+				<div class="row content">
 					<div class="col-md-10 col-md-offset-1">
 						<h2>Driving Lessons and Courses</h2>
 						<p>Here at GDT Driving School we offer a variety of Driving Courses all designed to suit your needs, all at competitive prices.  Here are list of Driving lesson prices and the courses we offer:</p>
-						<table class="table table-bordered">
-							<tr>
-								<th>Time</th>
-								<th>Price</th>
-							</tr>
-							<tr>
-								<td>1 Hour</td>
-								<td>£24.50</td>
-							</tr>
-							<tr>
-								<td>1.5 Hours</td>
-								<td>£36.75</td>
-							</tr>
-							<tr>
-								<td>2 Hours</td>
-								<td>£49.00</td>
-							</tr>
-						</table>
+						<div class="table-responsive">
+							<table class="table table-bordered">
+									<tr>
+										<th>Time</th>
+										<th>Price</th>
+									</tr>
+									<tr>
+										<td>1 Hour</td>
+										<td>£24.50</td>
+									</tr>
+									<tr>
+										<td>1.5 Hours</td>
+										<td>£36.75</td>
+									</tr>
+									<tr>
+										<td>2 Hours</td>
+										<td>£49.00</td>
+									</tr>
+							</table>
+						</div>
 						<ul class="nav nav-pills">
 							<li class="active"><a data-toggle="tab" href="#bronze">Intensive driving courses (Bronze)</a></li>
 							<li><a data-toggle="tab" href="#silver">Intensive driving courses (Silver)</a></li>
@@ -112,6 +114,6 @@
 			</div>
 <?php
 	include('Includes/socialicons.html');
-	include('Includes/footer.html');
+	include('Includes/footer.php');
 ?>
 

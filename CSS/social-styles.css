@@ -74,25 +74,13 @@
 	content: "";
 	display: block;
 	height: 8px;
-	width: 8px;
+	width: 20px;
 	left: -4px;
 	margin-top: -4px;
 	position: absolute;
 	top: 50%;
 	transform: rotate(45deg);
 }
-/*.entypo-twitter {
-	background: #00aced;
-}
-.entypo-facebook {
-	background: #3B5998	
-}
-.entypo-print {
-	background: #AEAEAE;
-}
-.entypo-mail {
-	background: #E34429;	
-}*/
 #social-sidebar a[class*="twitter"]:hover,
 #social-sidebar a[class*="twitter"] span,
 #social-sidebar a[class*="twitter"] span:before {background: #00aced;}
@@ -109,9 +97,9 @@
 #social-sidebar a[class*="mail"] span,
 #social-sidebar a[class*="mail"] span:before {background: #E34429;}
 
-#social-sidebar a[class*="plus"]:hover,
-#social-sidebar a[class*="plus"] span,
-#social-sidebar a[class*="plus"] span:before {background: #8DC5F2;}
+#social-sidebar a[class*="phone"]:hover,
+#social-sidebar a[class*="phone"] span,
+#social-sidebar a[class*="phone"] span:before {background: #8DC5F2;}
 
 @media all and (max-width:414px) {
 	#social-sidebar {
