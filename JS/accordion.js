@@ -12,4 +12,8 @@ $(document).ready(function() {
         $(".test").removeClass("active");
         $(this).addClass("active");
     });
+    $(".question").click(function () {
+        $(".question").removeClass("active");
+        $(this).addClass("active");
+    });
 });
