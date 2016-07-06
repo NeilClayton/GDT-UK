@@ -74,212 +74,73 @@
 							</div>
 							<div id="questions" class="collapse">
 								<h6>Car safety questions</h6>
-								<div class="panel-group" id="accordion">
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-												<a class="accordion-toggle toggle1" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Open the bonnet, identify where you would check the engine oil level and tell me how you would check that the engine has sufficient oil?</a>
-											</h4>
-										</div>
-										<div id="collapseOne" class="panel-collapse collapse in">										
-											<div class="panel-body">
-												Identify dipstick / oil level indicator, describe check of oil level against the minimum / maximum markers.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Open the bonnet, identify where you would check the engine coolant level and tell me how you would check that the engine has the correct level?</a>
-											</h4>
-										</div>
-										<div id="collapseTwo" class="panel-collapse collapse">
-											<div class="panel-body">
-												Identify high / low level markings on header tank where fitted or radiator filler cap, and describe how to top up to correct level.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Identify where the windscreen washer reservoir is and tell me how you would check the windscreen washer level?</a>
-											</h4>
-										</div>
-										<div id="collapseThree" class="panel-collapse collapse">
-											<div class="panel-body">
-												Identify reservoir and explain how to check level.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Open the bonnet, identify where the brake fluid reservoir is and tell me how you would check that you have a safe level of hydraulic brake fluid?</a>
-											</h4>
-										</div>
-										<div id="collapseFour" class="panel-collapse collapse">
-											<div class="panel-body">
-												Identify reservoir, check lever against high / low markings.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive"> Tell me how you would check that the brake lights are working on this car?</a>
-											</h4>
-										</div>
-										<div id="collapseFive" class="panel-collapse collapse">
-											<div class="panel-body">
-												Operate brake pedal, make use of reflections in windows, garage doors, etc, or ask someone to help.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<h2 class="sr-only">Question 6</h2>
-										<div class="panel-heading">
-											<h4 class="panel-title">
-												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Tell me how you would check that the brakes are working before starting a journey?</a>
-											</h4>
-										</div>
-										<div id="collapseSix" class="panel-collapse collapse">
-											<div class="panel-body">
-												Brakes should not feel spongy or slack.  Brakes should be tested as you set off.  Vehicle should not pull to one side.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Tell me how you would check the tyres to ensure that they have sufficient tread depth and that their general condition is safe to use on the road?</a>
-											</h4>
-										</div>
-										<div id="collapseSeven" class="panel-collapse collapse">
-											<div class="panel-body">
-												No cuts and bulges, 1.6mm of tread depth across the central ¾ of the breadth of the tyre and around the entire outer circumference.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Tell me where you would find the information for the recommended tyre pressures for this car and how tyre pressures should be checked?</a>
-											</h4>
-										</div>
-										<div id="collapseEight" class="panel-collapse collapse">
-											<div class="panel-body">
-												Manufacturer’s guide, use a reliable pressure gauge, check and adjust pressures when tyres are cold, don’t forget spare tyre, remember to refit valve caps.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">Show me / explain how you would check that the power assisted steering is working before starting a journey?</a>
-											</h4>
-										</div>
-										<div id="collapseNine" class="panel-collapse collapse">
-											<div class="panel-body">
-												If the steering becomes heavy the system may not be working properly.  Before starting a journey two simple checks can be made.  Gentle pressure on the steering wheel, maintained while the engine is started, should result in a slight but noticeable movement as the system begins to operate.  Alternatively turning the steering wheel just after moving off will give an immediate indication that the power assistance is functioning.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">Show me how you would check that the headlights & tail lights are working?</a>
-											</h4>
-										</div>
-										<div id="collapseTen" class="panel-collapse collapse">
-											<div class="panel-body">
-												Operate switch (turn on ignition if necessary), walk round vehicle.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">Show me how you would check that the direction indicators are working?</a>
-											</h4>
-										</div>
-										<div id="collapseEleven" class="panel-collapse collapse">
-											<div class="panel-body">
-												Applying the indicators or hazard warning switch and check functioning of all indicators.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve">Show me how you would check that the horn is working (off road only)?</a>
-											</h4>
-										</div>
-										<div id="collapseTwelve" class="panel-collapse collapse">
-											<div class="panel-body">
-												Check is carried out by using control (turn on ignition if necessary).
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen">Show me how you would check the parking brake for excessive wear?</a>
-											</h4>
-										</div>
-										<div id="collapseThirteen" class="panel-collapse collapse">
-											<div class="panel-body">
-												Demonstrate by applying parking brake that when it is fully applied it secures itself, and is not at the end of the working travel.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen">Show me how you would set the demister controls to clear all the windows effectively.  This should include both front and rear screens?</a>
-											</h4>
-										</div>
-										<div id="collapseFourteen" class="panel-collapse collapse">
-											<div class="panel-body">
-												Set all relevant controls, including fan, temperature, air direction/source and heated screen to clear windscreen and windows.  Engine does not have to be started for this demonstration.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen">Show me how you would switch on the rear fog light(s) and explain when you would use it/them (No need to exit vehicle)?</a>
-											</h4>
-										</div>
-										<div id="collapseFifteen" class="panel-collapse collapse">
-											<div class="panel-body">
-												Operate switch; turn on dipped headlights (and ignition, if necessary, but without starting the engine.) Check warning light is on. Explain when to use fog lights.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSixteen">Show me how you switch your headlights from dipped to main beam and explain how you would know the main beam is on whilst inside the car?</a>
-											</h4>
-										</div>
-										<div id="collapseSixteen" class="panel-collapse collapse">
-											<div class="panel-body">
-												Operate switch (with ignition or engine on if necessary); Check with main beam warning light
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-												<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeventeen">Tell me how you make sure your head restraint is correctly adjusted?</a>
-											</h4>
-										</div>
-										<div id="collapseSeventeen" class="panel-collapse collapse">
-											<div class="panel-body">
-												The head restraint should be adjusted so the rigid part of the head restraint is at least as high as the eye or top of the ears, and as close to the back of the head as is comfortable. NB: Some restraints might not be adjustable.
-											</div>
-										</div>
-									</div>
+								<div class="question active">
+									<h4>1. Open the bonnet, identify where you would check the engine oil level and tell me how you would check that the engine has sufficient oil?</h4>
+									<p>Identify dipstick / oil level indicator, describe check of oil level against the minimum / maximum markers.</p>
+								</div>
+								<div class="question">
+									<h4>2. Open the bonnet, identify where you would check the engine coolant level and tell me how you would check that the engine has the correct level?</h4>
+									<p>Identify high / low level markings on header tank where fitted or radiator filler cap, and describe how to top up to correct level.</p>
+								</div>
+								<div class="question">
+									<h4>3. Identify where the windscreen washer reservoir is and tell me how you would check the windscreen washer level?</h4>
+									<p>Identify reservoir and explain how to check level.</p>
+								</div>
+								<div class="question">
+									<h4>4. Open the bonnet, identify where the brake fluid reservoir is and tell me how you would check that you have a safe level of hydraulic brake fluid?</h4>
+									<p>Identify reservoir, check lever against high / low markings.</p>
+								</div>
+								<div class="question">
+									<h4>5. Tell me how you would check that the brake lights are working on this car?</h4>
+									<p>Operate brake pedal, make use of reflections in windows, garage doors, etc, or ask someone to help.</p>
+								</div>
+								<div class="question">
+									<h4>6. Tell me how you would check that the brakes are working before starting a journey?</h4>
+									<p>Brakes should not feel spongy or slack.  Brakes should be tested as you set off. Vehicle should not pull to one side.</p>
+								</div>
+								<div class="question">
+									<h4>7. Tell me how you would check the tyres to ensure that they have sufficient tread depth and that their general condition is safe to use on the road?</h4>
+									<p>No cuts and bulges, 1.6mm of tread depth across the central ¾ of the breadth of the tyre and around the entire outer circumference.</p>
+								</div>
+								<div class="question">
+									<h4>8. Tell me where you would find the information for the recommended tyre pressures for this car and how tyre pressures should be checked?</h4>
+									<p>Manufacturer’s guide, use a reliable pressure gauge, check and adjust pressures when tyres are cold, don’t forget spare tyre, remember to refit valve caps.</p>
+								</div>
+								<div class="question">
+									<h4>9. Show me / explain how you would check that the power assisted steering is working before starting a journey?</h4>
+									<p>If the steering becomes heavy the system may not be working properly.  Before starting a journey two simple checks can be made.  Gentle pressure on the steering wheel, maintained while the engine is started, should result in a slight but noticeable movement as the system begins to operate.  Alternatively turning the steering wheel just after moving off will give an immediate indication that the power assistance is functioning.</p>
+								</div>
+								<div class="question">
+									<h4>10. Show me how you would check that the headlights & tail lights are working?</h4>
+									<p>Operate switch (turn on ignition if necessary), walk round vehicle.</p>
+								</div>
+								<div class="question">
+									<h4>11. Show me how you would check that the direction indicators are working?</h4>
+									<p>Applying the indicators or hazard warning switch and check functioning of all indicators.</p>
+								</div>
+								<div class="question">
+									<h4>12. Show me how you would check that the horn is working (off road only)?</h4>
+									<p>Check is carried out by using control (turn on ignition if necessary).</p>
+								</div>
+								<div class="question">
+									<h4>13. Show me how you would check the parking brake for excessive wear?</h4>
+									<p>Demonstrate by applying parking brake that when it is fully applied it secures itself, and is not at the end of the working travel.</p>
+								</div>
+								<div class="question">
+									<h4>14. Show me how you would set the demister controls to clear all the windows effectively. This should include both front and rear screens?</h4>
+									<p>Set all relevant controls, including fan, temperature, air direction/source and heated screen to clear windscreen and windows. Engine does not have to be started for this demonstration.</p>
+								</div>
+								<div class="question">
+									<h4>15. Show me how you would switch on the rear fog light(s) and explain when you would use it/them (No need to exit vehicle)?</h4>
+									<p>Operate switch; turn on dipped headlights (and ignition, if necessary, but without starting the engine). Check warning light is on. Explain when to use fog lights.</p>
+								</div>
+								<div class="question">
+									<h4>16. Show me how you switch your headlights from dipped to main beam and explain how you would know the main beam is on whilst inside the car?</h4>
+									<p>Operate switch (with ignition or engine on if necessary); Check with main beam warning light.</p>
+								</div>
+								<div class="question">
+									<h4>17. Tell me how you make sure your head restraint is correctly adjusted?</h4>
+									<p>The head restraint should be adjusted so the rigid part of the head restraint is at least as high as the eye or top of the ears, and as close to the back of the head as is comfortable. NB: Some restraints might not be adjustable.</p>
 								</div>
 							</div>
 							<div id="booking" class="collapse">

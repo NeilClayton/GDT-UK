@@ -81,17 +81,10 @@
 	top: 50%;
 	transform: rotate(45deg);
 }
-#social-sidebar a[class*="twitter"]:hover,
-#social-sidebar a[class*="twitter"] span,
-#social-sidebar a[class*="twitter"] span:before {background: #00aced;}
 
 #social-sidebar a[class*="facebook"]:hover,
 #social-sidebar a[class*="facebook"] span,
 #social-sidebar a[class*="facebook"] span:before {background: #3B5998;}
-
-#social-sidebar a[class*="print"]:hover,
-#social-sidebar a[class*="print"] span,
-#social-sidebar a[class*="print"] span:before {background: #AEAEAE;}
 
 #social-sidebar a[class*="mail"]:hover,
 #social-sidebar a[class*="mail"] span,
@@ -99,7 +92,7 @@
 
 #social-sidebar a[class*="phone"]:hover,
 #social-sidebar a[class*="phone"] span,
-#social-sidebar a[class*="phone"] span:before {background: #8DC5F2;}
+#social-sidebar a[class*="phone"] span:before {background: #37c837;}
 
 @media all and (max-width:414px) {
 	#social-sidebar {
