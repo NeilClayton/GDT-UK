@@ -192,11 +192,14 @@ header img {
 	font-size: 1.7rem;
 	font-weight: normal;
 }
-.content h6 {
+.content h6, .profile-2 h6, .profile-1 h2 {
 	margin-top: 20px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 2.5rem;
 	font-weight: bold;
+}
+.content h6 .fa {
+	margin-right: 10px;
 }
 .introduction p, .introduction li, .profile-1 p, .content p {
 	margin-top: 15px;
@@ -358,9 +361,17 @@ h2 a {
     border-color: #ddd !important;
 }
 .price-link {
-	font-family: 'Lato', sans-serif;
-	font-weight:300;
-	font-size:1.6rem;	
+	width: 210px;
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 1.7rem;
+	text-align: center;
+	padding: 10px 25px 10px 15px;
+	border: 1px solid #ddd;
+	margin-bottom: 5px;
+	border-radius: 3px;
+	color: #333;
 }
 /* --- Prices page Ends --- */
 
@@ -372,7 +383,7 @@ h2 a {
 .contact h2 {
 	text-align: center;
 }
-.contact form input {
+.contact form input[type=text], .contact form input[type=password], .contact form input[type=email] {
 	border-radius: 0;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
@@ -397,10 +408,10 @@ label {
 /* --- Contact Page Ends --- */
 
 /* --- Driving pages Begin --- */
-#theory-content, #practical-content {
+#theory-content, #practical-content, #admin-content, #discounts-content, #profile-content {
 	margin-top: 25px;
 }
-#theory-content button, #practical-content button {
+#theory-content button, #practical-content button, #admin-content button, .calendar-toggle, #discounts-content button, #profile-content .profile {
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 	font-size: 1.7rem;
@@ -410,13 +421,14 @@ label {
 	margin-bottom: 5px;
 	background: white;
 	box-shadow: none;
+	color: #333;
 }
-#theory-content button.active, #practical-content button.active {
+#theory-content button.active, #practical-content button.active, #admin-content button.active, #discounts-content button.active, #profile-content .profile.active {
 	background: #f1f1f1;
 	box-shadow: none;
 	outline: none;
 }
-#theory-content button .fa, #practical-content button .fa {
+#theory-content button .fa, #practical-content button .fa, #admin-content button .fa, .calendar-toggle .fa, #discounts-content button .fa, #profile-content .profile .fa {
 	margin-right: 8px;
 }
 #practical-content .question {
@@ -445,14 +457,25 @@ label {
 	font-weight: bold;
 }
 .jumbotron {
-	margin-top:1%;
-	padding:1.5%;
+	border: none;
+	padding: 20px 10px;
+	color: white;
 }
-.jumbotron .btn-primary {
-	padding:5px 20px;
-	font-family: 'Lato', sans-serif;
-	font-weight:300;
-	font-size:1.6rem;
+.jumbotron .price, .jumbotron strong {
+	color: white;
+}
+.jumbotron.bronze {
+	margin-top: 30px;
+	background: #CD7F32;
+}
+.jumbotron.silver {
+	background: #B6B3BA;
+}
+.jumbotron.gold {
+	background: #E6CE6A;
+}
+.jumbotron button {
+	border: none !important;
 }
 .content ul {
 	margin-left: 0;
@@ -464,48 +487,6 @@ label {
 }
 .content li  {
 	margin:0;
-}
-.panel-default>.panel-heading a:hover {
-    text-decoration:none;
-}
-.panel-heading [data-toggle="collapse"]:after {
-    font-family: 'Glyphicons';
-    content: "\276F";
-    float: right;
-    color: #F58723;
-    font-size: 18px;
-    line-height: 22px;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-}
-.panel-heading [data-toggle="collapse"].collapsed:after {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-    color: #454444;
-}
-.panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
-	color:black;
-}
-.panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a:hover {
-	text-decoration:none;
-}
-.accordion-toggle {
-	font-size:1.45rem;
-}
-.panel{
-	margin-top:1% !important;
-	border-radius:0 !important;
-}
-.panel .panel-body {
-	font-family: 'Lato', sans-serif;
-	font-weight:300;
-	font-size:1.7rem;
 }
 /* --- Driving pages end --- */
 
@@ -520,20 +501,16 @@ label {
 }
 .profile-1 h1 {
 	margin-top:1%;
-	font-family: 'Montserrat', sans-serif;
-	font-size:4rem;
+	font-family: 'Roboto', sans-serif;
+	font-size: 4rem;
 }
 .profile-2 a {
 	color:#588ed3;
 }
-.profile-2 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover, .nav-pills>li>a:hover, .admin .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover, .nav-pills>li>a:hover {
-	border-bottom-color:#ddd;
-	border-radius:2px 2px 0 0;
-}
-#posts h6 ,#information h3 ,#lessons h3, #videos h3 {
+#posts h6, #information h3, #lessons h3, #videos h3 {
 	margin-top:1%;
-	font-family: 'Montserrat', sans-serif;
-	font-size:2.5rem;	
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.5rem;
 }
 .slogan {
 	font-style:italic;
@@ -547,11 +524,17 @@ label {
 .new-post form {
 	margin-top:1.5%;
 }
+.new-post form textarea {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.7rem;
+	border-radius: 0;
+}
 #post-message {
 	width:100%;
 	margin:0;
 	border-radius:0;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:300;
 	font-size:1.7rem;
 	box-shadow:none;
@@ -559,9 +542,16 @@ label {
 .new-post button[type=submit] {
 	margin-top:0.5%;
 	padding:5px 35px;
-	font-family: 'La', sans-serif;
-	font-size:1.7rem;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.7rem;
 	border-radius:0;
+}
+.new-reply form textarea {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.4rem;
+	border-radius: 0;
+	box-shadow: none;
 }
 .user-post {
 	width:100%;
@@ -585,12 +575,12 @@ label {
 .user-details h2 {
 	padding:0;
 	margin:2% 0 0 0;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size:2rem;
 	font-weight:bold;    
 }
 .datetime {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size:1.4rem;
 	color:#8e8e8e;
 }
@@ -599,7 +589,7 @@ label {
 	margin:0;
 	text-align:justify;
 	font-size:1.6rem;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:300;
 }
 .d-button {
@@ -610,7 +600,7 @@ label {
 	border: none;
 	color: #157df2;
 	font-size:1.5rem;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:300;
 
 }
@@ -636,25 +626,25 @@ label {
 	border:1px solid #ddd;
 }
 .reply-details h4 {
-	display:block;
-	width:100%;
-	padding:0;
-	float:none;
-	margin:1.8% 0 0 0;
-	font-family: 'Lato', sans-serif;
-	font-size:1.3rem;
-	font-weight:bold;
+	display: block;
+	width: 100%;
+	padding: 0;
+	float: none;
+	margin: 18px 0 0 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.3rem;
+	font-weight: bold;
 }
 .r-datetime {
-	font-family: 'Lato', sans-serif;
-	font-size:1.2rem;
-	color:#8e8e8e;	
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+	color: #8e8e8e;
 }
 .reply-message p {
-	margin:0;
-	font-size:1.3rem;
-	font-family: 'Lato', sans-serif;
-	font-weight:300;
+	margin: 0;
+	font-size: 1.3rem;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 }
 .new-reply {
 	margin-top:2%;
@@ -675,6 +665,7 @@ label {
 	font-size:1.4rem;
 	border-radius:0;
 }
+
 .about-details {
 	float:left;
 	width:100%;
@@ -823,7 +814,7 @@ thead, tbody {
 .admin td .fa {
 	font-size:2rem;
 }
-.admin form input, #overlay form input, .admin form select, .edit-form input, .edit-form select {
+.admin form input[type=text], .admin form input[type=password], .admin form input[type=email], #overlay form input, .admin form select, .edit-form input, .edit-form select {
 	border-radius:0;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
@@ -838,33 +829,21 @@ thead, tbody {
 	font-size: 2.5rem;
 	border-radius: 0;
 }
-.admin h6 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
-    font-weight: normal;
-}
 .del-form {
 	padding:15px;
 }
 .del-form p {
-	text-align:center !important;
-	font-family: 'Lato', sans-serif;
-	font-size:1.7rem;
-	margin:0 0 20px 0;
-	padding:0;
+	text-align: center !important;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.7rem;
+	margin: 0 0 20px 0;
+	padding: 0;
 	font-weight:300;
 }
 .del-buttons {
 	margin:0 0 0 25%;
 }
 .del-buttons .btn-primary {
-	margin: 0 auto;
-	padding: 10px 40px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.7rem;
-	border-radius:0;
-}
-.admin .btn-primary {
 	margin: 0 auto;
 	padding: 10px 40px;
 	font-family: 'Open Sans', sans-serif;
@@ -975,11 +954,11 @@ footer  a, footer a:visited, footer a:active, footer a:focus, footer a:hover {
 	.user-details h2 {
 		margin:3.5% 0 0 0;  
 	}
-	.introduction h2, .content h2, .contact h2, .introduction h3, .content h3, .introduction h4, .content h4 {
+	.introduction h2, .content h2, .contact h2, .introduction h3, .content h3, .introduction h4, .content h4, .admin h1, .admin h2 {
 		text-align: center;
 	}
 
-	.introduction p, .introduction li, .profile-1 p, .content p {
+	.introduction p, .introduction li, .profile-1 p, .content p, .admin p {
 		text-align: center;
 	}
 	.navbar-inverse .navbar-nav>li {
@@ -1041,10 +1020,18 @@ footer  a, footer a:visited, footer a:active, footer a:focus, footer a:hover {
 	.login-form h2 {
 		margin-top: 150px;
 	}
+	#theory-content button, #practical-content button, #admin-content button, .calendar-toggle, #profile-content .profile, #discounts-content button {
+		width: 75%;
+		margin-left: 12.5%;
+	}
 }
 @media all and (max-width: 375px) {
 	.login-form h2 {
 		margin-top: 110px;
+	}
+	#theory-content button, #practical-content button, #admin-content button, .calendar-toggle, #profile-content .profile, #discounts-content button  {
+		width: 100%;
+		margin-left: 0;
 	}
 }
 @media all and (max-width:320px) {

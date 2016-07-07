@@ -5,9 +5,9 @@ include('Includes/header2.html');
 include('Includes/nav.php');
 ?>
 			<div class="container-fluid">
-				<div class="row introduction">
+				<div class="row content">
 					<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-						<h1>Prices</h1>
+						<h2>Prices</h2>
 						<p>At GDT we offer various special offers for your individual needs.</p>
 						<div class="table-responsive">
 							<table class="table table-bordered">
@@ -32,10 +32,12 @@ include('Includes/nav.php');
 								<tr><td>£36.75</td></tr>
 							</table>
 						</div>
-						<p>10 lessons for £220.00</p>
-						<a class="price-link" href="discounts.php">Driving lesson gift vouchers</a> &#10072;
-						<a class="price-link" href="discounts.php">Student discounts</a> &#10072;
-						<a class="price-link" href="discounts.php">Recommend a friend</a>
+						<!--<p>10 lessons for £220.00</p>-->
+						<h6>Discounts</h6>
+						<p>Click on the button below to view the discounts.</p>
+						<a role="button" class="price-link" href="discounts.php">Gift Vouchers</a>
+						<a role="button" class="price-link" href="discounts.php">Student Discounts</a>
+						<a role="button" class="price-link" href="discounts.php">Recommend a Friend</a>
 					</div>
 				</div>
 			</div>

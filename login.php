@@ -23,7 +23,7 @@
 			<h2>Login</h2>
 			<div class="form-group">
 				<label for="usernameInput" class="sr-only">Username:</label>
-				<input type="text" class="form-control" id="usernameInput" name="email" placeholder="Email Address" autofocus>
+				<input type="text" class="form-control" id="usernameInput" name="username" placeholder="Username" autofocus>
 			</div>
 			<div class="form-group">
 				<label for="passwordInput" class="sr-only">Password:</label>
