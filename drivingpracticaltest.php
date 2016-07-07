@@ -32,30 +32,24 @@
 								</ul>
 								<p>Your examiner will call your name and ask you to sign a declaration on the test form.  They will then check both parts of your Provisional Driving Licence, the counter part and the plastic card (if you have the new photo card) or, if you have the old style paper licence you will be asked to show photographic identification of yourself, for example, a valid passport.</p>
 								<p>You may also request to the examiner at the start of your test that you would like your instructor to be present during the test. If you take this option your instructor will sit in the car behind you and they must not assist in any way during your test.</p>
-								<p>At the start of your test you will be required to read a number plate at 67ft/ 21.5 mtrs and once you have done this you will be asked two Car Safety Questions, more commonly called show me/tell me.
-								There are a number of test routes that will test all your skills as a driver, and you will be tested on 1 manoeuvre , and possibly be asked to do an emegency stop.</p>
+								<p>At the start of your test you will be required to read a number plate at 67ft/ 21.5 mtrs and once you have done this you will be asked two Car Safety Questions, more commonly called show me/tell me.There are a number of test routes that will test all your skills as a driver, and you will be tested on 1 manoeuvre , and possibly be asked to do an emegency stop.</p>
 								<p>At the end of your Practical Driving Test the examiner will give you a debriefing on your test after they have given you the result. You may request that your instructor also be present to listen to the debrief, as this can be very useful if your driving instructor was not present during your Practical Driving Test. This is helpful as they can offer you more advice or help on anything that your examiner mentions.</p>
 								<p>To book your Practical Driving Test click <a href="https://www.gov.uk/book-driving-test" target="_blank">here</a>.</p>
 							</div>
 							<div id="prepare" class="collapse">
 								<h6>How to prepare</h6>
-								<p>To prepare for that big day when you are going to take your Practical Driving Test you will have been having professional lessons from your Fully Approved Driving Instructor.
-								The amount of lessons you have is based on your ability, some may take only a handful of lessons but another person may take 30 hours, there is no set limit for the amount of lessons that a pupil will take.
-								Your lessons will be structured to teach you all aspects of driving that is required for you to become a safe and competent driver, that will enable you to be to pass your Practical Driving Test.</p>
+								<p>To prepare for that big day when you are going to take your Practical Driving Test you will have been having professional lessons from your Fully Approved Driving Instructor.The amount of lessons you have is based on your ability, some may take only a handful of lessons but another person may take 30 hours, there is no set limit for the amount of lessons that a pupil will take.Your lessons will be structured to teach you all aspects of driving that is required for you to become a safe and competent driver, that will enable you to be to pass your Practical Driving Test.</p>
 							</div>
 							<div id="dosanddonts" class="collapse">
 								<h6>Driving test do's &amp; dont's</h6>
 								<p>Do ask the examiner if your instructor can be present during the test if you want them there. Its your test and the examiner can't refuse, especially if you think that having your instructor there will help you relax a bit more, and make you drive better knowing that somebody is with you who you know.But this does not mean that you are allowed to bring a friend along.</p>
-								<p>During the Practical Driving Test, always ensure you listen carefully to your examiner, this can be sometimes difficult as nerves can get the better of some people.
-								But also the key is not to panic during your test, your Driving Instructor will have taught you to high standard of driving, and you would not be there if your instructor was not confident that you will be able to pass the Practical Driving Test,</p>
-								<p>Do ask the examiner if your instructor can be present at the end of your test to listen to your debrief, if you don't want them present during your test.
-								You may also have a translater there during your test if English is not your first spoken language.( this must be notified to DSA when booking your Practical Driving Test)</p>
+								<p>During the Practical Driving Test, always ensure you listen carefully to your examiner, this can be sometimes difficult as nerves can get the better of some people.But also the key is not to panic during your test, your Driving Instructor will have taught you to high standard of driving, and you would not be there if your instructor was not confident that you will be able to pass the Practical Driving Test,</p>
+								<p>Do ask the examiner if your instructor can be present at the end of your test to listen to your debrief, if you don't want them present during your test.You may also have a translater there during your test if English is not your first spoken language.( this must be notified to DSA when booking your Practical Driving Test)</p>
 							</div>
 							<div id="pass" class="collapse">
 								<h6>If you pass your test</h6>
 								<p>Your examiner will tell you immediately after your Practical Driving Test that you have passed ,if you have proved that you are a safe and competent driver, they will debrief you on what you have done and any areas that you may need to brush up on.</p>
-								<p>You will then be told about the <a href="courses.php" target="_blank">Pass Plus Driving Course</a> that's available to people after they have passed their driving test, and that you should discuss this with your instructor.
-								The benefits of doing the Pass Plus Driving Course is that this can reduce your insurance premium.</p>
+								<p>You will then be told about the <a href="courses.php" target="_blank">Pass Plus Driving Course</a> that's available to people after they have passed their driving test, and that you should discuss this with your instructor.The benefits of doing the Pass Plus Driving Course is that this can reduce your insurance premium.</p>
 								<p>The examiner will also send your Provisional Driving Licence off for you to DVLA to get your new FULL Driving Licence.( if you already have the 2 part photo i.d. Licence )</p>
 								<p>f you have the old 1 part paper licence then you will be required to send it off yourself with a recent photo of yourself. And the relevant forms from the post office D1 Application for a Driving Licence, or apply online at <a href="#" target="_blank">www.direct.gov.uk/exchangelicence</a>.</p>
 							</div>
@@ -74,6 +68,7 @@
 							</div>
 							<div id="questions" class="collapse">
 								<h6>Car safety questions</h6>
+								<p>Click on the questions to view the answers.</p>
 								<div class="question active">
 									<h4>1. Open the bonnet, identify where you would check the engine oil level and tell me how you would check that the engine has sufficient oil?</h4>
 									<p>Identify dipstick / oil level indicator, describe check of oil level against the minimum / maximum markers.</p>
@@ -153,8 +148,7 @@
 								<p><strong>Colwick</strong> (MPTC), Nottingham</p>
 								<p><strong>Chalfont Drive</strong>, Nottingham</p>
 								<p>Your examiner will call your name and ask you to sign a declaration on the test form, whilst they check your Driving Licence, the new photo I.D or if you have the old style paper licence you will be asked to prove photographic i.d. of yourself (valid passport).</p>
-								<p>You may also request to the examiner at the start of your test that you would like your instructor to be present during the test. At the start of your test you will be required to read a number plate at 67ft/ 20.5 mtrs and once you have done this you will be asked 2 <a href="#" target="_blank">Car Safety Questions</a> (show me/tell me).
-								There are a number of test routes that will test all your skills as a driver, and you will be tested on 2 manoeuvres , and possibly be asked to do the Emergency Stop.</p>
+								<p>You may also request to the examiner at the start of your test that you would like your instructor to be present during the test. At the start of your test you will be required to read a number plate at 67ft/ 20.5 mtrs and once you have done this you will be asked 2 <a href="#" target="_blank">Car Safety Questions</a> (show me/tell me).There are a number of test routes that will test all your skills as a driver, and you will be tested on 2 manoeuvres , and possibly be asked to do the Emergency Stop.</p>
 								<p>At the end of your Practical Driving Test the examiner will give you a debriefing on your test after they have given you the result, you may request that your instructor be present to listen in to the debrief also,this can be very useful if your Driving Instructor was not present during your Practical Driving Test, which is always helpful as they can give you more advice or help on anything that your examiner mentions.</p>
 							</div>
 						</div>

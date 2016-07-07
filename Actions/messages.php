@@ -24,8 +24,6 @@ if (isset($_GET['newMsg'])){
 }
 
 
-
-
 class messages
 {
 
@@ -71,7 +69,6 @@ class messages
                         echo '<img src="' . $row['image'] . '" width="75" height="75" class="img-responsive img-circle" alt="profile">';
                         echo '<h2><a href="#">' . $row['firstname'] . " " . $row['lastname'] . '</a><b class="pull-right datetime">' . $date . '</b></h2>';
                         echo '</div>';
-                        echo '<button type="button" class="d-button" onclick="d_message()">Delete</button>';
                         echo '<div class="user-message">';
                         echo '<p>' . $row['message'] . '</p>';
                         echo '</div>';
@@ -104,6 +101,7 @@ class messages
                 echo '<button type="submit" id="insertComment" name="' . $conversationIndex . '" class="btn btn-success pull-right">Reply&nbsp;&nbsp;<i class="fa fa-comments"></i></button>';
                 echo '</form>';
                 echo '</div>';
+                echo '<button type="button" class="d-button" onclick="d_message()">Delete</button>';
                 echo '</div>';
             } catch (PDOException $e){
             echo '<h1>Oops something went wrong, please try again';
@@ -151,5 +149,3 @@ class messages
                 }
             }
 }
-
-echo "<script src='../JS/refresh.js'></script>";

@@ -8,20 +8,19 @@
 				<div class="row admin">
 					<div class="col-md-8 col-md-offset-2">
 						<h1>Admin Panel</h1>
-						<ul class="nav nav-pills">
-							<li class="active"><a data-toggle="tab" href="#add-lessons"><i class="fa fa-plus-circle"></i>Add bookings</a></li>
-							<li><a data-toggle="tab" href="#man-lessons"><i class="fa fa-book"></i>Manage bookings</a></li>
-							<li><a data-toggle="tab" href="#add-users"><i class="fa fa-user-plus"></i>Add Users</a></li>
-							<li><a data-toggle="tab" href="#man-users"><i class="fa fa-users"></i>Manage Users</a></li>
-							<li><a data-toggle="tab" href="#add-videos"><i class="fa fa-plus-circle"></i>Add Videos</a></li>
-							<li><a data-toggle="tab" href="#man-videos"><i class="fa fa-video-camera"></i>Manage Videos</a></li>
-						</ul>
-						<div class="tab-content">
-							<div id="add-lessons" class="tab-pane fade in active">
+						<p>Click on the buttons to add or manage records.</p>
+						<div id="admin-content">
+							<button class="btn a-toggle active" data-toggle="collapse" data-target="#add-lessons" data-parent="#admin-content"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i>Add Lessons</button>
+							<button class="btn a-toggle" data-toggle="collapse" data-target="#man-lessons" data-parent="#admin-content"><i class="fa fa-calendar" aria-hidden="true"></i>Manage Lessons</button>
+							<button class="btn a-toggle" data-toggle="collapse" data-target="#add-users" data-parent="#admin-content"><i class="fa fa-user-plus" aria-hidden="true"></i>Add Users</button>
+							<button class="btn a-toggle" data-toggle="collapse" data-target="#man-users" data-parent="#admin-content"><i class="fa fa-users" aria-hidden="true"></i>Manage Users</button>
+							<button class="btn a-toggle" data-toggle="collapse" data-target="#add-videos" data-parent="#admin-content"><i class="fa fa-video-camera" aria-hidden="true"></i>Add Videos</button>
+							<button class="btn a-toggle" data-toggle="collapse" data-target="#man-videos" data-parent="#admin-content"><i class="fa fa-video-camera" aria-hidden="true"></i>Manage Videos</button>
+							<div id="add-lessons" class="collapse in">
 								<h2>Add bookings</h2>
-								<a role="button" class="btn btn-primary" href="calendar.php" target="_blank">View Calendar</a>
+								<a role="button" class="btn calendar-toggle" href="calendar.php"><i class="fa fa-calendar" aria-hidden="true"></i>View Calendar</a>
 							</div>
-							<div id="man-lessons" class="tab-pane fade">
+							<div id="man-lessons" class="collapse">
 								<h2>Booked Lessons</h2>
 								<div class="table-responsive">
 									<table class="table filter-this" id="bookings">
@@ -53,9 +52,131 @@
 									</table>
 								</div>
 							</div>
-							<div id="overlay-b">
+							<div id="add-users" class="collapse">
+								<h2>Add users</h2>
+								<form method="post" action="#">
+									<div class="form-group">
+										<label for="u-name">Full Name</label>
+										<input type="text" class="form-control" id="u-name" name="u-name" placeholder="Enter a name" required>
+									</div>
+									<div class="form-group">
+										<label for="u-email">Email</label>
+										<input type="text" class="form-control" id="u-email" name="u-email" placeholder="Enter an email address" required>
+									</div>
+									<div class="form-group">
+										<label for="u-mobile">Mobile No</label>
+										<input type="text" class="form-control" id="u-mobile" name="u-mobile" placeholder="Enter a mobile number" required>
+									</div>
+									<div class="form-group">
+										<label for="u-street">Street</label>
+										<input type="text" class="form-control" id="u-street" name="u-street" placeholder="Enter a street name" required>
+									</div>
+									<div class="form-group">
+										<label for="u-town">Town</label>
+										<input type="text" class="form-control" id="u-town" name="u-town" placeholder="Enter a town name" required>
+									</div>
+									<div class="form-group">
+										<label for="u-city">City</label>
+										<input type="text" class="form-control" id="u-city" name="u-city" placeholder="Enter a city name" required>
+									</div>
+									<div class="form-group">
+										<label for="u-postcode">Postcode</label>
+										<input type="text" class="form-control" id="u-postcode" name="u-postcode" placeholder="Enter a postcode" required>
+									</div>
+									<button type="submit" class="btn btn-success" onclick="refreshWindow()" name="submit">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
+								</form>
+							</div>
+							<div id="man-users" class="collapse">
+								<h2>User Management</h2>
+								<div class="table-responsive">
+									<table class="table filter-this">
+										<thead>
+										<tr><th>User ID</th><th>Full name</th><th>Email</th><th>Mobile No</th><th>Address</th><th>Edit</th><th>Delete</th></tr>
+										</thead>
+										<tbody>
+										<tr><td>1</td><td>John Smith</td><td>jsmith@email.com</td><td>123 4567 8901</td><td>1 Dashboard Avenue</td><td><button type="button" onclick="overlay_u()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_u2()"><i class="fa fa-remove"></i></button></td></tr>
+										<tr><td>2</td><td>Joe Bloggs</td><td>jbloggs@email.com</td><td>123 4567 8901</td><td>2 Dashboard Avenue</td><td><button type="button" onclick="overlay_u()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_u2()"><i class="fa fa-remove"></i></button></td></tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="table-mobile">
+									<table class="table table-bordered filter-this">
+										<tr><th>User ID</th></tr>
+										<tr><td>1</td></tr>
+										<tr><th>Full Name</th></tr>
+										<tr><td>John Smith</td></tr>
+										<tr><th>Email</th></tr>
+										<tr><td>jsmith:email.com</td></tr>
+										<tr><th>Mobile No</th></tr>
+										<tr><td>123 4567 8901</td></tr>
+										<tr><th>Address</th></tr>
+										<tr><td>1 Dashboard Avenue</td></tr>
+										<tr><th>Edit</th></tr>
+										<tr><td><button type="button" onclick="overlay_u()"><i class="fa fa-pencil"></i></button></td></tr>
+										<tr><th>Delete</th></tr>
+										<tr><td><button type="button" onclick="overlay_u2()"><i class="fa fa-remove"></i></button></td></tr>
+									</table>
+								</div>
+							</div>
+							<div id="add-videos" class="collapse">
+								<h2>Add Videos</h2>
+								<form method="post" action="#">
+									<div class="form-group">
+										<label for="v-title">Title</label>
+										<input type="text" class="form-control" id="v-title" name="v-title" placeholder="Enter a title" required>
+									</div>
+									<div class="form-group">
+										<label for="v-code">Video code</label>
+										<input type="text" class="form-control" id="v-code" name="v-code" placeholder="Enter the video code" required>
+									</div>
+									<div class="form-group">
+										<label>Client</label>
+										<div class="table-responsive">
+											<table class="table table-condensed filter-this">
+												<tr><th>First name</th><th>Last name</th><th>Street Address</th><th>Select</th></tr>
+												<tr><td>Joe</td><td>Bloggs</td><td>1 Large Crescent</td><td><input type="checkbox"></td></tr>
+												<tr><td>John</td><td>Smith</td><td>2 Field Drive</td><td><input type="checkbox"></td></tr>
+											</table>
+										</div>
+									</div>
+									<button type="submit" class="btn btn-success" onclick="refreshWindow()" name="submit">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
+								</form>
+							</div>
+							<div id="man-videos" class="collapse">
+								<h2>Videos</h2>
+								<div class="table-responsive">
+									<table class="table table-hover filter-this">
+										<thead>
+										<tr><th>Video ID</th><th>Title</th><th>Code</th><th>Client</th><th>Date</th><th>Edit</th><th>Delete</th></tr>
+										</thead>
+										<tbody>
+										<tr><td>1</td><td>John's lesson</td><td>345JJ34K7SD</td><td>John Smith</td><td>29/05/2016</td><td><button type="button" onclick="overlay_v()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_v2()"><i class="fa fa-remove"></i></button></td></tr>
+										<tr><td>2</td><td>Joe's lesson</td><td>345JJ34K7SD</td><td>Joe Bloggs</td><td>29/05/2016</td><td><button type="button" onclick="overlay_v()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_v2()"><i class="fa fa-remove"></i></button></td></tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="table-mobile">
+									<table class="table table-bordered filter-this">
+										<tr><th>Video ID</th></tr>
+										<tr><td>1</td></tr>
+										<tr><th>Title</th></tr>
+										<tr><td>John's Lesson</td></tr>
+										<tr><th>Code</th></tr>
+										<tr><td>345JJ34K7SD</td></tr>
+										<tr><th>Client</th></tr>
+										<tr><td>John Smith</td></tr>
+										<tr><th>Date</th></tr>
+										<tr><td>29/05/2016</td></tr>
+										<tr><th>Edit</th></tr>
+										<tr><td><button type="button" onclick="overlay_v()"><i class="fa fa-pencil"></i></button></td></tr>
+										<tr><th>Delete</th></tr>
+										<tr><td><button type="button" onclick="overlay_v2()"><i class="fa fa-remove"></i></button></td></tr>
+									</table>
+								</div>
+							</div>
+						</div>
+							<!--<div id="overlay-b">
 								<div class="form-container">
-									<!-- PUT NEW FORM HERE -->
 									<button type="button" onclick="overlay_b()" class="pull-right close-window"><i class="fa fa-remove" aria-hidden="true"></i></button><br>
 									<form method="post" action="#">
 										<h2>Edit Booking</h2>
@@ -90,7 +211,6 @@
 							</div>
 							<div id="overlay-b2">
 								<div class="form-container">
-									<!-- PUT NEW FORM HERE -->
 									<button type="button" onclick="overlay_b2()" class="pull-right close-window"><i class="fa fa-remove" aria-hidden="true"></i></button><br>
 									<form method="post" action="#" class="del-form">
 										<p>Are you sure you want to delete this booking?</p>
@@ -101,75 +221,8 @@
 									</form>
 								</div>
 							</div>
-							<div id="add-users" class="tab-pane fade">
-								<h2>Add users</h2>
-								<form method="post" action="#">
-									<div class="form-group">
-										<label for="u-name">Full Name</label>
-										<input type="text" class="form-control" id="u-name" name="u-name" placeholder="Enter a name" required>
-									</div>
-									<div class="form-group">
-										<label for="u-email">Email</label>
-										<input type="text" class="form-control" id="u-email" name="u-email" placeholder="Enter an email address" required>
-									</div>
-									<div class="form-group">
-										<label for="u-mobile">Mobile No</label>
-										<input type="text" class="form-control" id="u-mobile" name="u-mobile" placeholder="Enter a mobile number" required>
-									</div>
-									<div class="form-group">
-										<label for="u-street">Street</label>
-										<input type="text" class="form-control" id="u-street" name="u-street" placeholder="Enter a street name" required>
-									</div>
-									<div class="form-group">
-										<label for="u-town">Town</label>
-										<input type="text" class="form-control" id="u-town" name="u-town" placeholder="Enter a town name" required>
-									</div>
-									<div class="form-group">
-										<label for="u-city">City</label>
-										<input type="text" class="form-control" id="u-city" name="u-city" placeholder="Enter a city name" required>
-									</div>
-									<div class="form-group">
-										<label for="u-postcode">Postcode</label>
-										<input type="text" class="form-control" id="u-postcode" name="u-postcode" placeholder="Enter a postcode" required>
-									</div>
-									<button type="submit" class="btn btn-success" onclick="refreshWindow()" name="submit">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
-								</form>
-							</div>
-							<div id="man-users" class="tab-pane fade">
-								<h2>User Management</h2>
-								<div class="table-responsive">
-									<table class="table filter-this">
-										<thead>
-											<tr><th>User ID</th><th>Full name</th><th>Email</th><th>Mobile No</th><th>Address</th><th>Edit</th><th>Delete</th></tr>
-										</thead>
-										<tbody>
-											<tr><td>1</td><td>John Smith</td><td>jsmith@email.com</td><td>123 4567 8901</td><td>1 Dashboard Avenue</td><td><button type="button" onclick="overlay_u()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_u2()"><i class="fa fa-remove"></i></button></td></tr>
-											<tr><td>2</td><td>Joe Bloggs</td><td>jbloggs@email.com</td><td>123 4567 8901</td><td>2 Dashboard Avenue</td><td><button type="button" onclick="overlay_u()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_u2()"><i class="fa fa-remove"></i></button></td></tr>
-										</tbody>
-									</table>
-								</div>
-								<div class="table-mobile">
-									<table class="table table-bordered filter-this">
-										<tr><th>User ID</th></tr>
-										<tr><td>1</td></tr>
-										<tr><th>Full Name</th></tr>
-										<tr><td>John Smith</td></tr>
-										<tr><th>Email</th></tr>
-										<tr><td>jsmith:email.com</td></tr>
-										<tr><th>Mobile No</th></tr>
-										<tr><td>123 4567 8901</td></tr>
-										<tr><th>Address</th></tr>
-										<tr><td>1 Dashboard Avenue</td></tr>
-										<tr><th>Edit</th></tr>
-										<tr><td><button type="button" onclick="overlay_u()"><i class="fa fa-pencil"></i></button></td></tr>
-										<tr><th>Delete</th></tr>
-										<tr><td><button type="button" onclick="overlay_u2()"><i class="fa fa-remove"></i></button></td></tr>
-									</table>
-								</div>
-							</div>
 							<div id="overlay-u">
 								<div class="form-container">
-									<!-- PUT NEW FORM HERE -->
 									<button type="button" onclick="overlay_u()" class="pull-right close-window"><i class="fa fa-remove" aria-hidden="true"></i></button><br>
 									<form method="post" action="#">
 										<h2>Edit User</h2>
@@ -207,7 +260,6 @@
 							</div>
 							<div id="overlay-u2">
 								<div class="form-container">
-									<!-- PUT NEW FORM HERE -->
 									<button type="button" onclick="overlay_u2()" class="pull-right close-window"><i class="fa fa-remove" aria-hidden="true"></i></button><br>
 									<form method="post" action="#" class="del-form">
 										<p>Are you sure you want to delete this user?</p>
@@ -218,65 +270,8 @@
 									</form>
 								</div>
 							</div>
-							<div id="add-videos" class="tab-pane fade">
-								<h2>Add Videos</h2>
-								<form method="post" action="#">
-									<div class="form-group">
-										<label for="v-title">Title</label>
-										<input type="text" class="form-control" id="v-title" name="v-title" placeholder="Enter a title" required>
-									</div>
-									<div class="form-group">
-										<label for="v-code">Video code</label>
-										<input type="text" class="form-control" id="v-code" name="v-code" placeholder="Enter the video code" required>
-									</div>
-									<div class="form-group">
-										<label>Client</label>
-										<div class="table-responsive">
-											<table class="table table-condensed filter-this">
-												<tr><th>First name</th><th>Last name</th><th>Street Address</th><th>Select</th></tr>
-												<tr><td>Joe</td><td>Bloggs</td><td>1 Large Crescent</td><td><input type="checkbox"></td></tr>
-												<tr><td>John</td><td>Smith</td><td>2 Field Drive</td><td><input type="checkbox"></td></tr>
-											</table>
-										</div>
-									</div>
-									<button type="submit" class="btn btn-success" onclick="refreshWindow()" name="submit">Submit&nbsp;&nbsp;<i class="fa fa-send"></i></button>
-								</form>
-							</div>
-							<div id="man-videos" class="tab-pane fade">
-								<h2>Videos</h2>
-								<div class="table-responsive">
-									<table class="table table-hover filter-this">
-										<thead>
-											<tr><th>Video ID</th><th>Title</th><th>Code</th><th>Client</th><th>Date</th><th>Edit</th><th>Delete</th></tr>
-										</thead>
-										<tbody>
-											<tr><td>1</td><td>John's lesson</td><td>345JJ34K7SD</td><td>John Smith</td><td>29/05/2016</td><td><button type="button" onclick="overlay_v()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_v2()"><i class="fa fa-remove"></i></button></td></tr>
-											<tr><td>2</td><td>Joe's lesson</td><td>345JJ34K7SD</td><td>Joe Bloggs</td><td>29/05/2016</td><td><button type="button" onclick="overlay_v()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_v2()"><i class="fa fa-remove"></i></button></td></tr>
-										</tbody>
-									</table>
-								</div>
-								<div class="table-mobile">
-									<table class="table table-bordered filter-this">
-										<tr><th>Video ID</th></tr>
-										<tr><td>1</td></tr>
-										<tr><th>Title</th></tr>
-										<tr><td>John's Lesson</td></tr>
-										<tr><th>Code</th></tr>
-										<tr><td>345JJ34K7SD</td></tr>
-										<tr><th>Client</th></tr>
-										<tr><td>John Smith</td></tr>
-										<tr><th>Date</th></tr>
-										<tr><td>29/05/2016</td></tr>
-										<tr><th>Edit</th></tr>
-										<tr><td><button type="button" onclick="overlay_v()"><i class="fa fa-pencil"></i></button></td></tr>
-										<tr><th>Delete</th></tr>
-										<tr><td><button type="button" onclick="overlay_v2()"><i class="fa fa-remove"></i></button></td></tr>
-									</table>
-								</div>
-							</div>
 							<div id="overlay-v">
 								<div class="form-container">
-									<!-- PUT NEW FORM HERE -->
 									<button type="button" onclick="overlay_v()" class="pull-right close-window"><i class="fa fa-remove" aria-hidden="true"></i></button><br>
 									<form method="post" action="#">
 										<h2>Edit Video</h2>
@@ -303,7 +298,7 @@
 							</div>
 							<div id="overlay-v2">
 								<div class="form-container">
-									<!-- PUT NEW FORM HERE -->
+
 									<button type="button" onclick="overlay_v2()" class="pull-right close-window"><i class="fa fa-remove" aria-hidden="true"></i></button><br>
 									<form method="post" action="#" class="del-form">
 										<p>Are you sure you want to delete this video?</p>
@@ -312,7 +307,7 @@
 											<button type="button" class="btn btn-primary no-button" onclick="overlay_v2()">No</button>
 										</div>
 									</form>
-								</div>
+								</div>-->
 							</div>
 						</div>
 					</div>
