@@ -2,7 +2,7 @@ $(document).ready(function(){
     $("#hide").click(function(){
         $("#fb").toggle();
 		$("#call").toggle();
-		$("#email").toggle();
+		$("#email-me").toggle();
     });
 });
 

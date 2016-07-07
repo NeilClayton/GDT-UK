@@ -408,10 +408,10 @@ label {
 /* --- Contact Page Ends --- */
 
 /* --- Driving pages Begin --- */
-#theory-content, #practical-content, #admin-content, #discounts-content, #profile-content {
+#coll-content {
 	margin-top: 25px;
 }
-#theory-content button, #practical-content button, #admin-content button, .calendar-toggle, #discounts-content button, #profile-content .profile {
+.coll-toggle, .calendar-toggle {
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 	font-size: 1.7rem;
@@ -423,35 +423,35 @@ label {
 	box-shadow: none;
 	color: #333;
 }
-#theory-content button.active, #practical-content button.active, #admin-content button.active, #discounts-content button.active, #profile-content .profile.active {
+.coll-toggle.active {
 	background: #f1f1f1;
 	box-shadow: none;
 	outline: none;
 }
-#theory-content button .fa, #practical-content button .fa, #admin-content button .fa, .calendar-toggle .fa, #discounts-content button .fa, #profile-content .profile .fa {
+.coll-toggle .fa, .calendar-toggle .fa {
 	margin-right: 8px;
 }
-#practical-content .question {
+#coll-content .question {
 	cursor: pointer;
 	padding: 15px 30px;
 	border: 1px solid #ddd;
 	border-radius: 3px;
 	margin-top: 10px;
 }
-#practical-content .question:nth-last-child(17) {
+#coll-content .question:nth-last-child(17) {
 	margin-top: 25px;
 }
-#practical-content .question p {
+#coll-content .question p {
 	display: none;
 	font-size: 1.5rem;
 }
-#practical-content .question.active {
+#coll-content .question.active {
 	background: #f7f7f7;
 }
-#practical-content .question.active p {
+#coll-content .question.active p {
 	display: block;
 }
-#practical-content h4 {
+#coll-content h4 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.8rem;
 	font-weight: bold;
@@ -1020,7 +1020,7 @@ footer  a, footer a:visited, footer a:active, footer a:focus, footer a:hover {
 	.login-form h2 {
 		margin-top: 150px;
 	}
-	#theory-content button, #practical-content button, #admin-content button, .calendar-toggle, #profile-content .profile, #discounts-content button {
+	.coll-toggle, .calendar-toggle {
 		width: 75%;
 		margin-left: 12.5%;
 	}
@@ -1029,7 +1029,7 @@ footer  a, footer a:visited, footer a:active, footer a:focus, footer a:hover {
 	.login-form h2 {
 		margin-top: 110px;
 	}
-	#theory-content button, #practical-content button, #admin-content button, .calendar-toggle, #profile-content .profile, #discounts-content button  {
+	.coll-toggle, .calendar-toggle {
 		width: 100%;
 		margin-left: 0;
 	}
