@@ -9,14 +9,14 @@
 					<div class="col-md-10 col-md-offset-1">
 						<h2>The Theory Test</h2>
 						<p>Read the information below to learn about the theory driving test. Click on the buttons to view information.</p>
-						<div id="theory-content">
-							<button class="btn test active" data-toggle="collapse" data-target="#whytheory" data-parent="#theory-content"><i class="fa fa-question-circle" aria-hidden="true"></i>Why</button>
-							<button class="btn test" data-toggle="collapse" data-target="#about" data-parent="#theory-content"><i class="fa fa-info-circle" aria-hidden="true"></i>About</button>
-							<button class="btn test" data-toggle="collapse" data-target="#prepare" data-parent="#theory-content"><i class="fa fa-pencil-square" aria-hidden="true"></i>Preparation</button>
-							<button class="btn test" data-toggle="collapse" data-target="#books" data-parent="#theory-content"><i class="fa fa-book" aria-hidden="true"></i>Books</button>
-							<button class="btn test" data-toggle="collapse" data-target="#expect" data-parent="#theory-content"><i class="fa fa-thumbs-up" aria-hidden="true"></i>Expectations</button>
-							<button class="btn test" data-toggle="collapse" data-target="#hazard" data-parent="#theory-content"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Hazard Perception</button>
-							<button class="btn test" data-toggle="collapse" data-target="#booking" data-parent="#theory-content"><i class="fa fa-calendar" aria-hidden="true"></i>Book a Test</button>
+						<div id="coll-content">
+							<button class="btn coll-toggle active" data-toggle="collapse" data-target="#whytheory" data-parent="#theory-content"><i class="fa fa-question-circle" aria-hidden="true"></i>Why</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#about" data-parent="#theory-content"><i class="fa fa-info-circle" aria-hidden="true"></i>About</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#prepare" data-parent="#theory-content"><i class="fa fa-pencil-square" aria-hidden="true"></i>Preparation</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#books" data-parent="#theory-content"><i class="fa fa-book" aria-hidden="true"></i>Books</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#expect" data-parent="#theory-content"><i class="fa fa-thumbs-up" aria-hidden="true"></i>Expectations</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#hazard" data-parent="#theory-content"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Hazard Perception</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#booking" data-parent="#theory-content"><i class="fa fa-calendar" aria-hidden="true"></i>Book a Test</button>
 							<div id="whytheory" class="collapse in">
 								<h6>Why a theory test</h6>
 								<p>The reason for the Theory Test is to better prepare you for the road ahead, giving you a better understanding of all the rules of the road, and make you aware of all the various types of road signs and their meaning.</p>

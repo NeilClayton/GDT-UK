@@ -22,11 +22,11 @@
 				</div>
 				<div class="row profile-2">
 					<div class="col-md-8 col-md-offset-2">
-						<div id="profile-content">
-							<button class="btn profile active" data-toggle="collapse" data-target="#posts" data-parent="#profile-content"><i class="fa fa-user" aria-hidden="true"></i>User Feed</button>
-							<button class="btn profile" data-toggle="collapse" data-target="#information" data-parent="#profile-content"><i class="fa fa-info-circle" aria-hidden="true"></i>Information</button>
-							<button class="btn profile" data-toggle="collapse" data-target="#lessons" data-parent="#profile-content"><i class="fa fa-calendar" aria-hidden="true"></i>Lessons</button>
-							<button class="btn profile" data-toggle="collapse" data-target="#videos" data-parent="#profile-content"><i class="fa fa-video-camera" aria-hidden="true"></i>Videos</button>
+						<div id="coll-content">
+							<button class="btn coll-toggle active" data-toggle="collapse" data-target="#posts" data-parent="#profile-content"><i class="fa fa-user" aria-hidden="true"></i>User Feed</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#information" data-parent="#profile-content"><i class="fa fa-info-circle" aria-hidden="true"></i>Information</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#lessons" data-parent="#profile-content"><i class="fa fa-calendar" aria-hidden="true"></i>Lessons</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#videos" data-parent="#profile-content"><i class="fa fa-video-camera" aria-hidden="true"></i>Videos</button>
 							<div id="posts" class="collapse in">
 								<div class="new-post">
 									<form method="post" action="">

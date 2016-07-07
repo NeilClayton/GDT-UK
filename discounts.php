@@ -9,10 +9,10 @@
 					<div class="col-md-10 col-md-offset-1">
 						<h2>Available discounts</h2>
 						<p>Read the information below to learn about discounts. Click on the buttons to view information.</p>
-						<div id="discounts-content">
-							<button class="btn discount active" data-toggle="collapse" data-target="#discounts" data-parent="#discounts-content"><i class="fa fa-info-circle" aria-hidden="true"></i>About</button>
-							<button class="btn discount" data-toggle="collapse" data-target="#vouchers" data-parent="#discounts-content"><i class="fa fa-money" aria-hidden="true"></i>Vouchers</button>
-							<button class="btn discount" data-toggle="collapse" data-target="#friends" data-parent="#discounts-content"><i class="fa fa-users" aria-hidden="true"></i>Recommend a Friend</button>
+						<div id="coll-content">
+							<button class="btn coll-toggle active" data-toggle="collapse" data-target="#discounts" data-parent="#discounts-content"><i class="fa fa-info-circle" aria-hidden="true"></i>About</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#vouchers" data-parent="#discounts-content"><i class="fa fa-money" aria-hidden="true"></i>Vouchers</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#friends" data-parent="#discounts-content"><i class="fa fa-users" aria-hidden="true"></i>Recommend a Friend</button>
 							<div id="discounts" class="collapse in">
 								<h6>Student Driving Lesson Discounts</h6>
 								<p>Student Discounts are available to all students on production of a valid NUS card.</p>

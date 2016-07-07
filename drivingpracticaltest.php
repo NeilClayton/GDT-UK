@@ -9,16 +9,16 @@
 					<div class="col-md-10 col-md-offset-1">
 						<h2>The Practical Test</h2>
 						<p>Read the information below to learn about the practical driving test.</p>
-						<div id="practical-content">
-							<button class="btn test active" data-toggle="collapse" data-target="#what" data-parent="#practical-content"><i class="fa fa-question-circle" aria-hidden="true"></i>What is it?</button>
-							<button class="btn test" data-toggle="collapse" data-target="#prepare" data-parent="#practical-content"><i class="fa fa-question-circle" aria-hidden="true"></i>Preparation</button>
-							<button class="btn test" data-toggle="collapse" data-target="#dosanddonts" data-parent="#practical-content"><i class="fa fa-question-circle" aria-hidden="true"></i>Do's and Don't's</button>
-							<button class="btn test" data-toggle="collapse" data-target="#pass" data-parent="#practical-content"><i class="fa fa-check" aria-hidden="true"></i>If you pass</button>
-							<button class="btn test" data-toggle="collapse" data-target="#fail" data-parent="#practical-content"><i class="fa fa-remove" aria-hidden="true"></i>If you fail</button>
-							<button class="btn test" data-toggle="collapse" data-target="#information" data-parent="#practical-content"><i class="fa fa-info-circle" aria-hidden="true"></i>Information</button>
-							<button class="btn test" data-toggle="collapse" data-target="#questions" data-parent="#practical-content"><i class="fa fa-clipboard" aria-hidden="true"></i>Practice Questions</button>
-							<button class="btn test" data-toggle="collapse" data-target="#booking" data-parent="#practical-content"><i class="fa fa-calendar" aria-hidden="true"></i>Book a Test</button>
-							<button class="btn test" data-toggle="collapse" data-target="#ontheday" data-parent="#practical-content"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>On the day</button>
+						<div id="coll-content">
+							<button class="btn coll-toggle active" data-toggle="collapse" data-target="#what" data-parent="#practical-content"><i class="fa fa-question-circle" aria-hidden="true"></i>What is it?</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#prepare" data-parent="#practical-content"><i class="fa fa-question-circle" aria-hidden="true"></i>Preparation</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#dosanddonts" data-parent="#practical-content"><i class="fa fa-question-circle" aria-hidden="true"></i>Do's and Don't's</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#pass" data-parent="#practical-content"><i class="fa fa-check" aria-hidden="true"></i>If you pass</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#fail" data-parent="#practical-content"><i class="fa fa-remove" aria-hidden="true"></i>If you fail</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#information" data-parent="#practical-content"><i class="fa fa-info-circle" aria-hidden="true"></i>Information</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#questions" data-parent="#practical-content"><i class="fa fa-clipboard" aria-hidden="true"></i>Practice Questions</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#booking" data-parent="#practical-content"><i class="fa fa-calendar" aria-hidden="true"></i>Book a Test</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#ontheday" data-parent="#practical-content"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>On the day</button>
 							<div id="what" class="collapse in">
 								<h6>The driving test</h6>
 								<p>The Driving Test is a test of your ability to drive a car safely, the test is designed to put you through various parts of driving, from being able to move off safely and under control to doing manoeuvres such as the turn in the road, reversing left round a corner, parallel parking, bay parking, whilst still being in full control of the car throughout the whole test.</p>

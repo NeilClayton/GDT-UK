@@ -9,13 +9,13 @@
 					<div class="col-md-8 col-md-offset-2">
 						<h1>Admin Panel</h1>
 						<p>Click on the buttons to add or manage records.</p>
-						<div id="admin-content">
-							<button class="btn a-toggle active" data-toggle="collapse" data-target="#add-lessons" data-parent="#admin-content"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i>Add Lessons</button>
-							<button class="btn a-toggle" data-toggle="collapse" data-target="#man-lessons" data-parent="#admin-content"><i class="fa fa-calendar" aria-hidden="true"></i>Manage Lessons</button>
-							<button class="btn a-toggle" data-toggle="collapse" data-target="#add-users" data-parent="#admin-content"><i class="fa fa-user-plus" aria-hidden="true"></i>Add Users</button>
-							<button class="btn a-toggle" data-toggle="collapse" data-target="#man-users" data-parent="#admin-content"><i class="fa fa-users" aria-hidden="true"></i>Manage Users</button>
-							<button class="btn a-toggle" data-toggle="collapse" data-target="#add-videos" data-parent="#admin-content"><i class="fa fa-video-camera" aria-hidden="true"></i>Add Videos</button>
-							<button class="btn a-toggle" data-toggle="collapse" data-target="#man-videos" data-parent="#admin-content"><i class="fa fa-video-camera" aria-hidden="true"></i>Manage Videos</button>
+						<div id="coll-content">
+							<button class="btn coll-toggle active" data-toggle="collapse" data-target="#add-lessons" data-parent="#admin-content"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i>Add Lessons</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#man-lessons" data-parent="#admin-content"><i class="fa fa-calendar" aria-hidden="true"></i>Manage Lessons</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#add-users" data-parent="#admin-content"><i class="fa fa-user-plus" aria-hidden="true"></i>Add Users</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#man-users" data-parent="#admin-content"><i class="fa fa-users" aria-hidden="true"></i>Manage Users</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#add-videos" data-parent="#admin-content"><i class="fa fa-video-camera" aria-hidden="true"></i>Add Videos</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#man-videos" data-parent="#admin-content"><i class="fa fa-video-camera" aria-hidden="true"></i>Manage Videos</button>
 							<div id="add-lessons" class="collapse in">
 								<h2>Add bookings</h2>
 								<a role="button" class="btn calendar-toggle" href="calendar.php"><i class="fa fa-calendar" aria-hidden="true"></i>View Calendar</a>
