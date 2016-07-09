@@ -145,8 +145,12 @@
 							<div id="ontheday" class="collapse">
 								<h6>On the day</h6>
 								<h4>Once you are at the test centre either:</h4>
-								<p><strong>Colwick</strong> (MPTC), Nottingham</p>
-								<p><strong>Chalfont Drive</strong>, Nottingham</p>
+								<ul>
+									<li><strong>Colwick</strong> (MPTC), Nottingham.</li>
+									<li><strong>Beeston</strong>, Nottingham.</li>
+									<li><strong>Clifton campus</strong>, Nottingham.</li>
+									<li><strong>Watnall</strong>, Nottingham.</li>
+								</ul>
 								<p>Your examiner will call your name and ask you to sign a declaration on the test form, whilst they check your Driving Licence, the new photo I.D or if you have the old style paper licence you will be asked to prove photographic i.d. of yourself (valid passport).</p>
 								<p>You may also request to the examiner at the start of your test that you would like your instructor to be present during the test. At the start of your test you will be required to read a number plate at 67ft/ 20.5 mtrs and once you have done this you will be asked 2 <a href="#" target="_blank">Car Safety Questions</a> (show me/tell me).There are a number of test routes that will test all your skills as a driver, and you will be tested on 2 manoeuvres , and possibly be asked to do the Emergency Stop.</p>
 								<p>At the end of your Practical Driving Test the examiner will give you a debriefing on your test after they have given you the result, you may request that your instructor be present to listen in to the debrief also,this can be very useful if your Driving Instructor was not present during your Practical Driving Test, which is always helpful as they can give you more advice or help on anything that your examiner mentions.</p>
