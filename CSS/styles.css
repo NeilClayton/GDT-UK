@@ -977,6 +977,12 @@ footer  a, footer a:visited, footer a:active, footer a:focus, footer a:hover {
 		vertical-align: top;
 	}
 }
+@media all and (max-width: 736px) {
+	.coll-toggle, .calendar-toggle {
+		width: 220px;
+		margin-right: 10px;
+	}
+}
 @media all and (max-width:667px) {
 	.header-content {
 		transform:translateY(-40%);
@@ -985,11 +991,26 @@ footer  a, footer a:visited, footer a:active, footer a:focus, footer a:hover {
 	header img {
 		width:60%;
 	}
+	.coll-toggle, .calendar-toggle {
+		width: 200px;
+		margin-right: 5px;
+	}
+}
+@media all and (max-width: 568px) {
+	.coll-toggle, .calendar-toggle {
+		width: 48.7%;
+	}
+}
+@media all and (max-width: 480px) {
+	.coll-toggle, .calendar-toggle {
+		width: 100%;
+		margin-right: 0;
+	}
 }
 @media all and (max-width:414px) {
 	.header-content {
 		transform:translateY(-50%);
-		top:50%;
+		top: 50%;
 	}
 	header img {
 		width:100%;
@@ -1019,10 +1040,6 @@ footer  a, footer a:visited, footer a:active, footer a:focus, footer a:hover {
 	}
 	.login-form h2 {
 		margin-top: 150px;
-	}
-	.coll-toggle, .calendar-toggle {
-		width: 75%;
-		margin-left: 12.5%;
 	}
 }
 @media all and (max-width: 375px) {
