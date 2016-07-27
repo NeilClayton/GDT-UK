@@ -475,7 +475,17 @@ label {
 	background: #E6CE6A;
 }
 .jumbotron button {
-	border: none !important;
+	background: transparent;
+	color: white;
+	border: 1px solid white;
+	padding: 10px 30px;
+	border-radius: 3px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 1.6rem;
+}
+.jumbotron button .fa {
+	margin-right: 10px
 }
 .content ul {
 	margin-left: 0;
@@ -954,11 +964,14 @@ footer  a, footer a:visited, footer a:active, footer a:focus, footer a:hover {
 	.user-details h2 {
 		margin:3.5% 0 0 0;  
 	}
-	.introduction h2, .content h2, .contact h2, .introduction h3, .content h3, .introduction h4, .content h4, .admin h1, .admin h2 {
+	.introduction h2, .content h2, .contact h2, .introduction h3, .content h3, .introduction h4, .content h4, .admin h1, .admin h2, h6 {
 		text-align: center;
 	}
 
 	.introduction p, .introduction li, .profile-1 p, .content p, .admin p {
+		text-align: center;
+	}
+	th, td {
 		text-align: center;
 	}
 	.navbar-inverse .navbar-nav>li {
@@ -982,14 +995,41 @@ footer  a, footer a:visited, footer a:active, footer a:focus, footer a:hover {
 		width: 220px;
 		margin-right: 10px;
 	}
-}
-@media all and (max-width:667px) {
-	.header-content {
-		transform:translateY(-40%);
-		top:40%;
+	.header {
+		height: 100vh;
 	}
 	header img {
-		width:60%;
+		width: 70%;
+	}
+	.jumbotron button {
+		display: block;
+		margin: 0 auto;
+	}
+	h6 .pull-right {
+		float: none !important;
+		margin-left: 10px;
+	}
+	.login-form {
+		padding: 10px 30px;
+		height: 100%;
+		width: 100%;
+		box-shadow: none;
+		border-radius: 0;
+	}
+	.login-form h2 {
+		margin-top: 30px;
+	}
+	.login-form a {
+		display: none;
+	}
+}
+@media all and (max-width:667px) {
+	.login-form h2 {
+		margin-top: 10px;
+	}
+	.header-content {
+		transform: translateY(-40%);
+		top: 40%;
 	}
 	.coll-toggle, .calendar-toggle {
 		width: 200px;
@@ -997,11 +1037,20 @@ footer  a, footer a:visited, footer a:active, footer a:focus, footer a:hover {
 	}
 }
 @media all and (max-width: 568px) {
+	.introduction h2, .contact h2, .content h2 {
+		font-size: 4rem;
+	}
 	.coll-toggle, .calendar-toggle {
 		width: 48.7%;
 	}
+	.login-form h2 {
+		margin-top: 0;
+	}
 }
 @media all and (max-width: 480px) {
+	.introduction h2, .contact h2, .content h2 {
+		font-size: 3.5rem;
+	}
 	.coll-toggle, .calendar-toggle {
 		width: 100%;
 		margin-right: 0;
@@ -1031,15 +1080,17 @@ footer  a, footer a:visited, footer a:active, footer a:focus, footer a:hover {
     .table-mobile th {
         text-align:center;
     }
-	.login-form {
-		padding: 15px;
-		height: 100%;
+	.jumbotron button {
 		width: 100%;
-		box-shadow:none;
-		border-radius: 0;
+	}
+	.login-form {
+		padding: 10px;
 	}
 	.login-form h2 {
-		margin-top: 150px;
+		margin-top: 130px;
+	}
+	.login-form a {
+		display: block;
 	}
 }
 @media all and (max-width: 375px) {
@@ -1052,22 +1103,14 @@ footer  a, footer a:visited, footer a:active, footer a:focus, footer a:hover {
 	}
 }
 @media all and (max-width:320px) {
+	.login-form h2 {
+		margin-top: 60px;
+	}
+
 	.user-details h2 {
 		margin:9% 0 0 0;  
 	}
 	.datetime {
 		margin-top:1.75%;
-	}
-
-}
-@media all and (max-height:568px) {
-	.login-form h2 {
-		margin-top: 70px;
-	}
-
-}
-@media all and (max-height:480px) {
-	.login-form h2 {
-		margin-top: 30px;
 	}
 }

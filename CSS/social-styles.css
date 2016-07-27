@@ -94,7 +94,7 @@
 #social-sidebar a[class*="phone"] span,
 #social-sidebar a[class*="phone"] span:before {background: #37c837;}
 
-@media all and (max-width:414px) {
+@media all and (max-width:736px) {
 	#social-sidebar {
 		display: none;
 	}
