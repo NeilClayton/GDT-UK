@@ -30,17 +30,17 @@
 								<div class="jumbotron bronze">
 									<h6><i class="fa fa-car" aria-hidden="true"></i>Intense Driving Course (Bronze)<b class="pull-right price">£220</b></h6>
 									<p>With the Intensive Driving Course Bronze you will get 11 hours of driving tution. You can either take your lessons hourly or you can book more than 1 lesson a week, or you may like to book lessons by 1.1/2, 2 hour, 3 hours up to a maximum of 4 hours a day.</p>
-									<button type="button" class="btn"><i class="fa fa-paypal" aria-hidden="true"></i>Buy Now</button>
+									<button type="button"><i class="fa fa-paypal" aria-hidden="true"></i>Buy Now</button>
 								</div>
 								<div class="jumbotron silver">
 									<h6><i class="fa fa-car" aria-hidden="true"></i>Intense Driving Course (Silver)<b class="pull-right price">£430</b></h6>
 									<p><strong>20</strong> hours driving tuition plus one <strong>FREE</strong> attempt at the Driving Theory Test</p>
-									<button type="button" class="btn"><i class="fa fa-paypal" aria-hidden="true"></i>Buy Now</button>
+									<button type="button"><i class="fa fa-paypal" aria-hidden="true"></i>Buy Now</button>
 								</div>
 								<div class="jumbotron gold">
 									<h6><i class="fa fa-car" aria-hidden="true"></i>Intense Driving Course (Gold)<b class="pull-right price">£700</b></h6>
 									<p>You can either take your lessons hourly, or you can book more than 1 lesson a week.  You may like to book lessons by 1.1/2, 2 hour, 3 hours up to a maximum of 4 hours a day.</p>
-									<button type="button" class="btn"><i class="fa fa-paypal" aria-hidden="true"></i>Buy Now</button>
+									<button type="button"><i class="fa fa-paypal" aria-hidden="true"></i>Buy Now</button>
 								</div>
 							</div>
 							<div id="friends" class="collapse">
