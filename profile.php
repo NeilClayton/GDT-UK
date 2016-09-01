@@ -3,6 +3,7 @@
 	date_default_timezone_set("Europe/London");
 	include_once ('Actions/video.php');
 	include_once ('Actions/messages.php');
+	include 'Actions/lessons.php';
 	
 	$vid = new video();
 	$messages = new messages();
@@ -14,7 +15,14 @@
 			<div class="container-fluid">
 				<div class="row profile-1">
 					<div class="col-md-8 col-md-offset-2">
-						<img src="http://graph.facebook.com/1354146691/picture?type=large" width="200" height="200" class="img-responsive img-thumbnail" alt="profile">
+						<?php
+						if (!empty($_SESSION['image'])){
+							echo '<img src="' . $_SESSION['image'] . '" width="200" height="200" class="img-responsive img-thumbnail" alt="profile">';
+						}
+						else{
+							echo '<img src="Images/user.png" width="200" height="200" class="img-responsive img-thumbnail" alt="profile">';
+						}
+						?>
 						<h2><?php echo $_SESSION['firstname'] . " " . $_SESSION['lastname']; ?></h2>
 						<p><?php $_SESSION['gender'];?> from <?php echo $_SESSION['town'];?>, Nottingham</p>
 						<p class="slogan">I really like driving.</p>
@@ -77,18 +85,9 @@
 											<th>Date</th>
 											<th>Time</th>
 										</tr>
-										<tr class="outdated">
-											<td>27/05/2016</td>
-											<td>16:45</td>
-										</tr>
-										<tr>
-											<td>29/05/2016</td>
-											<td>15:45</td>
-										</tr>
-										<tr>
-											<td>05/06/2016</td>
-											<td>15:45</td>
-										</tr>
+										<?php $lesson = new lessons();
+										$lesson->getLessonsBooked($_SESSION['clientID'])
+										?>
 									</table>
 								</div>
 							</div>

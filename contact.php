@@ -8,7 +8,7 @@
 				<div class="row contact">	
 					<div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
 						<h2>Contact GDT-UK</h2>
-						<form>
+						<form action="Actions/contact.php" method="post">
 							<div class="form-group">
 								<label for="name">Full Name<b class="asterisk">*</b></label>
 								<input type="text" class="form-control" id="name" placeholder="Who are you?" required>
@@ -28,6 +28,9 @@
 							<div class="form-group">
 								<label for="message">Message<b class="asterisk">*</b></label>
 								<textarea class="form-control" id="message" rows="7" cols="100" maxlength="600" required placeholder="Please enter your message"></textarea>
+							</div>
+							<div class="form-group">
+								<div class="g-recaptcha" data-sitekey="6LfypyQTAAAAAE6KccNeAwM2RfU4QEJTSasEokjB"></div>
 							</div>
 							<button type="submit" class="btn btn-success" name="submit">Submit<i class="fa fa-send" aria-hidden="true"></i></button>
 						</form>

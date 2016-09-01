@@ -3,6 +3,7 @@
 
 	include('Includes/header2.html');
 	include('Includes/nav.php');
+	include 'Actions/lessons.php';
 ?>
 			<div class="container-fluid">
 				<div class="row admin">
@@ -28,8 +29,15 @@
 											<tr><th>Booking ID</th><th>Full Name</th><th>Date</th><th>Time</th><th>Duration</th><th>Edit</th><th>Delete</th></tr>
 										</thead>
 										<tbody>
+										<?php
+											$lesson = new lessons();
+											$lesson->getLessonsBooked();
+										?>
+										
+											<!--
 											<tr><td>1</td><td>John Smith</td><td>29/05/2016</td><td>15:55</td><td>1 hour</td><td><button type="button" onclick="overlay_b()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_b2()"><i class="fa fa-remove"></i></button></td></tr>
 											<tr><td>2</td><td>Joe Bloggs</td><td>05/06/2016</td><td>14:40</td><td>2 hours</td><td><button type="button" onclick="overlay_b()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_b2()"><i class="fa fa-remove"></i></button></td></tr>
+											-->
 										</tbody>
 									</table>
 								</div>

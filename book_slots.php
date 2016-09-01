@@ -6,8 +6,9 @@ if(isset($_POST['slots_booked'])) $slots_booked = mysqli_real_escape_string($lin
 if(isset($_POST['name'])) $name = mysqli_real_escape_string($link, $_POST['name']);
 if(isset($_POST['duration'])) $duration = mysqli_real_escape_string($link, $_POST['duration']);
 if(isset($_POST['booking_date'])) $booking_date = mysqli_real_escape_string($link, $_POST['booking_date']);
-if(isset($_POST['cost_per_slot'])) $cost_per_slot = mysqli_real_escape_string($link, $_POST['cost_per_slot']);
+//if(isset($_POST['cost_per_slot'])) $cost_per_slot = mysqli_real_escape_string($link, $_POST['cost_per_slot']);
 
+var_dump($_POST);
 
 $booking_array = array(
 	"slots_booked" => $slots_booked,	

@@ -48,6 +48,7 @@
                         $_SESSION['DOB'] = $num['DOB'];
                         $_SESSION['gender'] = $num['gender'];
                         $_SESSION['hobbies'] = $num['Hobbies'];
+                        $_SESSION['image'] = $num['image'];
                         $_SESSION['accessLevel'] = $num['access_level'];
                        }
                         if ($_SESSION['accessLevel'] == 1) {

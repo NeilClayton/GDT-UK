@@ -5,11 +5,12 @@ header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
 header("Cache-Control: post-check=0, pre-check=0", false);
 header("Pragma: no-cache");
 
+//includes
 include('Actions/connect.php');
 include('Classes/class_calendar.php');
 
 $calendar = new booking_diary($link);
-$calendar = new booking_diary($link);
+
 
 if(isset($_GET['month'])) $month = $_GET['month']; else $month = date("m");
 if(isset($_GET['year'])) $year = $_GET['year']; else $year = date("Y");

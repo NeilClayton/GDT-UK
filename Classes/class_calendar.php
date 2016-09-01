@@ -1,6 +1,7 @@
 <?php
 date_default_timezone_set('Europe/London');
-	
+
+
 class booking_diary {
 
 
@@ -66,11 +67,11 @@ function make_calendar($selected_date, $back, $forward, $day, $month, $year) {
 
 function make_booking_array($year, $month, $j = 0) {
 
-	$stmt = $this->link->prepare("SELECT name, date, start FROM bookings WHERE date LIKE  CONCAT(?, '-', ?, '%')");
+	$stmt = $this->link->prepare("SELECT date, start FROM bookings WHERE date LIKE  CONCAT(?, '-', ?, '%')");
 	$this->is_slot_booked_today = 0; // Defaults to 0
 
 	$stmt->bind_param('ss', $year, $month);
-	$stmt->bind_result($name, $date, $start);
+	//$stmt->bind_result($name, $date, $start);
 	$stmt->execute();
 	$stmt->store_result();
 
@@ -79,7 +80,7 @@ function make_booking_array($year, $month, $j = 0) {
 		$this->bookings_per_day[$date][] = $start;
 
 		$this->bookings[] = array(
-            "name" => $name,
+            //"name" => $name,
             "date" => $date,
             "start" => $start
  		);
@@ -358,9 +359,10 @@ function make_cells($table = '') {
 function booking_form() {
 
 	echo "<div class='col-md-4'>
+			
 				<div id='outer_booking'><h2>Available Slots</h2>
-					<p>The following slots are available on <span> " . $this->day . "-" . $this->month . "-" . $this->year . "</span></p>
-					<button type='button' onclick='openBookForm()' class='btn'>Book Slot/s</button>
+					<p>The following start times are available on <span> " . $this->day . "-" . $this->month . "-" . $this->year . "</span></p>
+					<button type='button' name='selectedTime' ' onclick='openBookForm()' class='btn'>Book Slot/s</button>
 					<table id='booking' class='center-block'>
 						<tr>
 							<th>Start</th>
@@ -395,13 +397,24 @@ function booking_form() {
 
 							// Calculate finish time
 							$finish_time = strtotime($start) + $this->booking_frequency * 60;
+							echo "<script>
+
+function getRadioValue(id) {
+var radioBtn = document.getElementById(id);
+var lessonTime = radioBtn.value;
+
+//alert(radioBtn.value);
+}  
+
+</script>";
+
 
 							echo "
 						<tr>\r\n
 							<td>" . $start . "</td>
 							<td>" . date("H:i:s", $finish_time) . "</td>
 							<!--<td></td>\r\n-->
-							<td width='110'><input type='checkbox' data-val='" . $start . " - " . date("H:i:s", $finish_time) . "' class='fields' ></td>
+							<td width='110'><input type='radio' id='".$start."' name='timeSlot' value='" . $start . "' class='fields' onclick='getRadioValue(this.id)' ></td>
 						</tr>";
 						} // Close foreach
 						foreach ($this->bookings as $booking) {
@@ -430,14 +443,19 @@ function booking_form() {
 							}
 						}
 
-	echo "</table></div><!-- Close outer_booking DIV -->
+	echo "</table></form></div><!-- Close outer_booking DIV -->
 			</div>
 		</div>";
 
 } // Close function
 
 function basket($selected_day = '') {
-
+	//if(isset($_POST['selectedTime'])){
+		//var_dump($_POST);
+		//if(isset($_POST['timeSlot'])){
+		//	$_SESSION['timeslot'] = $_POST['timeSlot'];
+		//}
+	//}
 	if(!isset($_GET['day']))
 	$day = '01';
 	else
@@ -456,7 +474,7 @@ function basket($selected_day = '') {
 		<div class='basket-container'>
 		<button type='button' onclick='closeBookForm()' class='close-window pull-right'><i class='fa fa-remove' aria-hidden='true'></i></button><br>
 			<h2>Selected Slots</h2>
-			<form method='post' action='book_slots.php'>
+			<form method='post' action='Actions/lessons.php'>
 				<div class='form-group'>
 					<label for='name'>Client</label>
 					<select class='form-control' id='name' name='name' required>
@@ -469,9 +487,9 @@ function basket($selected_day = '') {
 					<label for='duration'>Duration</label>
 					<select class='form-control' id='duration' name='duration' required>
 						<option selected value=''>...</option>
-						<option value='#'>1 hour</option>
-						<option value='#'>1.5 hours</option>
-						<option value='#'>2 hours</option>
+						<option value='1'>1 hour</option>
+						<option value='1.5'>1.5 hours</option>
+						<option value='2'>2 hours</option>
 					</select>
 				</div>
 				<div class='form-group'>
@@ -488,12 +506,12 @@ function basket($selected_day = '') {
 					<label class='radio-inline'>
 						<input type='radio' name='lesson' value='30'>30
 					</label>
-				</div>						
+				</div>		
 				<input type='hidden' name='slots_booked' id='slots_booked'>
 				<!--<input type='hidden' name='cost_per_slot' id='cost_per_slot' value=''>-->
 				<input type='hidden' name='booking_date' value='" . $_GET['year'] . '-' . $_GET['month'] . '-' . $day . "'>
-				<button type='submit' class='btn btn-success center-block'>Add booking<i class='fa fa-send' aria-hidden='true'></i></button>
-			</form>
+				<button type='submit' name='addBooking' class='btn btn-success center-block'>Add booking<i class='fa fa-send' aria-hidden='true'></i></button>
+			<!--</form>-->
 		</div>
 	</div>
 	<script src='../JS/calendar.js'></script>";
