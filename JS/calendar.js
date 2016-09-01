@@ -67,6 +67,7 @@ $(document).ready(function(){
 });
 
 function openBookForm() {
+    
     $("#outer_basket").css("display", "block");
 }
 

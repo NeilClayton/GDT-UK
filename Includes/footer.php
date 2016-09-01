@@ -50,5 +50,6 @@
 <script src="JS/tab-reload.js"></script>
 <script src="JS/text-slider.js"></script>
 <script src="JS/accordion.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 </html>

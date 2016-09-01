@@ -19,7 +19,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body id="login-body">
-		<form class="login-form" method="post" action="<?php $_SERVER['PHP_SELF']; ?>" autocomplete="off">
+		<form class="login-form" method="post" action="login.php" autocomplete="off">
 			<h2>Login</h2>
 			<div class="form-group">
 				<label for="usernameInput" class="sr-only">Username:</label>
