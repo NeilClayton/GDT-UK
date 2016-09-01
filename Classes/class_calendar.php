@@ -477,11 +477,17 @@ function basket($selected_day = '') {
 			<form method='post' action='Actions/lessons.php'>
 				<div class='form-group'>
 					<label for='name'>Client</label>
-					<select class='form-control' id='name' name='name' required>
-						<option value='' selected>...</option>
-						<option value='JoeBloggs'>Joe Bloggs</option>
-						<option value='JohnDoe'>John Doe</option>
-					</select>
+					<div class='table-responsive'>
+						<table class='table table-hover filter-this'>
+						<thead>
+							<tr><th>Full name</th><th>Email</th><th>Select</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>John Smith</td><td>jsmith@email.com</td><td><input type='radio' name='user' value='John Smith'></td></tr>
+							<tr><td>Joe Bloggs</td><td>jbloggs@email.com</td><td><input type='radio' name='user' value='John Smith'></td></tr>
+						</tbody>
+						</table>
+					</div>
 				</div>
 				<div class='form-group'>
 					<label for='duration'>Duration</label>

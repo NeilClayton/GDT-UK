@@ -33,7 +33,6 @@
 											$lesson = new lessons();
 											$lesson->getLessonsBooked();
 										?>
-										
 											<!--
 											<tr><td>1</td><td>John Smith</td><td>29/05/2016</td><td>15:55</td><td>1 hour</td><td><button type="button" onclick="overlay_b()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_b2()"><i class="fa fa-remove"></i></button></td></tr>
 											<tr><td>2</td><td>Joe Bloggs</td><td>05/06/2016</td><td>14:40</td><td>2 hours</td><td><button type="button" onclick="overlay_b()"><i class="fa fa-pencil"></i></button></td><td><button type="button" onclick="overlay_b2()"><i class="fa fa-remove"></i></button></td></tr>
@@ -114,7 +113,7 @@
 										<tr><th>Full Name</th></tr>
 										<tr><td>John Smith</td></tr>
 										<tr><th>Email</th></tr>
-										<tr><td>jsmith:email.com</td></tr>
+										<tr><td>jsmith@email.com</td></tr>
 										<tr><th>Mobile No</th></tr>
 										<tr><td>123 4567 8901</td></tr>
 										<tr><th>Address</th></tr>
@@ -183,7 +182,7 @@
 								</div>
 							</div>
 						</div>
-							<!--<div id="overlay-b">
+							<div id="overlay-b">
 								<div class="form-container">
 									<button type="button" onclick="overlay_b()" class="pull-right close-window"><i class="fa fa-remove" aria-hidden="true"></i></button><br>
 									<form method="post" action="#">
@@ -315,7 +314,7 @@
 											<button type="button" class="btn btn-primary no-button" onclick="overlay_v2()">No</button>
 										</div>
 									</form>
-								</div>-->
+								</div>
 							</div>
 						</div>
 					</div>
