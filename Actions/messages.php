@@ -55,6 +55,7 @@ class messages
                             echo '<textarea id="comment' . $conversationIndex . '" class="form-control" id="reply-message" rows="3" cols="100" maxlength="600" required placeholder="Write a reply..."></textarea>';
                             echo '<button type="submit" id="insertComment" name="' . $conversationIndex . '" class="btn btn-success pull-right">Reply&nbsp;&nbsp;<i class="fa fa-comments"></i></button>';
                             echo '</form>';
+                            echo '<button type="button" class="d-button" onclick="d_message()">Delete</button>';
                             echo '</div>';
                             echo '</div>';
                         }
@@ -100,8 +101,8 @@ class messages
                 echo '<textarea id="comment' . $conversationIndex . '" class="form-control" id="reply-message" rows="3" cols="100" maxlength="600" required placeholder="Write a reply..."></textarea>';
                 echo '<button type="submit" id="insertComment" name="' . $conversationIndex . '" class="btn btn-success pull-right">Reply&nbsp;&nbsp;<i class="fa fa-comments"></i></button>';
                 echo '</form>';
-                echo '</div>';
                 echo '<button type="button" class="d-button" onclick="d_message()">Delete</button>';
+                echo '</div>';
                 echo '</div>';
             } catch (PDOException $e){
             echo '<h1>Oops something went wrong, please try again';

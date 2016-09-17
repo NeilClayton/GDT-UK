@@ -40,6 +40,7 @@
         </div>
     </div>
 </footer>
+<script src="JS/navscroll.js"></script>
 <script src="JS/calendar.js"></script>
 <script src="JS/filter-table.js"></script>
 <script src="JS/fixed-window"></script>

@@ -137,12 +137,12 @@
 							</div>
 							<div id="overlay-dm">
 								<div class="form-container">
-									<button type="button" onclick="overlay_b2()" class="pull-right close-window"><i class="fa fa-remove" aria-hidden="true"></i></button><br>
+									<button type="button" onclick="d_message()" class="pull-right close-window"><i class="fa fa-remove" aria-hidden="true"></i></button><br>
 									<form method="post" action="#" class="del-form">
-										<p>Are you sure you want to delete this booking?</p>
+										<p>Are you sure you want to delete this message?</p>
 										<div class="del-buttons">
 											<button type="submit" class="btn btn-default" onclick="refreshWindow()" name="submit">Yes</button>
-											<button type="button" class="btn btn-primary no-button" onclick="overlay_b2()">No</button>
+											<button type="button" class="btn btn-primary no-button" onclick="d_message()">No</button>
 										</div>
 									</form>
 								</div>
