@@ -214,6 +214,7 @@ function calendar_top() {
 	<div class='container-fluid'>
    		<div class='row calendar'>
    			<div class='col-md-4 col-md-offset-2'>
+   			<a href='admin.php' class='back-to-admin'><i class='fa fa-chevron-left' aria-hidden='true'></i>Admin Page</a>
 			<table id='calendar' class='center-block'>
     		    <tr id='week'>
     		    <td align='left'><a href='?month=" . date("m", $this->back) . "&amp;year=" . date("Y", $this->back) . "'><i class='fa fa-chevron-left' aria-hidden='true'></i></a></td>

@@ -1,9 +1,13 @@
 <?php
 	session_start();
 
+	include 'Actions/lessons.php';
+	include_once ('Actions/messages.php');
+
+	$messages = new messages();
+
 	include('Includes/header2.html');
 	include('Includes/nav.php');
-	include 'Actions/lessons.php';
 ?>
 			<div class="container-fluid">
 				<div class="row admin">
@@ -17,6 +21,7 @@
 							<button class="btn coll-toggle" data-toggle="collapse" data-target="#man-users" data-parent="#admin-content"><i class="fa fa-users" aria-hidden="true"></i>Manage Users</button>
 							<button class="btn coll-toggle" data-toggle="collapse" data-target="#add-videos" data-parent="#admin-content"><i class="fa fa-video-camera" aria-hidden="true"></i>Add Videos</button>
 							<button class="btn coll-toggle" data-toggle="collapse" data-target="#man-videos" data-parent="#admin-content"><i class="fa fa-video-camera" aria-hidden="true"></i>Manage Videos</button>
+							<button class="btn coll-toggle" data-toggle="collapse" data-target="#all-messages" data-parent="#admin-content"><i class="fa fa-envelope" aria-hidden="true"></i>All Messages</button>
 							<div id="add-lessons" class="collapse in">
 								<h2>Add bookings</h2>
 								<a role="button" class="btn calendar-toggle" href="calendar.php"><i class="fa fa-calendar" aria-hidden="true"></i>View Calendar</a>
@@ -179,6 +184,15 @@
 										<tr><th>Delete</th></tr>
 										<tr><td><button type="button" onclick="overlay_v2()"><i class="fa fa-remove"></i></button></td></tr>
 									</table>
+								</div>
+							</div>
+							<div id="all-messages" class="collapse">
+								<div id="posts">
+									<div class="new-post">
+										<?php
+										$id = $_SESSION['clientID'];
+										$messages->getMessages($id)?>
+									</div>
 								</div>
 							</div>
 						</div>
