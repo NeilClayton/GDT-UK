@@ -84,6 +84,7 @@
 										<tr>
 											<th>Date</th>
 											<th>Time</th>
+											<th>Duration</th>
 										</tr>
 										<?php $lesson = new lessons();
 										$lesson->getLessonsBooked($_SESSION['clientID'])
