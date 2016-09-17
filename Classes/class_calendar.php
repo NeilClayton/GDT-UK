@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('Europe/London');
-
+include ($_SERVER['DOCUMENT_ROOT'].'/GDT-UK/Resources/db.php');
 
 class booking_diary {
 
@@ -71,7 +71,7 @@ function make_booking_array($year, $month, $j = 0) {
 	$this->is_slot_booked_today = 0; // Defaults to 0
 
 	$stmt->bind_param('ss', $year, $month);
-	//$stmt->bind_result($name, $date, $start);
+	$stmt->bind_result($date, $start);
 	$stmt->execute();
 	$stmt->store_result();
 
@@ -397,16 +397,6 @@ function booking_form() {
 
 							// Calculate finish time
 							$finish_time = strtotime($start) + $this->booking_frequency * 60;
-							echo "<script>
-
-function getRadioValue(id) {
-var radioBtn = document.getElementById(id);
-var lessonTime = radioBtn.value;
-
-//alert(radioBtn.value);
-}  
-
-</script>";
 
 
 							echo "
@@ -416,31 +406,31 @@ var lessonTime = radioBtn.value;
 							<!--<td></td>\r\n-->
 							<td width='110'><input type='radio' id='".$start."' name='timeSlot' value='" . $start . "' class='fields' onclick='getRadioValue(this.id)' ></td>
 						</tr>";
-						} // Close foreach
-						foreach ($this->bookings as $booking) {
-							if($booking['date'] == $this->year.'-'.$this->month.'-'.$this->day) {
-								foreach ($booking as $key => $value) {
-									$booking_name;
-									$time;
-									switch ($key) {
-										case "name":
-											$booking_name = $value;
-											break;
-										case "date":
-											break;
-										case "start":
-											$time = $value;
-											$endtime = strtotime("+15 minutes", strtotime($time));
-											echo "
-											<tr>
-											<td>" . $time . "</td>
-											<td>" . date('H:i:s', $endtime) . "</td>
-											<td>" . $booking_name . "</td>
-											</tr>";
-											break;
-									}
-								}
-							}
+						 // Close foreach
+						//foreach ($this->bookings as $booking) {
+						//	if($booking['date'] == $this->year.'-'.$this->month.'-'.$this->day) {
+						//		foreach ($booking as $key => $value) {
+						//			$booking_name;
+						//			$time;
+						//			switch ($key) {
+						//				case "client_id":
+						//					$booking_name = $value;
+						//					break;
+						//				case "date":
+						//					break;
+						//				case "start":
+						//					$time = $value;
+						//					$endtime = strtotime("+15 minutes", strtotime($time));
+						//					echo "
+						//					<tr>
+						//					<td>" . $time . "</td>
+						//					<td>" . date('H:i:s', $endtime) . "</td>
+						//					<td>" . $booking_name . "</td>
+						//					</tr>";
+						//					break;
+						//			}
+						//		}
+						//	}
 						}
 
 	echo "</table></form></div><!-- Close outer_booking DIV -->
@@ -450,12 +440,7 @@ var lessonTime = radioBtn.value;
 } // Close function
 
 function basket($selected_day = '') {
-	//if(isset($_POST['selectedTime'])){
-		//var_dump($_POST);
-		//if(isset($_POST['timeSlot'])){
-		//	$_SESSION['timeslot'] = $_POST['timeSlot'];
-		//}
-	//}
+
 	if(!isset($_GET['day']))
 	$day = '01';
 	else
@@ -474,18 +459,29 @@ function basket($selected_day = '') {
 		<div class='basket-container'>
 		<button type='button' onclick='closeBookForm()' class='close-window pull-right'><i class='fa fa-remove' aria-hidden='true'></i></button><br>
 			<h2>Selected Slots</h2>
-			<form method='post' action='Actions/lessons.php'>
-				<div class='form-group'>
+			<form method='post' action='Actions/lessons.php'>";
+
+			//get all users within the client_list table
+			$db = new db();
+			$sql = "SELECT client_list.client_id, firstname, lastname, email FROM client_list LEFT JOIN user_list ON client_list.client_id = user_list.client_id WHERE user_list.client_id = 2";
+			$clients = $db->pdo->prepare($sql);
+			$clients->execute();
+	
+	
+			echo "<div class='form-group'>
 					<label for='name'>Client</label>
 					<div class='table-responsive'>
 						<table class='table table-hover filter-this'>
 						<thead>
 							<tr><th>Full name</th><th>Email</th><th>Select</th></tr>
 						</thead>
-						<tbody>
-							<tr><td>John Smith</td><td>jsmith@email.com</td><td><input type='radio' name='user' value='John Smith'></td></tr>
-							<tr><td>Joe Bloggs</td><td>jbloggs@email.com</td><td><input type='radio' name='user' value='John Smith'></td></tr>
-						</tbody>
+						<tbody>";
+						foreach ($clients as $client){
+
+							echo "<tr><td>". $client['firstname'] . " " . $client['lastname'] . "</td><td>" .$client['email'] . "</td><td><input type='radio' name='user' value='" . $client['client_id'] . "'></td></tr>";
+						}
+
+						echo "</tbody>
 						</table>
 					</div>
 				</div>
